@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClinicSystemBusiness
 {
-    public class Class1
+    internal class User
     {
     }
 }
