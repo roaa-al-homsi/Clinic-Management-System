@@ -1,12 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\ClinicSystem\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A954B8-C47F-433D-9E5B-5BAF912BAE80}|..\\ClinicSystemDataAccess\\ClinicSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdataaccess\\settingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\SettingData.cs",
+              "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\SettingData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\SettingData.cs",
+              "RelativeToolTip": "..\\ClinicSystemDataAccess\\SettingData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:43:43.14Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

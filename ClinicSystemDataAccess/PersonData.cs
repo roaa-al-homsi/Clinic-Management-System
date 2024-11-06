@@ -1,6 +1,8 @@
 ﻿namespace ClinicSystemDataAccess
 {
-    internal class PersonData
+    public static class PersonData
     {
+
+
     }
 }
