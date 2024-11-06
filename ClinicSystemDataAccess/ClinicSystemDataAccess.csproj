@@ -45,6 +45,7 @@
     <Compile Include="CarrerData.cs" />
     <Compile Include="DoctorData.cs" />
     <Compile Include="EmployeeData.cs" />
+    <Compile Include="GenericData.cs" />
     <Compile Include="MedicalRecordData.cs" />
     <Compile Include="MedicalSpecialtiesData.cs" />
     <Compile Include="PatientData.cs" />
