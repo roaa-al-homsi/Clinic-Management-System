@@ -68,7 +68,7 @@ namespace ClinicSystemDataAccess
         {
             return GenericData.All("select * from View_Users_Details");
         }
-        static public bool GetUserByUserNameAndPassword(ref int PersonId, ref int Id, string username, string Password, ref int Permission)
+        static public bool GetUserByUsernameAndPassword(ref int PersonId, ref int Id, string Username, string Password, ref int Permission)
         {
             string query = @"select * from Users where UserName=@username and Password=@Password";
 
@@ -78,7 +78,7 @@ namespace ClinicSystemDataAccess
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@UserName", username);
+                    command.Parameters.AddWithValue("@UserName", Username);
                     command.Parameters.AddWithValue("@Password", Password);
                     try
                     {
@@ -95,8 +95,6 @@ namespace ClinicSystemDataAccess
                         {
                             IsFound = false;
                         }
-
-                        reader.Close();
                     }
                     catch { Exception exception; }
                 }
@@ -117,20 +115,22 @@ namespace ClinicSystemDataAccess
                     try
                     {
                         connection.Open();
-                        SqlDataReader reader = command.ExecuteReader();
-                        if (reader.Read())
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            IsFound = true;
-                            Id = (int)reader["Id"];
-                            PersonId = (int)reader["Person Id"];
-                            Password = (string)reader["Password"];
-                            Permission = (int)reader["Permission"];
+                            if (reader.Read())
+                            {
+                                IsFound = true;
+                                Id = (int)reader["Id"];
+                                PersonId = (int)reader["PersonId"];
+                                Password = (string)reader["Password"];
+                                Permission = (int)reader["Permission"];
+                            }
+                            else
+                            {
+                                IsFound = false;
+                            }
                         }
-                        else
-                        {
-                            IsFound = false;
-                        }
-                        reader.Close();
+
                     }
                     catch { Exception exception; }
                 }
@@ -154,7 +154,7 @@ namespace ClinicSystemDataAccess
                         {
                             IsFound = true;
                             username = (string)reader["UserName"];
-                            PersonId = (int)reader["Person Id"];
+                            PersonId = (int)reader["PersonId"];
                             Password = (string)reader["Password"];
                             Permission = (int)reader["Permission"];
                         }
@@ -162,7 +162,7 @@ namespace ClinicSystemDataAccess
                         {
                             IsFound = false;
                         }
-                        reader.Close();
+
                     }
                     catch { Exception exception; }
                 }
