@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClinicSystemBusiness
 {
-    internal class Carrer
+    public class Career
     {
+
+        public Career() { } 
     }
 }

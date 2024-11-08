@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Appointement.cs" />
-    <Compile Include="Carrer.cs" />
+    <Compile Include="Career.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="MedicalRecord.cs" />

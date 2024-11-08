@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E7A954B8-C47F-433D-9E5B-5BAF912BAE80}|..\\ClinicSystemDataAccess\\ClinicSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdataaccess\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -22,6 +25,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\UserData.cs",
+              "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\UserData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\UserData.cs",
+              "RelativeToolTip": "..\\ClinicSystemDataAccess\\UserData.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAuwGkAAACDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T06:56:11.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SettingData.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\SettingData.cs",
+              "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\SettingData.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\SettingData.cs",
+              "RelativeToolTip": "..\\ClinicSystemDataAccess\\SettingData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T06:51:55.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -30,19 +59,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-07T06:38:24.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SettingData.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\SettingData.cs",
-              "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\SettingData.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\SettingData.cs",
-              "RelativeToolTip": "..\\ClinicSystemDataAccess\\SettingData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T06:36:25.308Z",
               "EditorCaption": ""
             }
           ]
