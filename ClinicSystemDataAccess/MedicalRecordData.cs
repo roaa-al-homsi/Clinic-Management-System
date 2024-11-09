@@ -70,11 +70,12 @@ namespace ClinicSystemDataAccess
         static public bool GetMedicalRecord(int id, ref string visitDescription, ref string diagnosis, ref string additionalNotes)
         {
             bool isFound = false;
-            string query = @"select * from MedicalRecords";
+            string query = @"select * from MedicalRecords where Id=@id";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@Id", id);
                     try
                     {
                         connection.Open();
