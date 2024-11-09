@@ -85,7 +85,5 @@ namespace ClinicSystemBusiness
                 return EmployeeData.Delete(employeeId);
             }
         }
-
-
     }
 }
