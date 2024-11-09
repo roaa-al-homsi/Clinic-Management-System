@@ -3,7 +3,7 @@ using System.Data;
 
 namespace ClinicSystemBusiness
 {
-    internal class AppointmentStatus
+    public class AppointmentStatus
     {
         private enum Mode { Add, Update };
         private Mode _mode;
