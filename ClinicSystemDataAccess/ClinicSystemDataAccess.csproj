@@ -50,13 +50,13 @@
     <Compile Include="MedicalRecordData.cs" />
     <Compile Include="MedicalSpecialtiesData.cs" />
     <Compile Include="PatientData.cs" />
-    <Compile Include="PayementMethodsData.cs" />
+    <Compile Include="PaymentMethodsData.cs" />
     <Compile Include="PaymentsData.cs" />
     <Compile Include="PersonData.cs" />
     <Compile Include="PrescriptionData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingData.cs" />
-    <Compile Include="StatusAppointementData.cs" />
+    <Compile Include="AppointmentStatusData.cs" />
     <Compile Include="UserData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
