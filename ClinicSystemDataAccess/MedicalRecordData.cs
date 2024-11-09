@@ -75,10 +75,6 @@ namespace ClinicSystemDataAccess
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Id", id);
-                    command.Parameters.AddWithValue("@visitDescription", visitDescription);
-                    command.Parameters.AddWithValue("@diagnosis", diagnosis);
-                    command.Parameters.AddWithValue("@additionalNotes", additionalNotes);
                     try
                     {
                         connection.Open();
