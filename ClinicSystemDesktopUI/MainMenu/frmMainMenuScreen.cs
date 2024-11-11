@@ -92,7 +92,7 @@ namespace ClinicSystem.MainMenu
         private void btnEmployees_Click_1(object sender, System.EventArgs e)
         {
             btnTitle.Image = btnEmployees.Image;
-            OpenChildFormAsync(new frmManageEmployees(), sender);
+            OpenChildFormAsync(new frmManageEmployees(this), sender);
         }
 
         private void frmMainMenuScreen_Load(object sender, System.EventArgs e)

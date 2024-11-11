@@ -1,4 +1,5 @@
-﻿using ClinicSystemBusiness;
+﻿using ClinicSystem.MainMenu;
+using ClinicSystemBusiness;
 using System;
 using System.Windows.Forms;
 
@@ -6,9 +7,11 @@ namespace ClinicSystem.Employees
 {
     public partial class frmManageEmployees : Form
     {
-        public frmManageEmployees()
+        private frmMainMenuScreen _frmMainMenuScreen;
+        public frmManageEmployees(frmMainMenuScreen frmMainMenuScreen)
         {
             InitializeComponent();
+            _frmMainMenuScreen = frmMainMenuScreen;
         }
         private void _RefreshEmployeeData()
         {
@@ -19,6 +22,11 @@ namespace ClinicSystem.Employees
         private void frmManageEmployees_Load(object sender, EventArgs e)
         {
             _RefreshEmployeeData();
+        }
+
+        private void btnAddEmployee_Click(object sender, EventArgs e)
+        {
+            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateEmployee());
         }
     }
 }
