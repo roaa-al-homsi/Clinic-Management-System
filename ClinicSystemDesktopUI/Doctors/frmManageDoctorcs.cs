@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicSystem
+namespace ClinicSystem.Doctors
 {
-    public partial class Form1 : Form
+    public partial class frmManageDoctorcs : Form
     {
-        public Form1()
+        public frmManageDoctorcs()
         {
             InitializeComponent();
         }

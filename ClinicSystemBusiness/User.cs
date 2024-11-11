@@ -112,7 +112,7 @@ namespace ClinicSystemBusiness
             int Id = -1;
             int PersonId = -1;
             int Permission = 0;
-            if (UserData.GetUserByUserNameAndPassword(ref PersonId, ref Id, UserName, Password, ref Permission))
+            if (UserData.GetUserByUsernameAndPassword(ref PersonId, ref Id, UserName, Password, ref Permission))
             {
                 return new User(Id, PersonId, UserName, Password, Permission);
             }
