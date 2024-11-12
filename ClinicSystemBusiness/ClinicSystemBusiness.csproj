@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Appointement.cs" />
     <Compile Include="Career.cs" />
+    <Compile Include="Countries.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="MedicalRecord.cs" />

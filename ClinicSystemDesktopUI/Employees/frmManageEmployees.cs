@@ -17,7 +17,6 @@ namespace ClinicSystem.Employees
         {
             dgvManageEmployees.DataSource = Employee.All();
 
-
         }
         private void frmManageEmployees_Load(object sender, EventArgs e)
         {

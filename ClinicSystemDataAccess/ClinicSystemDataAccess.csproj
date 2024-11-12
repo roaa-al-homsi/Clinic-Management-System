@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="AppointementData.cs" />
     <Compile Include="CarrerData.cs" />
+    <Compile Include="CountriesData.cs" />
     <Compile Include="DoctorData.cs" />
     <Compile Include="EmployeeData.cs" />
     <Compile Include="GenericData.cs" />
