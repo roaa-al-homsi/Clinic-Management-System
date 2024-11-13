@@ -9,5 +9,14 @@ namespace ClinicSystemBusiness
         {
             return CountriesData.All();
         }
+        public static int GetIdByName(string name)
+        {
+            return CountriesData.GetIdByName(name);
+        }
+        public static string GetNameByID(int id)
+        {
+            return CountriesData.GetNameByID(id);
+        }
     }
+
 }

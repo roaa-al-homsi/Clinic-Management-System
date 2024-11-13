@@ -37,7 +37,7 @@
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.labPersoId = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.labPersonId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPerson = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -74,6 +74,7 @@
             this.cbGendre.Size = new System.Drawing.Size(200, 36);
             this.cbGendre.TabIndex = 175;
             this.cbGendre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cbGendre.SelectedIndexChanged += new System.EventHandler(this.cbGendre_SelectedIndexChanged);
             // 
             // guna2HtmlLabel5
             // 
@@ -154,7 +155,6 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.PlaceholderText = "";
-            this.txtFullName.ReadOnly = true;
             this.txtFullName.SelectedText = "";
             this.txtFullName.Size = new System.Drawing.Size(200, 36);
             this.txtFullName.TabIndex = 163;
@@ -191,20 +191,20 @@
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(122, 46);
             this.guna2HtmlLabel4.TabIndex = 159;
-            this.guna2HtmlLabel4.Text = "Country:";
+            this.guna2HtmlLabel4.Text = "CountryId:";
             // 
-            // labPersoId
+            // labPersonId
             // 
-            this.labPersoId.AutoSize = false;
-            this.labPersoId.BackColor = System.Drawing.Color.Transparent;
-            this.labPersoId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labPersoId.Location = new System.Drawing.Point(496, 28);
-            this.labPersoId.Name = "labPersoId";
-            this.labPersoId.Size = new System.Drawing.Size(95, 32);
-            this.labPersoId.TabIndex = 168;
-            this.labPersoId.Text = "??";
-            this.labPersoId.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            this.labPersoId.Visible = false;
+            this.labPersonId.AutoSize = false;
+            this.labPersonId.BackColor = System.Drawing.Color.Transparent;
+            this.labPersonId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPersonId.Location = new System.Drawing.Point(496, 28);
+            this.labPersonId.Name = "labPersonId";
+            this.labPersonId.Size = new System.Drawing.Size(95, 32);
+            this.labPersonId.TabIndex = 168;
+            this.labPersonId.Text = "??";
+            this.labPersonId.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.labPersonId.Visible = false;
             // 
             // labPerson
             // 
@@ -239,7 +239,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderText = "";
-            this.txtEmail.ReadOnly = true;
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(200, 36);
             this.txtEmail.TabIndex = 181;
@@ -275,11 +274,9 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderText = "";
-            this.txtAddress.ReadOnly = true;
             this.txtAddress.SelectedText = "";
             this.txtAddress.Size = new System.Drawing.Size(229, 135);
             this.txtAddress.TabIndex = 179;
-            this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel2
             // 
@@ -313,11 +310,11 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "";
-            this.txtPhone.ReadOnly = true;
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(200, 36);
             this.txtPhone.TabIndex = 177;
             this.txtPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // guna2HtmlLabel6
             // 
@@ -423,7 +420,7 @@
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.labPersoId);
+            this.Controls.Add(this.labPersonId);
             this.Controls.Add(this.labPerson);
             this.Name = "frmAddUpdatePersons";
             this.Text = "AddUpdatePersons";
@@ -445,7 +442,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labPersoId;
+        private Guna.UI2.WinForms.Guna2HtmlLabel labPersonId;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPerson;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;

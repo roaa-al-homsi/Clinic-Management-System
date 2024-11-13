@@ -65,6 +65,14 @@ namespace ClinicSystemBusiness
             }
             return CareerData.Delete(id);
         }
+        public static int GetIdByName(string name)
+        {
+            return CareerData.GetCareerIdByName(name);
+        }
+        public static string GetNameById(int id)
+        {
+            return CareerData.GetNameById(id);
+        }
     }
 }
 

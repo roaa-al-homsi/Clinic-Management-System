@@ -22,10 +22,9 @@ namespace ClinicSystem.Employees
         {
             _RefreshEmployeeData();
         }
-
         private void btnAddEmployee_Click(object sender, EventArgs e)
         {
-            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateEmployee());
+            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateEmployee(-1));
         }
     }
 }

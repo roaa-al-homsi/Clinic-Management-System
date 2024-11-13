@@ -10,19 +10,19 @@ namespace ClinicSystemBusiness
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
-        public string Country { get; set; }
+        public int CountryId { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Gender { get; set; }
         public string Address { get; set; }
         public string ImagePath { get; set; }
 
-        private Person(int Id, string Name, DateTime BirthDate, string Gender, string Phone, string Email, string Country, string Address, string ImagePath)
+        private Person(int Id, string Name, DateTime BirthDate, string Gender, string Phone, string Email, int CountryId, string Address, string ImagePath)
         {
             this.Id = Id;
             this.Name = Name;
             this.BirthDate = BirthDate;
-            this.Country = Country;
+            this.CountryId = CountryId;
             this.Gender = Gender;
             this.Phone = Phone;
             this.Email = Email;
@@ -36,7 +36,7 @@ namespace ClinicSystemBusiness
             this.Id = -1;
             this.Name = string.Empty;
             this.BirthDate = DateTime.MinValue;
-            this.Country = string.Empty;
+            this.CountryId = -1;
             this.Gender = string.Empty;
             this.Phone = string.Empty;
             this.Email = string.Empty;
@@ -46,12 +46,12 @@ namespace ClinicSystemBusiness
         }
         private bool _Add()
         {
-            this.Id = PersonData.Add(this.Name, this.BirthDate, this.Gender, this.Phone, this.Email, this.Country, this.Address, this.ImagePath);
+            this.Id = PersonData.Add(this.Name, this.BirthDate, this.Gender, this.Phone, this.Email, this.CountryId, this.Address, this.ImagePath);
             return (Id != -1);
         }
         private bool _Update()
         {
-            return PersonData.Update(this.Id, this.Name, this.BirthDate, this.Gender, this.Phone, this.Email, this.Country, this.Address, this.ImagePath);
+            return PersonData.Update(this.Id, this.Name, this.BirthDate, this.Gender, this.Phone, this.Email, this.CountryId, this.Address, this.ImagePath);
         }
         static public bool DeletePerson(int Id)
         {
@@ -59,7 +59,7 @@ namespace ClinicSystemBusiness
         }
         private bool ReadyPerson()
         {
-            if (this.Name == null || this.BirthDate == null || this.Gender == null || this.Phone == null || this.Email == null || this.Country == null || this.Address == null)
+            if (this.Name == null || this.BirthDate == null || this.Gender == null || this.Phone == null || this.Email == null || this.CountryId == 0 || this.Address == null)
             {
                 return false;
             }
@@ -87,20 +87,24 @@ namespace ClinicSystemBusiness
             string Gender = string.Empty;
             string Phone = string.Empty;
             string Email = string.Empty;
-            string Country = string.Empty;
+            int CountryId = -1;
             string Address = string.Empty;
             string ImagePath = string.Empty;
 
-            if (PersonData.GetPersonById(Id, ref Name, ref BirthDate, ref Gender, ref Phone, ref Email, ref Country, ref Address, ref ImagePath))
+            if (PersonData.GetPersonById(Id, ref Name, ref BirthDate, ref Gender, ref Phone, ref Email, ref CountryId, ref Address, ref ImagePath))
 
             {
-                return new Person(Id, Name, BirthDate, Gender, Phone, Email, Country, Address, ImagePath);
+                return new Person(Id, Name, BirthDate, Gender, Phone, Email, CountryId, Address, ImagePath);
             }
             return null;
         }
         static public bool Exist(int Id)
         {
             return PersonData.Exist(Id);
+        }
+        static public int GetPersonIdByName(string name)
+        {
+            return PersonData.GetPersonIdByName(name);
         }
     }
 }

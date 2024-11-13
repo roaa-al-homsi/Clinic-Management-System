@@ -29,7 +29,7 @@ namespace ClinicSystem.Persons
         }
         private void _LoadPersonData()
         {
-            _FillComboBoxCountries();
+
             if (_mode == Mode.Add)
             {
                 _person = new Person();
@@ -41,20 +41,20 @@ namespace ClinicSystem.Persons
                 this.Text = "Update Person";
                 linkRemove.Visible = true;
                 _person = Person.Find(_personId);
-                labPersoId.Text = _personId.ToString();
+                labPersonId.Text = _personId.ToString();
                 txtAddress.Text = _person.Address;
                 txtEmail.Text = _person.Email;
                 txtFullName.Text = _person.Name;
                 txtPhone.Text = _person.Phone;
                 TimePicBirthDate.Value = _person.BirthDate;
                 cbGendre.SelectedItem = _person.Gender;
-                cbCountries.SelectedIndex = cbCountries.FindString(_person.Country);
+                cbCountries.SelectedIndex = cbCountries.FindString(Countries.GetNameByID(_person.CountryId));
                 picPerson.ImageLocation = string.IsNullOrEmpty(_person.ImagePath) ? null : _person.ImagePath;
             }
         }
-
         private void frmAddUpdatePersons_Load(object sender, System.EventArgs e)
         {
+            _FillComboBoxCountries();
             _LoadPersonData();
         }
         private void _FillPersonBeforeSave()
@@ -64,7 +64,7 @@ namespace ClinicSystem.Persons
             _person.Name = txtFullName.Text;
             _person.Phone = txtPhone.Text;
             _person.BirthDate = TimePicBirthDate.Value.Date;
-            _person.Country = cbCountries.SelectedItem.ToString();
+            _person.CountryId = Countries.GetIdByName(cbCountries.Text);
             _person.Gender = cbGendre.SelectedItem.ToString();
             _person.ImagePath = (picPerson.ImageLocation != null) ? picPerson.ImageLocation.ToString() : string.Empty;
 
@@ -75,8 +75,8 @@ namespace ClinicSystem.Persons
             if (_person.Save())
             {
                 labPerson.Visible = true;
-                labPersoId.Visible = true;
-                labPersoId.Text = _person.Id.ToString();
+                labPersonId.Visible = true;
+                labPersonId.Text = _person.Id.ToString();
                 MessageBox.Show("Data Saved Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -90,7 +90,6 @@ namespace ClinicSystem.Persons
         {
             this.Close();
         }
-
         private void linkSet_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
@@ -105,10 +104,19 @@ namespace ClinicSystem.Persons
                 picPerson.ImageLocation = selectedFilePath;
             }
         }
-
         private void linkRemove_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             picPerson.ImageLocation = null;
+        }
+
+        private void txtPhone_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void cbGendre_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

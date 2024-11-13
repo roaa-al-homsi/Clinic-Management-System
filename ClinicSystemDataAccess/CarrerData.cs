@@ -94,6 +94,54 @@ namespace ClinicSystemDataAccess
             }
             return isFound;
         }
+        static public int GetCareerIdByName(string name)
+        {
+            int CareerId = -1;
+            string query = @"select Id from CareerSpecializations where Name = @name;
+                          SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("name", name);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        {
+                            CareerId = insertedID;
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return CareerId;
+        }
+        static public string GetNameById(int id)
+        {
+            string name = string.Empty;
+            string query = @"select Name from CareerSpecializations where Id = @id;
+                          SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            name = result.ToString();
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return name;
+        }
     }
 }
 
