@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ClinicSystemBusiness;
+using System;
 using System.Windows.Forms;
 
 namespace ClinicSystem.Doctors
@@ -15,6 +9,14 @@ namespace ClinicSystem.Doctors
         public frmManageDoctorcs()
         {
             InitializeComponent();
+        }
+        private void _RefreshDoctorsData()
+        {
+            dgvManageDoctors.DataSource = Doctor.All();
+        }
+        private void frmManageDoctorcs_Load(object sender, EventArgs e)
+        {
+            _RefreshDoctorsData();
         }
     }
 }

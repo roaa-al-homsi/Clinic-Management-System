@@ -1,4 +1,5 @@
-﻿using ClinicSystem.Employees;
+﻿using ClinicSystem.Doctors;
+using ClinicSystem.Employees;
 using Guna.UI2.WinForms;
 using System.Drawing;
 using System.Windows.Forms;
@@ -93,6 +94,13 @@ namespace ClinicSystem.MainMenu
         private void frmMainMenuScreen_Load(object sender, System.EventArgs e)
         {
 
+        }
+
+        private void btnDoctors_Click(object sender, System.EventArgs e)
+        {
+
+            btnTitle.Image = btnDoctors.Image;
+            OpenChildFormAsync(new frmManageDoctorcs(), sender);
         }
     }
 }

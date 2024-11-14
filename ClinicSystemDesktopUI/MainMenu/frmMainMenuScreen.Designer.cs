@@ -177,6 +177,7 @@
             this.btnDoctors.TabIndex = 2;
             this.btnDoctors.Tag = "Doctors";
             this.btnDoctors.Text = "Doctors";
+            this.btnDoctors.Click += new System.EventHandler(this.btnDoctors_Click);
             // 
             // btnLogout
             // 
