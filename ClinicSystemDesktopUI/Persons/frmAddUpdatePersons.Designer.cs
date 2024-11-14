@@ -204,7 +204,6 @@
             this.labPersonId.TabIndex = 168;
             this.labPersonId.Text = "??";
             this.labPersonId.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            this.labPersonId.Visible = false;
             // 
             // labPerson
             // 
@@ -216,7 +215,6 @@
             this.labPerson.Size = new System.Drawing.Size(111, 34);
             this.labPerson.TabIndex = 167;
             this.labPerson.Text = "Person Id:";
-            this.labPerson.Visible = false;
             // 
             // txtEmail
             // 

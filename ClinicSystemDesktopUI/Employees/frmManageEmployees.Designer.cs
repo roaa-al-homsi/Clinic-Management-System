@@ -128,20 +128,21 @@
             this.cmsManageEmployees.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageEmployees.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageEmployees.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageEmployees.Size = new System.Drawing.Size(128, 52);
+            this.cmsManageEmployees.Size = new System.Drawing.Size(211, 80);
             // 
             // tsUpdate
             // 
             this.tsUpdate.Name = "tsUpdate";
-            this.tsUpdate.Size = new System.Drawing.Size(127, 24);
+            this.tsUpdate.Size = new System.Drawing.Size(210, 24);
             this.tsUpdate.Text = "Update";
             this.tsUpdate.Click += new System.EventHandler(this.tsUpdate_Click);
             // 
             // tsDelete
             // 
             this.tsDelete.Name = "tsDelete";
-            this.tsDelete.Size = new System.Drawing.Size(127, 24);
+            this.tsDelete.Size = new System.Drawing.Size(210, 24);
             this.tsDelete.Text = "Delete";
+            this.tsDelete.Click += new System.EventHandler(this.tsDelete_Click);
             // 
             // btnAddEmployee
             // 

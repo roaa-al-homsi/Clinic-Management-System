@@ -61,6 +61,10 @@ namespace ClinicSystemDataAccess
         {
             return GenericData.Exist("select Found=1 from Doctors where id =@id", "@id", id);
         }
+        static public bool ExistByEmployeeId(int employeeId)
+        {
+            return GenericData.Exist("select Found=1 from Doctors where EmployeeId=@employeeId", "@employeeId", employeeId);
+        }
         static public DataTable All()
         {
             return GenericData.All("select * from Doctors");
@@ -93,6 +97,32 @@ namespace ClinicSystemDataAccess
                 }
             }
             return isFound;
+        }
+        static public int GetDoctorIdByEmployeeId(int employeeId)
+        {
+            int doctorId = 0;
+            string query = @"select Id from Doctors where EmployeeId=@employeeId  SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@employeeId", employeeId);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        {
+                            employeeId = insertedID;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Log or handle the exception as needed
+                    }
+                }
+            }
+            return employeeId;
         }
         static public int GetEmployeeIdByDoctorId(int doctorId)
         {

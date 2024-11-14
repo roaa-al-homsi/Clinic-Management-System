@@ -32,6 +32,8 @@ namespace ClinicSystem.Persons
             if (_mode == Mode.Add)
             {
                 _person = new Person();
+                labPerson.Visible = false;
+                labPersonId.Visible = false;
                 this.Text = "Add person";
                 return;
             }

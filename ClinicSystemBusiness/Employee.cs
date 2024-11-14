@@ -70,14 +70,23 @@ namespace ClinicSystemBusiness
             {
                 return false;
             }
+            if (Doctor.ExistByEmployeeId(employeeId))
+            {
+                int doctorId = DoctorData.GetDoctorIdByEmployeeId(employeeId);
+                if (!Doctor.Delete(doctorId))
+                {
+                    return false;
+                }
+            }
             int PersonId = EmployeeData.GetPersonIdByEmployeeId(employeeId);
-            if (!PersonData.Delete(PersonId))
+
+            if (!EmployeeData.Delete(employeeId))
             {
                 return false;
             }
             else
             {
-                return (EmployeeData.Delete(employeeId));
+                return PersonData.Delete(PersonId);
             }
         }
         public static DataTable All()

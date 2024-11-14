@@ -69,6 +69,14 @@ namespace ClinicSystemBusiness
         {
             return DoctorData.Exist(id);
         }
+        public static bool ExistByEmployeeId(int employeeId)
+        {
+            return DoctorData.ExistByEmployeeId(employeeId);
+        }
+        public static int GetDoctorIdByEmployeeId(int employeeId)
+        {
+            return DoctorData.GetDoctorIdByEmployeeId(employeeId);
+        }
         public static bool Delete(int id)
         {
             if (!Exist(id))
@@ -85,5 +93,6 @@ namespace ClinicSystemBusiness
                 return EmployeeData.Delete(employeeId);
             }
         }
+
     }
 }
