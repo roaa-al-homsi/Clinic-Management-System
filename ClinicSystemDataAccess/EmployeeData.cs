@@ -10,12 +10,12 @@ namespace ClinicSystemDataAccess
         {
             int NewIdEmployeer = 0;
             SqlConnection connection = new SqlConnection(SettingData.ConnectionString);
-            string query = @"insert into Employees (Salary,careerId,PersonId) values (@salary,@careerId,@PersonId)
+            string query = @"insert into Employees (Salary,careerId,personId) values (@salary,@careerId,@personId)
                            SELECT SCOPE_IDENTITY();";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@salary", salary);
             command.Parameters.AddWithValue("@careerId", careerId);
-            command.Parameters.AddWithValue("@PersonId", PersonId);
+            command.Parameters.AddWithValue("@personId", PersonId);
             try
             {
                 connection.Open();
@@ -29,19 +29,19 @@ namespace ClinicSystemDataAccess
             finally { connection.Close(); }
             return NewIdEmployeer;
         }
-        static public bool Update(int Id, int salary, int careerId, int PersonId)
+        static public bool Update(int id, int salary, int careerId, int personId)
         {
             int RowAffected = 0;
 
             SqlConnection connection = new SqlConnection(SettingData.ConnectionString);
-            string query = @"update Employees Salary=@salary ,careerId=@careerId,PersonId=@PersonId
-				   where Id=@Id;";
+            string query = @"update Employees  set Salary=@salary ,careerId=@careerId,personId=@personId
+				   where Id=@id;";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@salary", salary);
-            command.Parameters.AddWithValue("@PersonId", PersonId);
+            command.Parameters.AddWithValue("@personId", personId);
             command.Parameters.AddWithValue("@careerId", careerId);
-            command.Parameters.AddWithValue("@Id", Id);
+            command.Parameters.AddWithValue("@id", id);
             try
             {
                 connection.Open();
@@ -53,7 +53,7 @@ namespace ClinicSystemDataAccess
         }
         static public bool Delete(int Id)
         {
-            return GenericData.Delete("Delete Employees where Id=@Id", "@Id", Id);
+            return GenericData.Delete("Delete Employees where id=@id", "@id", Id);
         }
         static public DataTable All()
         {
@@ -67,11 +67,11 @@ namespace ClinicSystemDataAccess
         static public bool GetEmployeeById(int Id, ref int salary, ref int careerId, ref int PersonId)
         {
             SqlConnection connection = new SqlConnection(SettingData.ConnectionString);
-            string query = @"select * from Employees where Id =@Id";
+            string query = @"select * from Employees where id =@id";
 
             bool IsFound = false;
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@Id", Id);
+            command.Parameters.AddWithValue("@id", Id);
             try
             {
                 connection.Open();
@@ -79,7 +79,7 @@ namespace ClinicSystemDataAccess
                 if (reader.Read())
                 {
                     IsFound = true;
-                    PersonId = (int)reader["PersonId"];
+                    PersonId = (int)reader["personId"];
                     careerId = (int)reader["CareerId"];
                     salary = (int)reader["Salary"];
                 }
@@ -97,7 +97,7 @@ namespace ClinicSystemDataAccess
         {
             int PersonID = 0;
             SqlConnection connection = new SqlConnection(SettingData.ConnectionString);
-            string query = @"select PersonId from Employees where Id =@EmployeeId";
+            string query = @"select personId from Employees where id =@EmployeeId";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@EmployeeId", EmployeeId);
             try
@@ -115,7 +115,7 @@ namespace ClinicSystemDataAccess
         }
         static public bool Exist(int Id)
         {
-            return GenericData.Exist("select Found=1 from Employees where Id =@Id", "@Id", Id);
+            return GenericData.Exist("select Found=1 from Employees where id =@id", "@id", Id);
         }
     }
 }

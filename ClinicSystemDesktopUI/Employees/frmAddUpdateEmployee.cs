@@ -4,18 +4,19 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
+
 namespace ClinicSystem.Employees
 {
     public partial class frmAddUpdateEmployee : Form
     {
         private enum Mode { Add, Update }
         private Mode _mode;
-        private int _id;
+        private int _employeeId;
         private Employee _employee;
         public frmAddUpdateEmployee(int employeeId)
         {
             InitializeComponent();
-            _id = employeeId;
+            _employeeId = employeeId;
             _mode = employeeId == -1 ? Mode.Add : Mode.Update;
         }
         private void _FillComboCareer()
@@ -34,44 +35,26 @@ namespace ClinicSystem.Employees
                 this.Tag = "Add Employee";
                 return;
             }
-            _employee = Employee.Find(_id);
+            _employee = Employee.Find(_employeeId);
             this.Tag = "Update Employee";
+            picPerson.ImageLocation = _employee.Person.ImagePath;
+            labEmployeeId.Text = _employeeId.ToString();
             txtSalary.Text = _employee.Salary.ToString();
             cbCareer.SelectedIndex = cbCareer.FindString(Career.GetNameById(_employee.CareerId));
             labPersonId.Text = _employee.PersonId.ToString();
-            labEmployeeId.Visible = true;
-            labEmployeeId.Text = _employee.Id.ToString();
-            labEmployee.Visible = true;
-
         }
         private void btnSelectPerson_Click(object sender, EventArgs e)
         {
-            frmAddUpdatePersons addUpdatePersons = new frmAddUpdatePersons(-1);
+            frmAddUpdatePersons addUpdatePersons = new frmAddUpdatePersons(_employee.PersonId);
             addUpdatePersons.DataBack += DataBackPerson;
             addUpdatePersons.ShowDialog();
-        }
-        private void LoadPersonInfo(Person person)
-        {
-            txtAddress.Text = person.Address;
-            txtEmail.Text = person.Email;
-            txtFullName.Text = person.Name;
-            txtPhone.Text = person.Phone;
-            cbCountry.SelectedIndex = cbCountry.FindString(Countries.GetNameByID(person.CountryId));
-            cbGendre.SelectedItem = person.Gender;
-            if (person.BirthDate != DateTime.MinValue)
-            {
-                TimePicBirthDate.Value = person.BirthDate;
-            }
-
-            picPerson1.ImageLocation = (string.IsNullOrWhiteSpace(person.ImagePath) ? null : person.ImagePath);
-            picPerson.ImageLocation = (string.IsNullOrWhiteSpace(person.ImagePath) ? null : person.ImagePath);
         }
         private void DataBackPerson(object sender, int personId)
         {
             Person person = Person.Find(personId);
             if (person != null)
             {
-                LoadPersonInfo(person);
+                uc_personInfo1.ViewDataPerson(person);
                 labPersonId.Text = personId.ToString();
             }
         }
@@ -88,8 +71,6 @@ namespace ClinicSystem.Employees
             _employee.PersonId = int.Parse(labPersonId.Text);
             if (_employee.Save())
             {
-                labEmployee.Visible = true;
-                labEmployeeId.Visible = true;
                 labEmployeeId.Text = _employee.Id.ToString();
                 MessageBox.Show("Data Saved Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

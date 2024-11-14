@@ -25,12 +25,12 @@ namespace ClinicSystemBusiness
         }
         private Employee(int id, int salary, int careerId, int personId)
         {
-            Person = Person.Find(PersonId);
-            // Career = Career.Fine(careerId);
-            this.Id = Id;
+            Person = Person.Find(personId);
+            Career = Career.Find(careerId);
+            this.Id = id;
             this.Salary = salary;
-            this.PersonId = PersonId;
-            this.CareerId = CareerId;
+            this.PersonId = personId;
+            this.CareerId = careerId;
             _Mode = Mode.Update;
         }
         private bool _Add()
@@ -45,10 +45,10 @@ namespace ClinicSystemBusiness
         }
         private bool _ReadyEmployee()
         {
-            //if (!PersonData.Exist(this.PersonId) ||CareerData.Exist(this.CareerId)||this.Salary<=0)
-            //{
-            //    return false;
-            //}
+            if (!PersonData.Exist(this.PersonId) || !CareerData.Exist(this.CareerId) || this.Salary <= 0)
+            {
+                return false;
+            }
             return true;
         }
         public bool Save()
@@ -63,7 +63,6 @@ namespace ClinicSystemBusiness
                     return _Update();
             }
             return false;
-
         }
         public static bool Delete(int employeeId)
         {

@@ -29,7 +29,6 @@ namespace ClinicSystem.Persons
         }
         private void _LoadPersonData()
         {
-
             if (_mode == Mode.Add)
             {
                 _person = new Person();

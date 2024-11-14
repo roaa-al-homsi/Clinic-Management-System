@@ -117,7 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="cmsManageEmployees.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="picPerson.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAA9dJREFUeF7t
+        Wc9rE0EUzp/in+IfYGUTitJKSksjWsFDUUoVRL2EehAUC6IFCz0URQS9lkJOxYNgoRdBkHgQxJNHj+t+
+        s+9tXoeX7Cab3exs5oOP/sjMm3lf3o/Z2YaHh4eHh4eHh4dH5RAEwYXLrdajhWazt9Bs9SOG9DNis4fP
+        LgWLF2n4/ADCCEGysD8XQsXCmGhJnL+2dMWwu7lmuHvveri9sRLeWluWAhGbPTJVP9jiQBSI0Xu+OZKf
+        ntw2Y4VQfdgis/UApVTiJCJFE2MYIRLmCBv1EklGzsHjDVWELIRQUiQy7zbiLhU7lSWl0ggbiUhBa5+W
+        cRfsDIqu5rDk571tQ+0zSVHA3U41fMMsENJDc1by7+meofaZpEw1RCgt5x7wDcMJtG3NUclvH7th+Oud
+        IX7XxkiKou1uLSIHUmsP0orFAf99P0hNNRR7tu/kITJKr1V2YFR6nR4+PCeOFKl/9FSdA8o0c14gzUEQ
+        AmjiMNNEYvtYi5Z1B9ze7e6F1EkTxuYwofiE7WSh5ghaaS8Z536f7JoOpQmQlRAKNmALNp2OINQFduCs
+        90J1OA//nL1xWyD5/FWEQMcfdhKBnD0s8jPY4esHqpN5+GznDgvk7jmIC/V6p21SQnN0Elrp5e7zmEyz
+        +1s3VWcnIWyxXeevPbibgdNINVl7nH4OY8RRFNcipFqego25LE6trl8p1ZJL+kkiCXMG4tTkskzCFilr
+        NKEgYyzPg43avuGASNzZmHAeRRdtG/UFRLTIQjxgjd9qSMi6lJHz8V7MxiCijFicfvgZMX6zijE03MPD
+        wyMXZM0Zp+jS1Ukfc2tZrOlxIzkDETN1JhJHzjNzIRYNcRdxOz8vTLDeMaS/R4okxcGcxbtbiR2im+1f
+        O+csv3wVrh4dhzd+/Aw7X76miiTFgTCYx3OvdgcPrIZBa9+Z44AdNRACTrGD0tFhIg0Tx55vRVT1X0PL
+        qw043377XnWOqYmURRxJrMHjYaOytckWR4sajbZIbCOLOEzLRvXuicb91m3aDk5qQ9Sm6kRSXnGYLFJe
+        G5jPImFvtM3ZARvJKw4TDmr/H4e2SLTN2UC28mk4Ny1iL7wvHAFou+VCphafb6pE2d1mkmrRwlNLraI4
+        s1STLb2K0cOUqVZqFHHtQVvVNlYlDlp/SffZsvZUqTAPY+lRhK7AC2obqiK5FpVyeIwWMsXZhfRi4iaB
+        vtTiizUt5ER6MWWakRvFQHYvbSNVZWl1iAXCM5O2kSqzlDoE41gEi+H84xL5tqBQgWQHc5ZFPpvVQqCy
+        DoweHh4eHh4eHh51RqPxH006XpHo5V3FAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

@@ -197,7 +197,7 @@
             // 
             this.labPersonId.AutoSize = false;
             this.labPersonId.BackColor = System.Drawing.Color.Transparent;
-            this.labPersonId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPersonId.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold);
             this.labPersonId.Location = new System.Drawing.Point(496, 28);
             this.labPersonId.Name = "labPersonId";
             this.labPersonId.Size = new System.Drawing.Size(95, 32);
@@ -210,7 +210,7 @@
             // 
             this.labPerson.AutoSize = false;
             this.labPerson.BackColor = System.Drawing.Color.Transparent;
-            this.labPerson.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPerson.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold);
             this.labPerson.Location = new System.Drawing.Point(376, 28);
             this.labPerson.Name = "labPerson";
             this.labPerson.Size = new System.Drawing.Size(111, 34);

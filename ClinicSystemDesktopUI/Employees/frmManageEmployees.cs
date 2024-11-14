@@ -26,5 +26,10 @@ namespace ClinicSystem.Employees
         {
             _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateEmployee(-1));
         }
+        private void tsUpdate_Click(object sender, EventArgs e)
+        {
+            int employeeId = Convert.ToInt32(dgvManageEmployees.CurrentRow.Cells[0].Value);
+            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateEmployee(employeeId));
+        }
     }
 }

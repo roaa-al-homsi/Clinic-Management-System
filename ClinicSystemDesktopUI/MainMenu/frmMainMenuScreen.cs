@@ -14,7 +14,6 @@ namespace ClinicSystem.MainMenu
 
         private Guna2Button _currentButton;
         private Form _activeForm;
-
         private void _ActivateButton(object btnSender)
         {
             if (btnSender != null)
@@ -86,15 +85,11 @@ namespace ClinicSystem.MainMenu
             MessageBox.Show("Access Denied!! You don't have permission to use this feature." +
                      "Please contact your administrator for assistance..", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
-
-
-
         private void btnEmployees_Click_1(object sender, System.EventArgs e)
         {
             btnTitle.Image = btnEmployees.Image;
             OpenChildFormAsync(new frmManageEmployees(this), sender);
         }
-
         private void frmMainMenuScreen_Load(object sender, System.EventArgs e)
         {
 

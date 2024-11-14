@@ -85,6 +85,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\uc_PersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_PersonInfo.Designer.cs">
+      <DependentUpon>uc_PersonInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Doctors\frmManageDoctorcs.resx">
+      <DependentUpon>frmManageDoctorcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employees\frmAddUpdateEmployee.resx">
       <DependentUpon>frmAddUpdateEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +115,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\uc_PersonInfo.resx">
+      <DependentUpon>uc_PersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,7 +142,6 @@
     <Folder Include="Appointements\" />
     <Folder Include="Patients\" />
     <Folder Include="Payments\" />
-    <Folder Include="UserControls\" />
     <Folder Include="Users\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
