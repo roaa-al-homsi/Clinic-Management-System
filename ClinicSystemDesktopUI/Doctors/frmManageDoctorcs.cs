@@ -26,5 +26,11 @@ namespace ClinicSystem.Doctors
             _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateDoctor(-1));
 
         }
+
+        private void tsUpdate_Click(object sender, EventArgs e)
+        {
+            int doctorId = Convert.ToInt32(dgvManageDoctors.CurrentRow.Cells[0].Value);
+            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateDoctor(doctorId));
+        }
     }
 }

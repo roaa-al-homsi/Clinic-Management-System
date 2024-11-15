@@ -39,6 +39,7 @@ namespace ClinicSystem.Doctors
             }
             this.Tag = "Add Doctor";
             _doctor = Doctor.Find(_doctorId);
+            _employeeId = _doctor.EmployeeId;
             labDoctorId.Text = _doctor.Id.ToString();
             labEmployeeDocId.Text = _doctor.EmployeeId.ToString();
             picPerson.ImageLocation = _doctor.Employee.Person.ImagePath;
@@ -52,6 +53,7 @@ namespace ClinicSystem.Doctors
                 _employee = new Employee();
                 return;
             }
+
             _employee = Employee.Find(_employeeId);
             picPerson.ImageLocation = _employee.Person.ImagePath;
             labEmployeeId.Text = _employeeId.ToString();
@@ -71,7 +73,7 @@ namespace ClinicSystem.Doctors
         }
         private void btnSelectPerson_Click_1(object sender, EventArgs e)
         {
-            frmAddUpdatePersons addUpdatePersons = new frmAddUpdatePersons(_employee.PersonId);
+            frmAddUpdatePersons addUpdatePersons = new frmAddUpdatePersons(_doctor.Employee.PersonId);
             addUpdatePersons.DataBack += DataBackPerson;
             addUpdatePersons.ShowDialog();
         }
@@ -82,8 +84,8 @@ namespace ClinicSystem.Doctors
         private void frmAddUpdateDoctor_Load(object sender, EventArgs e)
         {
             _FillComboSpecialization();
-            _LoadEmployeeData();
             _LoadDoctorData();
+            _LoadEmployeeData();
             cbSpecialization.SelectedIndex = 0;
         }
         private void btnSaveEmployee_Click(object sender, EventArgs e)

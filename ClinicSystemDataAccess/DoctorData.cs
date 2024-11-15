@@ -72,12 +72,12 @@ namespace ClinicSystemDataAccess
         static public bool GetDoctor(int id, ref int SpecializationId, ref int employeeId)
         {
             bool isFound = false;
-            string query = @"select * from Doctors";
+            string query = @"select * from Doctors where Id=@id";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Id", id);
+                    command.Parameters.AddWithValue("@id", id);
                     try
                     {
                         connection.Open();

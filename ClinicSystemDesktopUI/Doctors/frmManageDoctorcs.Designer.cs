@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManageDoctors = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnAddDoctor = new Guna.UI2.WinForms.Guna2Button();
+            this.cmsManageDoctors = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.tsUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsDelete = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageDoctors)).BeginInit();
+            this.cmsManageDoctors.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvManageDoctors
@@ -42,43 +46,44 @@
             this.dgvManageDoctors.AllowDrop = true;
             this.dgvManageDoctors.AllowUserToAddRows = false;
             this.dgvManageDoctors.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgvManageDoctors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgvManageDoctors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvManageDoctors.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dgvManageDoctors.BackgroundColor = System.Drawing.Color.Silver;
             this.dgvManageDoctors.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.NullValue = "NULL";
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvManageDoctors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.NullValue = "NULL";
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvManageDoctors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvManageDoctors.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvManageDoctors.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvManageDoctors.ContextMenuStrip = this.cmsManageDoctors;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvManageDoctors.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvManageDoctors.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvManageDoctors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.dgvManageDoctors.Location = new System.Drawing.Point(0, 0);
             this.dgvManageDoctors.Name = "dgvManageDoctors";
             this.dgvManageDoctors.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvManageDoctors.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvManageDoctors.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvManageDoctors.RowHeadersVisible = false;
             this.dgvManageDoctors.RowHeadersWidth = 51;
             this.dgvManageDoctors.RowTemplate.Height = 24;
@@ -126,6 +131,37 @@
             this.btnAddDoctor.Text = "Add Doctor";
             this.btnAddDoctor.Click += new System.EventHandler(this.btnAddDoctor_Click);
             // 
+            // cmsManageDoctors
+            // 
+            this.cmsManageDoctors.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsManageDoctors.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsUpdate,
+            this.tsDelete});
+            this.cmsManageDoctors.Name = "cmsManageEmployees";
+            this.cmsManageDoctors.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmsManageDoctors.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmsManageDoctors.RenderStyle.ColorTable = null;
+            this.cmsManageDoctors.RenderStyle.RoundedEdges = true;
+            this.cmsManageDoctors.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmsManageDoctors.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmsManageDoctors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmsManageDoctors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmsManageDoctors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmsManageDoctors.Size = new System.Drawing.Size(211, 80);
+            // 
+            // tsUpdate
+            // 
+            this.tsUpdate.Name = "tsUpdate";
+            this.tsUpdate.Size = new System.Drawing.Size(210, 24);
+            this.tsUpdate.Text = "Update";
+            this.tsUpdate.Click += new System.EventHandler(this.tsUpdate_Click);
+            // 
+            // tsDelete
+            // 
+            this.tsDelete.Name = "tsDelete";
+            this.tsDelete.Size = new System.Drawing.Size(210, 24);
+            this.tsDelete.Text = "Delete";
+            // 
             // frmManageDoctorcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,6 +175,7 @@
             this.Text = "frmManageDoctorcs";
             this.Load += new System.EventHandler(this.frmManageDoctorcs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageDoctors)).EndInit();
+            this.cmsManageDoctors.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -147,5 +184,8 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvManageDoctors;
         private Guna.UI2.WinForms.Guna2Button btnAddDoctor;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsManageDoctors;
+        private System.Windows.Forms.ToolStripMenuItem tsUpdate;
+        private System.Windows.Forms.ToolStripMenuItem tsDelete;
     }
 }
