@@ -65,6 +65,15 @@ namespace ClinicSystemBusiness
             }
             return MedicalSpecialtiesData.Delete(id);
         }
+        public static string GetNameById(int id)
+        {
+            return MedicalSpecialtiesData.GetNameById(id);
+        }
+        public static int GetIdByName(string name)
+        {
+            return MedicalSpecialtiesData.GetIdByName(name);
+        }
+
 
 
     }

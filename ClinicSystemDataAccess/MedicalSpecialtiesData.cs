@@ -94,5 +94,53 @@ namespace ClinicSystemDataAccess
             }
             return isFound;
         }
+        static public string GetNameById(int id)
+        {
+            string name = string.Empty;
+            string query = @"select Name from MedicalSpecialties where Id = @id;
+                          SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            name = result.ToString();
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return name;
+        }
+        static public int GetIdByName(string name)
+        {
+            int id = -1;
+            string query = @"select Id from MedicalSpecialties where Name = @name;
+                          SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@name", name);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        {
+                            id = insertedID;
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return id;
+        }
     }
 }

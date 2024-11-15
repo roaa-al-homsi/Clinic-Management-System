@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Doctors\frmAddUpdateDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\frmAddUpdateDoctor.Designer.cs">
+      <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctors\frmManageDoctorcs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="UserControls\uc_PersonInfo.Designer.cs">
       <DependentUpon>uc_PersonInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Doctors\frmAddUpdateDoctor.resx">
+      <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctors\frmManageDoctorcs.resx">
       <DependentUpon>frmManageDoctorcs.cs</DependentUpon>
     </EmbeddedResource>

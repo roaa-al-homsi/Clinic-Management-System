@@ -10,8 +10,8 @@ namespace ClinicSystemBusiness
         public int Id { get; set; }
         public int MedicalSpecialtiesId { get; set; }
         public int EmployeeId { get; set; }
-        MedicalSpecialties MedicalSpecialties { get; set; }
-        Employee Employee { get; set; }
+        public MedicalSpecialties MedicalSpecialties { get; set; }
+        public Employee Employee { get; set; }
 
         public Doctor()
         {
@@ -35,14 +35,27 @@ namespace ClinicSystemBusiness
         private bool _Add()
         {
             this.Id = DoctorData.Add(this.MedicalSpecialtiesId, this.EmployeeId);
-            return (this.Id == -1);
+            return (this.Id != -1);
         }
         private bool _Update()
         {
             return DoctorData.Update(this.Id, this.MedicalSpecialtiesId, this.EmployeeId);
         }
+        private bool _ReadyDoctor()
+        {
+            if (!MedicalSpecialties.Exist(this.MedicalSpecialtiesId) || !Employee.Exist(this.EmployeeId))
+            {
+                return false;
+            }
+            return true;
+        }
         public bool Save()
         {
+            if (!_ReadyDoctor())
+            {
+                return false;
+            }
+
             switch (_mode)
             {
                 case Mode.Add: return _Add();

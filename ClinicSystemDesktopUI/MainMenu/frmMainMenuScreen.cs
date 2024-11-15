@@ -100,7 +100,7 @@ namespace ClinicSystem.MainMenu
         {
 
             btnTitle.Image = btnDoctors.Image;
-            OpenChildFormAsync(new frmManageDoctorcs(), sender);
+            OpenChildFormAsync(new frmManageDoctorcs(this), sender);
         }
     }
 }
