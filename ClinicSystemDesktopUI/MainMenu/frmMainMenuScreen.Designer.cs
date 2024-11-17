@@ -259,6 +259,7 @@
             this.btnAppointements.TabIndex = 4;
             this.btnAppointements.Tag = "Appointements";
             this.btnAppointements.Text = "Appointements";
+            this.btnAppointements.Click += new System.EventHandler(this.btnAppointments_Click);
             // 
             // btnPayments
             // 

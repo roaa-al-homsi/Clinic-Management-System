@@ -74,7 +74,7 @@ namespace ClinicSystemDataAccess
         }
         static public DataTable All()
         {
-            return GenericData.All("select * from Appointments");
+            return GenericData.All("select * from View_Appointment_Details");
         }
         static public bool GetAppointment(int id, ref DateTime date, ref int patientId, ref int doctorId, ref int AppointmentStatusId, ref int paymentId, ref int medicalRecordId)
         {

@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointements\frmManageAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointements\frmManageAppointment.Designer.cs">
+      <DependentUpon>frmManageAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctors\frmAddUpdateDoctor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <Compile Include="UserControls\uc_PersonInfo.Designer.cs">
       <DependentUpon>uc_PersonInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Appointements\frmManageAppointment.resx">
+      <DependentUpon>frmManageAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctors\frmAddUpdateDoctor.resx">
       <DependentUpon>frmAddUpdateDoctor.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,7 +193,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Appointements\" />
     <Folder Include="Users\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,5 @@
-﻿using ClinicSystem.Doctors;
+﻿using ClinicSystem.Appointments;
+using ClinicSystem.Doctors;
 using ClinicSystem.Employees;
 using ClinicSystem.Patients;
 using ClinicSystem.Payments;
@@ -97,25 +98,26 @@ namespace ClinicSystem.MainMenu
         {
 
         }
-
         private void btnDoctors_Click(object sender, System.EventArgs e)
         {
-
             btnTitle.Image = btnDoctors.Image;
             OpenChildFormAsync(new frmManageDoctorcs(this), sender);
         }
-
         private void btnPatients_Click(object sender, System.EventArgs e)
         {
             btnTitle.Image = btnPatients.Image;
             OpenChildFormAsync(new frmManagePatients(this), sender);
         }
-
         private void btnPayments_Click(object sender, System.EventArgs e)
         {
-
             btnTitle.Image = btnPayments.Image;
             OpenChildFormAsync(new frmManagePayments(), sender);
+        }
+
+        private void btnAppointments_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnAppointements.Image;
+            OpenChildFormAsync(new frmManageAppointment(), sender);
         }
     }
 }
