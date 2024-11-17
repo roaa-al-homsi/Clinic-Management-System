@@ -16,10 +16,10 @@ namespace ClinicSystemBusiness
             this.Name = string.Empty;
             _mode = Mode.Add;
         }
-        public PaymentMethods(int id, string name)
+        private PaymentMethods(int id, string name)
         {
-            Id = id;
-            Name = name;
+            this.Id = id;
+            this.Name = name;
             _mode = Mode.Update;
         }
         private bool _Add()
@@ -67,11 +67,11 @@ namespace ClinicSystemBusiness
         }
         public static string GetNameById(int id)
         {
-            return PaymentsData.GetNameById(id);
+            return PaymentMethodsData.GetNameById(id);
         }
         public static int GetIdByName(string name)
         {
-            return PaymentsData.GetIdByName(name);
+            return PaymentMethodsData.GetIdByName(name);
         }
     }
 }

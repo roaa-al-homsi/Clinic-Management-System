@@ -33,8 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManageIPayments = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cmManagePaymets = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageIPayments)).BeginInit();
+            this.cmManagePaymets.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvManageIPayments
@@ -58,6 +62,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvManageIPayments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvManageIPayments.ColumnHeadersHeight = 30;
+            this.dgvManageIPayments.ContextMenuStrip = this.cmManagePaymets;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,6 +112,38 @@
             this.dgvManageIPayments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvManageIPayments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // cmManagePaymets
+            // 
+            this.cmManagePaymets.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmManagePaymets.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateToolStripMenuItem,
+            this.deleteToolStripMenuItem});
+            this.cmManagePaymets.Name = "cmManagePaymets";
+            this.cmManagePaymets.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmManagePaymets.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmManagePaymets.RenderStyle.ColorTable = null;
+            this.cmManagePaymets.RenderStyle.RoundedEdges = true;
+            this.cmManagePaymets.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmManagePaymets.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmManagePaymets.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmManagePaymets.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmManagePaymets.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmManagePaymets.Size = new System.Drawing.Size(211, 80);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
             // btnSave
             // 
             this.btnSave.AutoRoundedCorners = true;
@@ -137,6 +174,7 @@
             this.Text = "frmManagePayments";
             this.Load += new System.EventHandler(this.frmManagePayments_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageIPayments)).EndInit();
+            this.cmManagePaymets.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -145,5 +183,8 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvManageIPayments;
         private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip cmManagePaymets;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }

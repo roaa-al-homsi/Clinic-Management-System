@@ -19,7 +19,7 @@ namespace ClinicSystem.Payments
         }
         private void _FillComboPaymentsMethods()
         {
-            DataTable dataTable = Payment.All();
+            DataTable dataTable = PaymentMethods.All();
             foreach (DataRow row in dataTable.Rows)
             {
                 cbMethods.Items.Add(row["Name"]);
@@ -61,6 +61,10 @@ namespace ClinicSystem.Payments
             {
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

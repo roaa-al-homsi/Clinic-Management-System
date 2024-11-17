@@ -39,7 +39,7 @@ namespace ClinicSystemBusiness
         private bool _Add()
         {
             this.Id = PaymentsData.Add(this.Date, this.Amount, this.AdditionalNotes, this.PaymentMethodsId);
-            return (this.Id == -1);
+            return (this.Id != -1);
         }
         private bool _Update()
         {

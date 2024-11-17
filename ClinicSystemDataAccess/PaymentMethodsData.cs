@@ -68,13 +68,13 @@ namespace ClinicSystemDataAccess
         static public bool GetPaymentMethods(int id, ref string name)
         {
             bool isFound = false;
-            string query = @"select * from PaymentMethods";
+            string query = @"select * from PaymentMethods where Id=@id";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Id", id);
-                    command.Parameters.AddWithValue("@name", name);
+                    command.Parameters.AddWithValue("@id", id);
+
                     try
                     {
                         connection.Open();
@@ -93,6 +93,54 @@ namespace ClinicSystemDataAccess
                 }
             }
             return isFound;
+        }
+        static public string GetNameById(int id)
+        {
+            string name = string.Empty;
+            string query = @"select Name from PaymentMethods where Id = @id;
+                          SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null)
+                        {
+                            name = result.ToString();
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return name;
+        }
+        static public int GetIdByName(string name)
+        {
+            int paymentId = -1;
+            string query = @"select Id from PaymentMethods where Name = @name;
+                          SELECT SCOPE_IDENTITY();";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("name", name);
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+                        if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                        {
+                            paymentId = insertedID;
+                        }
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return paymentId;
         }
     }
 }
