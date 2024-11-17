@@ -90,21 +90,24 @@ namespace ClinicSystemBusiness
         {
             return DoctorData.GetDoctorIdByEmployeeId(employeeId);
         }
-        public static bool Delete(int id)
+        public static bool Delete(int doctorId)
         {
-            if (!Exist(id))
+            if (!Exist(doctorId))
             {
                 return false;
             }
-            int employeeId = DoctorData.GetEmployeeIdByDoctorId(id);
-            if (!DoctorData.Delete(id))
+            int employeeId = DoctorData.GetEmployeeIdByDoctorId(doctorId);
+            int personId = EmployeeData.GetPersonIdByEmployeeId(employeeId);
+            if (!DoctorData.Delete(doctorId))
             {
                 return false;
             }
-            else
+            if (!EmployeeData.Delete(employeeId))
             {
-                return EmployeeData.Delete(employeeId);
+                return false;
             }
+            return PersonData.Delete(personId);
+
         }
 
     }

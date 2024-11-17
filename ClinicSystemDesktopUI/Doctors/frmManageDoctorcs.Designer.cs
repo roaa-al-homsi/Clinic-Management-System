@@ -33,10 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManageDoctors = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnAddDoctor = new Guna.UI2.WinForms.Guna2Button();
             this.cmsManageDoctors = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.tsUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.tsDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddDoctor = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageDoctors)).BeginInit();
             this.cmsManageDoctors.SuspendLayout();
             this.SuspendLayout();
@@ -112,6 +112,38 @@
             this.dgvManageDoctors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvManageDoctors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // cmsManageDoctors
+            // 
+            this.cmsManageDoctors.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsManageDoctors.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsUpdate,
+            this.tsDelete});
+            this.cmsManageDoctors.Name = "cmsManageEmployees";
+            this.cmsManageDoctors.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmsManageDoctors.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmsManageDoctors.RenderStyle.ColorTable = null;
+            this.cmsManageDoctors.RenderStyle.RoundedEdges = true;
+            this.cmsManageDoctors.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmsManageDoctors.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmsManageDoctors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmsManageDoctors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmsManageDoctors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmsManageDoctors.Size = new System.Drawing.Size(128, 52);
+            // 
+            // tsUpdate
+            // 
+            this.tsUpdate.Name = "tsUpdate";
+            this.tsUpdate.Size = new System.Drawing.Size(127, 24);
+            this.tsUpdate.Text = "Update";
+            this.tsUpdate.Click += new System.EventHandler(this.tsUpdate_Click);
+            // 
+            // tsDelete
+            // 
+            this.tsDelete.Name = "tsDelete";
+            this.tsDelete.Size = new System.Drawing.Size(127, 24);
+            this.tsDelete.Text = "Delete";
+            this.tsDelete.Click += new System.EventHandler(this.tsDelete_Click);
+            // 
             // btnAddDoctor
             // 
             this.btnAddDoctor.Animated = true;
@@ -130,37 +162,6 @@
             this.btnAddDoctor.TabIndex = 116;
             this.btnAddDoctor.Text = "Add Doctor";
             this.btnAddDoctor.Click += new System.EventHandler(this.btnAddDoctor_Click);
-            // 
-            // cmsManageDoctors
-            // 
-            this.cmsManageDoctors.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.cmsManageDoctors.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsUpdate,
-            this.tsDelete});
-            this.cmsManageDoctors.Name = "cmsManageEmployees";
-            this.cmsManageDoctors.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.cmsManageDoctors.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.cmsManageDoctors.RenderStyle.ColorTable = null;
-            this.cmsManageDoctors.RenderStyle.RoundedEdges = true;
-            this.cmsManageDoctors.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.cmsManageDoctors.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmsManageDoctors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.cmsManageDoctors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.cmsManageDoctors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageDoctors.Size = new System.Drawing.Size(211, 80);
-            // 
-            // tsUpdate
-            // 
-            this.tsUpdate.Name = "tsUpdate";
-            this.tsUpdate.Size = new System.Drawing.Size(210, 24);
-            this.tsUpdate.Text = "Update";
-            this.tsUpdate.Click += new System.EventHandler(this.tsUpdate_Click);
-            // 
-            // tsDelete
-            // 
-            this.tsDelete.Name = "tsDelete";
-            this.tsDelete.Size = new System.Drawing.Size(210, 24);
-            this.tsDelete.Text = "Delete";
             // 
             // frmManageDoctorcs
             // 

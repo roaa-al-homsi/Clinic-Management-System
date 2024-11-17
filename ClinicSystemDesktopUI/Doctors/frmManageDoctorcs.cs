@@ -32,5 +32,24 @@ namespace ClinicSystem.Doctors
             int doctorId = Convert.ToInt32(dgvManageDoctors.CurrentRow.Cells[0].Value);
             _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateDoctor(doctorId));
         }
+
+        private void tsDelete_Click(object sender, EventArgs e)
+        {
+            int doctorId = Convert.ToInt32(dgvManageDoctors.CurrentRow.Cells[0].Value);
+
+            if (MessageBox.Show("Are you sure delete this doctor?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                if (Doctor.Delete(doctorId))
+                {
+                    MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Delete Failed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            _RefreshDoctorsData();
+        }
     }
+}
 }
