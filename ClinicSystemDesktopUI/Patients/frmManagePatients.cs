@@ -21,5 +21,10 @@ namespace ClinicSystem.Patients
         {
             _RefreshPatientsData();
         }
+
+        private void btnAddPatient_Click(object sender, EventArgs e)
+        {
+            _frmMainMenu.OpenChildFormAsync(new frmAddUpdatePatient(-1));
+        }
     }
 }

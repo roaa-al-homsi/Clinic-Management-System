@@ -16,7 +16,7 @@ namespace ClinicSystemBusiness
         public int AppointmentStatusId { get; set; }
         public int PaymentId { get; set; }
         public int MedicalRecordId { get; set; }
-        public Patient Patient { get; set; }
+        public Employee Patient { get; set; }
         public Doctor Doctor { get; set; }
         public AppointmentStatus AppointmentStatus { get; set; }
         public Payment Payment { get; set; }
@@ -30,7 +30,7 @@ namespace ClinicSystemBusiness
             this.PaymentId = -1;
             this.MedicalRecordId = -1;
             this.Id = -1;
-            Patient = new Patient();
+            Patient = new Employee();
             Doctor = new Doctor();
             AppointmentStatus = new AppointmentStatus();
             MedicalRecord = new MedicalRecord();
@@ -47,7 +47,7 @@ namespace ClinicSystemBusiness
             this.PaymentId = paymentId;
             this.MedicalRecordId = medicalRecordId;
             this.Id = id;
-            this.Patient = Patient.Find(patientId);
+            this.Patient = Employee.Find(patientId);
             this.Doctor = Doctor.Find(doctorId);
             this.AppointmentStatus = AppointmentStatus.Find(appointmentStatusId);
             this.MedicalRecord = MedicalRecord.Find(medicalRecordId);
@@ -68,7 +68,7 @@ namespace ClinicSystemBusiness
         private bool _ReadyAppointment()
         {
             if ((!Exist(this.Id) && _mode == Mode.Update)
-                || !Patient.Exist(this.PatientId)
+                || !Employee.Exist(this.PatientId)
                 || !Doctor.Exist(this.DoctorId)
                 || !AppointmentStatus.Exist(this.AppointmentStatusId)
                 || !Payment.Exist(this.PaymentId)

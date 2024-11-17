@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManagePatients = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnAddPatient = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManagePatients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,11 +107,31 @@
             this.dgvManagePatients.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvManagePatients.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // btnAddPatient
+            // 
+            this.btnAddPatient.Animated = true;
+            this.btnAddPatient.AutoRoundedCorners = true;
+            this.btnAddPatient.BorderRadius = 25;
+            this.btnAddPatient.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddPatient.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddPatient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddPatient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddPatient.FillColor = System.Drawing.Color.Black;
+            this.btnAddPatient.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAddPatient.ForeColor = System.Drawing.Color.White;
+            this.btnAddPatient.Location = new System.Drawing.Point(509, 524);
+            this.btnAddPatient.Name = "btnAddPatient";
+            this.btnAddPatient.Size = new System.Drawing.Size(225, 52);
+            this.btnAddPatient.TabIndex = 117;
+            this.btnAddPatient.Text = "Add Patient";
+            this.btnAddPatient.Click += new System.EventHandler(this.btnAddPatient_Click);
+            // 
             // frmManagePatients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1668, 638);
+            this.Controls.Add(this.btnAddPatient);
             this.Controls.Add(this.dgvManagePatients);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManagePatients";
@@ -124,5 +145,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvManagePatients;
+        private Guna.UI2.WinForms.Guna2Button btnAddPatient;
     }
 }

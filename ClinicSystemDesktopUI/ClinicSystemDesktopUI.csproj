@@ -83,6 +83,12 @@
     <Compile Include="MainMenu\frmMainMenuScreen.Designer.cs">
       <DependentUpon>frmMainMenuScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patients\frmAddUpdatePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients\frmAddUpdatePatient.Designer.cs">
+      <DependentUpon>frmAddUpdatePatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patients\frmManagePatients.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu\frmMainMenuScreen.resx">
       <DependentUpon>frmMainMenuScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients\frmAddUpdatePatient.resx">
+      <DependentUpon>frmAddUpdatePatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patients\frmManagePatients.resx">
       <DependentUpon>frmManagePatients.cs</DependentUpon>
