@@ -66,17 +66,16 @@ namespace ClinicSystemBusiness
             {
                 return false;
             }
+
             int personId = PatientData.GetPersonIdByPatientId(id);
-            if (!PersonData.Delete(personId))
+            if (!PatientData.Delete(id))
             {
                 return false;
             }
             else
             {
-                return PatientData.Delete(id);
+                return PersonData.Delete(personId);
             }
         }
-
-
     }
 }

@@ -34,7 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManagePatients = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnAddPatient = new Guna.UI2.WinForms.Guna2Button();
+            this.cmManagePatients = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.tcmUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.tcmDelete = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManagePatients)).BeginInit();
+            this.cmManagePatients.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvManagePatients
@@ -58,6 +62,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvManagePatients.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvManagePatients.ColumnHeadersHeight = 30;
+            this.dgvManagePatients.ContextMenuStrip = this.cmManagePatients;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,6 +131,38 @@
             this.btnAddPatient.Text = "Add Patient";
             this.btnAddPatient.Click += new System.EventHandler(this.btnAddPatient_Click);
             // 
+            // cmManagePatients
+            // 
+            this.cmManagePatients.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmManagePatients.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tcmUpdate,
+            this.tcmDelete});
+            this.cmManagePatients.Name = "cmManagePatients";
+            this.cmManagePatients.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmManagePatients.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmManagePatients.RenderStyle.ColorTable = null;
+            this.cmManagePatients.RenderStyle.RoundedEdges = true;
+            this.cmManagePatients.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmManagePatients.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmManagePatients.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmManagePatients.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmManagePatients.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmManagePatients.Size = new System.Drawing.Size(211, 80);
+            // 
+            // tcmUpdate
+            // 
+            this.tcmUpdate.Name = "tcmUpdate";
+            this.tcmUpdate.Size = new System.Drawing.Size(210, 24);
+            this.tcmUpdate.Text = "Update";
+            this.tcmUpdate.Click += new System.EventHandler(this.tcmUpdate_Click);
+            // 
+            // tcmDelete
+            // 
+            this.tcmDelete.Name = "tcmDelete";
+            this.tcmDelete.Size = new System.Drawing.Size(210, 24);
+            this.tcmDelete.Text = "Delete";
+            this.tcmDelete.Click += new System.EventHandler(this.tcmDelete_Click);
+            // 
             // frmManagePatients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -138,6 +175,7 @@
             this.Text = "frmManagePatients";
             this.Load += new System.EventHandler(this.frmManagePatients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManagePatients)).EndInit();
+            this.cmManagePatients.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -146,5 +184,8 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvManagePatients;
         private Guna.UI2.WinForms.Guna2Button btnAddPatient;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip cmManagePatients;
+        private System.Windows.Forms.ToolStripMenuItem tcmUpdate;
+        private System.Windows.Forms.ToolStripMenuItem tcmDelete;
     }
 }

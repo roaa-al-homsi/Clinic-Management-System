@@ -66,7 +66,7 @@ namespace ClinicSystemDataAccess
         static public bool GetPatient(int id, ref int personId)
         {
             bool isFound = false;
-            string query = @"select * from Patients";
+            string query = @"select * from Patients where Id=@id";
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))

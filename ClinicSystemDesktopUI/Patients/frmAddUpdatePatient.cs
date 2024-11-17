@@ -67,7 +67,5 @@ namespace ClinicSystem.Patients
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
     }
 }
