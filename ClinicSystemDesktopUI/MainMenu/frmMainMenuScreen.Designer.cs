@@ -279,6 +279,7 @@
             this.btnPayments.TabIndex = 8;
             this.btnPayments.Tag = "Payments";
             this.btnPayments.Text = "Payments";
+            this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
             // 
             // btnUsers
             // 

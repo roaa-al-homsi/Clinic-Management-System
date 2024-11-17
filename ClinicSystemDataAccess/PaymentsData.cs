@@ -66,7 +66,7 @@ namespace ClinicSystemDataAccess
         }
         static public DataTable All()
         {
-            return GenericData.All("select * from Payments");
+            return GenericData.All("select * from View_Payment_Details");
         }
         static public bool GetPayment(int id, ref DateTime date, ref int amount, ref string additionalNotes, ref int PaymentMethodsId)
         {
