@@ -238,6 +238,7 @@
             this.btnPatients.TabIndex = 3;
             this.btnPatients.Tag = "Patients";
             this.btnPatients.Text = "Patients";
+            this.btnPatients.Click += new System.EventHandler(this.btnPatients_Click);
             // 
             // btnAppointements
             // 

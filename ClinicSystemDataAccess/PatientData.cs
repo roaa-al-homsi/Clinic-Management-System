@@ -61,7 +61,7 @@ namespace ClinicSystemDataAccess
         }
         static public DataTable All()
         {
-            return GenericData.All("select * from Patients");
+            return GenericData.All("select * from View_Patient_Details");
         }
         static public bool GetPatient(int id, ref int personId)
         {

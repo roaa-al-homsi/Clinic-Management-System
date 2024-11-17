@@ -172,6 +172,7 @@
             this.Controls.Add(this.dgvManageDoctors);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManageDoctorcs";
+            this.ShowInTaskbar = false;
             this.Tag = "Manage Doctors";
             this.Text = "frmManageDoctorcs";
             this.Load += new System.EventHandler(this.frmManageDoctorcs_Load);

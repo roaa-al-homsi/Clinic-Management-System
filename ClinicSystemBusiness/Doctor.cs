@@ -107,7 +107,6 @@ namespace ClinicSystemBusiness
                 return false;
             }
             return PersonData.Delete(personId);
-
         }
 
     }
