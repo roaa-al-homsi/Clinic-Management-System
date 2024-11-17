@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManageIPayments = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageIPayments)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,11 +107,30 @@
             this.dgvManageIPayments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvManageIPayments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // btnSave
+            // 
+            this.btnSave.AutoRoundedCorners = true;
+            this.btnSave.BorderRadius = 23;
+            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(500, 538);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(159, 48);
+            this.btnSave.TabIndex = 227;
+            this.btnSave.Text = "Add Payment ";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // frmManagePayments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1668, 638);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvManageIPayments);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManagePayments";
@@ -124,5 +144,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvManageIPayments;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
     }
 }

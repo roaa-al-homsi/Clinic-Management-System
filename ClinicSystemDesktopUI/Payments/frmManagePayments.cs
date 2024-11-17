@@ -18,5 +18,11 @@ namespace ClinicSystem.Payments
         {
             _RefreshPaymentData();
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            frmAddUpdatePayment frmAddUpdatePayment = new frmAddUpdatePayment(-1);
+            frmAddUpdatePayment.ShowDialog();
+        }
     }
 }

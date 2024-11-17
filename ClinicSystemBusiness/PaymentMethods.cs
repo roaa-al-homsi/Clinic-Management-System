@@ -65,5 +65,13 @@ namespace ClinicSystemBusiness
             }
             return PaymentMethodsData.Delete(id);
         }
+        public static string GetNameById(int id)
+        {
+            return PaymentsData.GetNameById(id);
+        }
+        public static int GetIdByName(string name)
+        {
+            return PaymentsData.GetIdByName(name);
+        }
     }
 }

@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:payments\\frmmanagepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\payments\\frmmanagepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:payments\\frmmanagepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\payments\\frmaddupdatepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:payments\\frmaddupdatepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7A954B8-C47F-433D-9E5B-5BAF912BAE80}|..\\ClinicSystemDataAccess\\ClinicSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdataaccess\\paymentsdata.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -29,11 +25,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "frmAddUpdatePayment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmAddUpdatePayment.cs",
+              "RelativeDocumentMoniker": "Payments\\frmAddUpdatePayment.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmAddUpdatePayment.cs [Design]",
+              "RelativeToolTip": "Payments\\frmAddUpdatePayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T13:35:09.377Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PaymentsData.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\PaymentsData.cs",
               "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\PaymentsData.cs",
@@ -46,50 +54,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmMainMenuScreen.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs",
-              "RelativeDocumentMoniker": "MainMenu\\frmMainMenuScreen.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs",
-              "RelativeToolTip": "MainMenu\\frmMainMenuScreen.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAmwHYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T13:18:12.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMainMenuScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs",
-              "RelativeDocumentMoniker": "MainMenu\\frmMainMenuScreen.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs [Design]",
-              "RelativeToolTip": "MainMenu\\frmMainMenuScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T13:18:08.058Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmManagePayments.cs",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmManagePayments.cs",
               "RelativeDocumentMoniker": "Payments\\frmManagePayments.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmManagePayments.cs",
-              "RelativeToolTip": "Payments\\frmManagePayments.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAgwA4AAAA3AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmManagePayments.cs \u2B24",
+              "RelativeToolTip": "Payments\\frmManagePayments.cs \u2B24",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T13:16:04.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmManagePayments.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmManagePayments.cs",
               "RelativeDocumentMoniker": "Payments\\frmManagePayments.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmManagePayments.cs [Design]",
-              "RelativeToolTip": "Payments\\frmManagePayments.cs [Design]",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Payments\\frmManagePayments.cs [Design] \u2B24",
+              "RelativeToolTip": "Payments\\frmManagePayments.cs [Design] \u2B24",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T13:15:08.881Z",
               "EditorCaption": " [Design]"
