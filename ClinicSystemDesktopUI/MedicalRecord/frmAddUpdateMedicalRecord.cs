@@ -32,7 +32,6 @@ namespace ClinicSystem
             txtNotes.Text = _medicalRecord.AdditionalNotes;
             labRecordId.Text = _medicalRecord.Id.ToString();
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             _medicalRecord.VisitDescription = txtDescription.Text;
@@ -41,6 +40,12 @@ namespace ClinicSystem
             if (_medicalRecord.Save())
             {
 
+                labRecordId.Text = _medicalRecord.Id.ToString();
+                MessageBox.Show("Data Saved Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void btnCancel_Click(object sender, EventArgs e)
@@ -52,4 +57,8 @@ namespace ClinicSystem
             _LoadMedicalRecordData();
         }
     }
+
 }
+
+
+
