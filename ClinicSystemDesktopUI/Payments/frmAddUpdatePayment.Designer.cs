@@ -126,9 +126,9 @@
             this.labPayment.AutoSize = false;
             this.labPayment.BackColor = System.Drawing.Color.Transparent;
             this.labPayment.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold);
-            this.labPayment.Location = new System.Drawing.Point(65, 52);
+            this.labPayment.Location = new System.Drawing.Point(12, 52);
             this.labPayment.Name = "labPayment";
-            this.labPayment.Size = new System.Drawing.Size(164, 34);
+            this.labPayment.Size = new System.Drawing.Size(217, 32);
             this.labPayment.TabIndex = 219;
             this.labPayment.Text = "Payment Id:";
             // 

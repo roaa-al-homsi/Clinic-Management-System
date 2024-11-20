@@ -159,7 +159,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(159, 48);
             this.btnSave.TabIndex = 227;
-            this.btnSave.Text = "Add Payment ";
+            this.btnSave.Text = "Add MedicalRecord ";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmManagePayments

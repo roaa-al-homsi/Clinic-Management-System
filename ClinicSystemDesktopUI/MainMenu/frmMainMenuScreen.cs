@@ -117,7 +117,7 @@ namespace ClinicSystem.MainMenu
         private void btnAppointments_Click(object sender, System.EventArgs e)
         {
             btnTitle.Image = btnAppointements.Image;
-            OpenChildFormAsync(new frmManageAppointment(), sender);
+            OpenChildFormAsync(new frmManageAppointment(this), sender);
         }
     }
 }

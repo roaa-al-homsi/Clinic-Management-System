@@ -12,7 +12,7 @@ namespace ClinicSystem.Payments
         }
         private void _RefreshPaymentData()
         {
-            dgvManageIPayments.DataSource = Payment.All();
+            dgvManageIPayments.DataSource = MedicalRecord.All();
         }
         private void frmManagePayments_Load(object sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace ClinicSystem.Payments
 
             if (MessageBox.Show("Are you sure delete this payment?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                if (Payment.Delete(paymentId))
+                if (MedicalRecord.Delete(paymentId))
                 {
                     MessageBox.Show("Delete Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

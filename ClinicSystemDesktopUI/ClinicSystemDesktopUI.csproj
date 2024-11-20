@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointements\frmAddUpdateAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointements\frmAddUpdateAppointment.Designer.cs">
+      <DependentUpon>frmAddUpdateAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Appointements\frmManageAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="Employees\frmAddUpdateEmployee.Designer.cs">
       <DependentUpon>frmAddUpdateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUpdateMedicalRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUpdateMedicalRecord.Designer.cs">
+      <DependentUpon>frmAddUpdateMedicalRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageEmployees.cs" />
     <Compile Include="Employees\frmManageEmployees.cs">
@@ -127,6 +139,9 @@
     <Compile Include="UserControls\uc_PersonInfo.Designer.cs">
       <DependentUpon>uc_PersonInfo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Appointements\frmAddUpdateAppointment.resx">
+      <DependentUpon>frmAddUpdateAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Appointements\frmManageAppointment.resx">
       <DependentUpon>frmManageAppointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\frmManageEmployees.resx">
       <DependentUpon>frmManageEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUpdateMedicalRecord.resx">
+      <DependentUpon>frmAddUpdateMedicalRecord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu\frmMainMenuScreen.resx">
       <DependentUpon>frmMainMenuScreen.cs</DependentUpon>

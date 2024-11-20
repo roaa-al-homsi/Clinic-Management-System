@@ -5,6 +5,7 @@ using System.Windows.Forms;
 
 namespace ClinicSystem.Payments
 {
+
     public partial class frmAddUpdatePayment : Form
     {
         private enum Mode { Add, Update }

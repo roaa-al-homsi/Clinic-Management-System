@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7A954B8-C47F-433D-9E5B-5BAF912BAE80}|..\\ClinicSystemDataAccess\\ClinicSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdataaccess\\appointementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\appointements\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:appointements\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\appointements\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:appointements\\frmaddupdateappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,44 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppointementData.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\AppointementData.cs",
-              "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\AppointementData.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\AppointementData.cs \u2B24",
-              "RelativeToolTip": "..\\ClinicSystemDataAccess\\AppointementData.cs \u2B24",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:21:39.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmManageAppointment.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs",
-              "RelativeDocumentMoniker": "Appointements\\frmManageAppointment.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs \u2B24",
-              "RelativeToolTip": "Appointements\\frmManageAppointment.cs \u2B24",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBUAAAA+AAAAAAAAAA==",
+              "Title": "frmAddUpdateAppointment.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmAddUpdateAppointment.cs",
+              "RelativeDocumentMoniker": "Appointements\\frmAddUpdateAppointment.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmAddUpdateAppointment.cs",
+              "RelativeToolTip": "Appointements\\frmAddUpdateAppointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:18:15.625Z",
+              "WhenOpened": "2024-11-17T17:38:01.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmManageAppointment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs",
-              "RelativeDocumentMoniker": "Appointements\\frmManageAppointment.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs [Design] \u2B24",
-              "RelativeToolTip": "Appointements\\frmManageAppointment.cs [Design] \u2B24",
+              "DocumentIndex": 0,
+              "Title": "frmAddUpdateAppointment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmAddUpdateAppointment.cs",
+              "RelativeDocumentMoniker": "Appointements\\frmAddUpdateAppointment.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmAddUpdateAppointment.cs [Design]",
+              "RelativeToolTip": "Appointements\\frmAddUpdateAppointment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:16:35.06Z",
+              "WhenOpened": "2024-11-17T17:36:32.441Z",
               "EditorCaption": " [Design]"
             }
           ]

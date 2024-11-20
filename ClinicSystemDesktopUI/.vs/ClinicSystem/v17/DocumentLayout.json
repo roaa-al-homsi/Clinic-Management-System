@@ -3,23 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\frmaddupdatemedicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:frmaddupdatemedicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:mainmenu\\frmmainmenuscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7A954B8-C47F-433D-9E5B-5BAF912BAE80}|..\\ClinicSystemDataAccess\\ClinicSystemDataAccess.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdataaccess\\appointementdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:appointements\\frmmanageappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|c:\\users\\ruaa\\source\\repos\\clinic-management-system\\clinicsystemdesktopui\\frmaddupdatemedicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{944DE2E1-6C76-4BD2-A113-21CF8AE6B6D8}|ClinicSystemDesktopUI.csproj|solutionrelative:frmaddupdatemedicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,64 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmMainMenuScreen.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs",
-              "RelativeDocumentMoniker": "MainMenu\\frmMainMenuScreen.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs \u2B24",
-              "RelativeToolTip": "MainMenu\\frmMainMenuScreen.cs \u2B24",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAgwH0AAAA3AAAAAAAAAA==",
+              "Title": "frmAddUpdateMedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\frmAddUpdateMedicalRecord.cs",
+              "RelativeDocumentMoniker": "frmAddUpdateMedicalRecord.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\frmAddUpdateMedicalRecord.cs",
+              "RelativeToolTip": "frmAddUpdateMedicalRecord.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:28:29.719Z",
+              "WhenOpened": "2024-11-20T14:39:48.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmMainMenuScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs",
-              "RelativeDocumentMoniker": "MainMenu\\frmMainMenuScreen.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\MainMenu\\frmMainMenuScreen.cs [Design] \u2B24",
-              "RelativeToolTip": "MainMenu\\frmMainMenuScreen.cs [Design] \u2B24",
+              "Title": "frmAddUpdateMedicalRecord.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\frmAddUpdateMedicalRecord.cs",
+              "RelativeDocumentMoniker": "frmAddUpdateMedicalRecord.cs",
+              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\frmAddUpdateMedicalRecord.cs [Design]",
+              "RelativeToolTip": "frmAddUpdateMedicalRecord.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:28:27.656Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppointementData.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\AppointementData.cs",
-              "RelativeDocumentMoniker": "..\\ClinicSystemDataAccess\\AppointementData.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDataAccess\\AppointementData.cs",
-              "RelativeToolTip": "..\\ClinicSystemDataAccess\\AppointementData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:21:39.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmManageAppointment.cs",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs",
-              "RelativeDocumentMoniker": "Appointements\\frmManageAppointment.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs",
-              "RelativeToolTip": "Appointements\\frmManageAppointment.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwA4AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:18:15.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmManageAppointment.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs",
-              "RelativeDocumentMoniker": "Appointements\\frmManageAppointment.cs",
-              "ToolTip": "C:\\Users\\Ruaa\\source\\repos\\Clinic-Management-System\\ClinicSystemDesktopUI\\Appointements\\frmManageAppointment.cs [Design]",
-              "RelativeToolTip": "Appointements\\frmManageAppointment.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T17:16:35.06Z",
+              "WhenOpened": "2024-11-20T14:39:29.103Z",
               "EditorCaption": " [Design]"
             }
           ]
