@@ -31,14 +31,26 @@ namespace ClinicSystemBusiness
         private bool _Add()
         {
             this.Id = MedicalRecordData.Add(this.VisitDescription, this.Diagnosis, this.AdditionalNotes);
-            return (this.Id == -1);
+            return (this.Id != -1);
         }
         private bool _Update()
         {
             return MedicalRecordData.Update(this.Id, this.VisitDescription, this.Diagnosis, this.AdditionalNotes);
         }
+        private bool _ReadyMedicalRecord()
+        {
+            if (string.IsNullOrWhiteSpace(this.VisitDescription) || string.IsNullOrWhiteSpace(this.Diagnosis))
+            {
+                return false;
+            }
+            return true;
+        }
         public bool Save()
         {
+            if (!_ReadyMedicalRecord())
+            {
+                return false;
+            }
             switch (_mode)
             {
                 case Mode.Add: return _Add();

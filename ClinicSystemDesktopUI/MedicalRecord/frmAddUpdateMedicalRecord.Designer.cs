@@ -153,6 +153,7 @@
             this.btnCancel.Size = new System.Drawing.Size(113, 48);
             this.btnCancel.TabIndex = 231;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnSave
             // 
@@ -170,6 +171,7 @@
             this.btnSave.Size = new System.Drawing.Size(113, 48);
             this.btnSave.TabIndex = 230;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // txtDiagnosis
             // 

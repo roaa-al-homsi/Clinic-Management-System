@@ -5,9 +5,11 @@ using System.Windows.Forms;
 
 namespace ClinicSystem.Payments
 {
-
     public partial class frmAddUpdatePayment : Form
     {
+        //Declare a delegate 
+        public delegate void DataBackEventHandle(object sender, int PersonId);
+        public event DataBackEventHandle DataBack;
         private enum Mode { Add, Update }
         private Mode _mode;
         private int _paymentId;
@@ -62,6 +64,8 @@ namespace ClinicSystem.Payments
             {
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            DataBack?.Invoke(this, _payment.Id);
+            this.Close();
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {

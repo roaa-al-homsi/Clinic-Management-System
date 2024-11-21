@@ -65,5 +65,13 @@ namespace ClinicSystemBusiness
             }
             return AppointmentStatusData.Delete(id);
         }
+        public static string GetNameById(int id)
+        {
+            return AppointmentStatusData.GetNameById(id);
+        }
+        public static int GetIdByName(string name)
+        {
+            return AppointmentStatusData.GetIdByName(name);
+        }
     }
 }

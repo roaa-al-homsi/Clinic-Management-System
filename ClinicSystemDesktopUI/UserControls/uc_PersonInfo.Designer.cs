@@ -46,13 +46,16 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPersonId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPerson = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.picPerson)).BeginInit();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtEmail
             // 
             this.txtEmail.Animated = true;
             this.txtEmail.AutoRoundedCorners = true;
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
             this.txtEmail.BorderRadius = 17;
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.DefaultText = "";
@@ -65,7 +68,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(498, 292);
+            this.txtEmail.Location = new System.Drawing.Point(504, 304);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -81,7 +84,7 @@
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(401, 292);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(403, 307);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(113, 37);
             this.guna2HtmlLabel3.TabIndex = 222;
@@ -90,6 +93,9 @@
             // txtAddress
             // 
             this.txtAddress.Animated = true;
+            this.txtAddress.AutoRoundedCorners = true;
+            this.txtAddress.BackColor = System.Drawing.Color.Transparent;
+            this.txtAddress.BorderRadius = 25;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.DefaultText = "";
             this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -101,14 +107,14 @@
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAddress.ForeColor = System.Drawing.Color.White;
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Location = new System.Drawing.Point(498, 356);
+            this.txtAddress.Location = new System.Drawing.Point(504, 365);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderText = "";
             this.txtAddress.ReadOnly = true;
             this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(229, 135);
+            this.txtAddress.Size = new System.Drawing.Size(229, 52);
             this.txtAddress.TabIndex = 221;
             // 
             // guna2HtmlLabel2
@@ -116,7 +122,7 @@
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(401, 357);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(403, 372);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(113, 37);
             this.guna2HtmlLabel2.TabIndex = 220;
@@ -126,6 +132,8 @@
             // 
             this.txtPhone.Animated = true;
             this.txtPhone.AutoRoundedCorners = true;
+            this.txtPhone.BackColor = System.Drawing.Color.Transparent;
+            this.txtPhone.BorderColor = System.Drawing.Color.Transparent;
             this.txtPhone.BorderRadius = 17;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
@@ -136,12 +144,13 @@
             this.txtPhone.FillColor = System.Drawing.Color.Black;
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPhone.ForeColor = System.Drawing.Color.White;
+            this.txtPhone.ForeColor = System.Drawing.Color.Transparent;
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(498, 228);
+            this.txtPhone.Location = new System.Drawing.Point(504, 243);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
+            this.txtPhone.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txtPhone.PlaceholderText = "";
             this.txtPhone.ReadOnly = true;
             this.txtPhone.SelectedText = "";
@@ -154,7 +163,7 @@
             this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(401, 227);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(403, 242);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(113, 37);
             this.guna2HtmlLabel6.TabIndex = 218;
@@ -177,7 +186,7 @@
             this.cbGendre.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cbGendre.Location = new System.Drawing.Point(157, 357);
+            this.cbGendre.Location = new System.Drawing.Point(150, 365);
             this.cbGendre.Name = "cbGendre";
             this.cbGendre.Size = new System.Drawing.Size(200, 36);
             this.cbGendre.TabIndex = 217;
@@ -188,7 +197,7 @@
             this.guna2HtmlLabel5.AutoSize = false;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(22, 357);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(15, 373);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(90, 36);
             this.guna2HtmlLabel5.TabIndex = 216;
@@ -208,7 +217,7 @@
             this.cbCountries.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbCountries.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbCountries.ItemHeight = 30;
-            this.cbCountries.Location = new System.Drawing.Point(157, 292);
+            this.cbCountries.Location = new System.Drawing.Point(150, 304);
             this.cbCountries.Name = "cbCountries";
             this.cbCountries.Size = new System.Drawing.Size(200, 36);
             this.cbCountries.TabIndex = 215;
@@ -216,20 +225,23 @@
             // 
             // picPerson
             // 
+            this.picPerson.BackColor = System.Drawing.Color.Transparent;
             this.picPerson.FillColor = System.Drawing.Color.DimGray;
             this.picPerson.ImageRotate = 0F;
             this.picPerson.InitialImage = ((System.Drawing.Image)(resources.GetObject("picPerson.InitialImage")));
-            this.picPerson.Location = new System.Drawing.Point(308, 0);
+            this.picPerson.Location = new System.Drawing.Point(318, 13);
             this.picPerson.Name = "picPerson";
             this.picPerson.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picPerson.Size = new System.Drawing.Size(197, 186);
+            this.picPerson.Size = new System.Drawing.Size(198, 186);
             this.picPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPerson.TabIndex = 212;
             this.picPerson.TabStop = false;
+            this.picPerson.UseTransparentBackground = true;
             // 
             // TimePicBirthDate
             // 
             this.TimePicBirthDate.AutoRoundedCorners = true;
+            this.TimePicBirthDate.BackColor = System.Drawing.Color.Transparent;
             this.TimePicBirthDate.BorderRadius = 17;
             this.TimePicBirthDate.Checked = true;
             this.TimePicBirthDate.Enabled = false;
@@ -237,7 +249,7 @@
             this.TimePicBirthDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TimePicBirthDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.TimePicBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.TimePicBirthDate.Location = new System.Drawing.Point(157, 422);
+            this.TimePicBirthDate.Location = new System.Drawing.Point(150, 426);
             this.TimePicBirthDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.TimePicBirthDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.TimePicBirthDate.Name = "TimePicBirthDate";
@@ -249,6 +261,7 @@
             // 
             this.txtFullName.Animated = true;
             this.txtFullName.AutoRoundedCorners = true;
+            this.txtFullName.BackColor = System.Drawing.Color.Transparent;
             this.txtFullName.BorderRadius = 17;
             this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFullName.DefaultText = "";
@@ -259,9 +272,9 @@
             this.txtFullName.FillColor = System.Drawing.Color.Black;
             this.txtFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFullName.ForeColor = System.Drawing.Color.White;
+            this.txtFullName.ForeColor = System.Drawing.Color.Transparent;
             this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFullName.Location = new System.Drawing.Point(157, 227);
+            this.txtFullName.Location = new System.Drawing.Point(150, 243);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.PasswordChar = '\0';
@@ -277,7 +290,7 @@
             this.guna2HtmlLabel10.AutoSize = false;
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(22, 412);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(15, 428);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(122, 46);
             this.guna2HtmlLabel10.TabIndex = 209;
@@ -288,7 +301,7 @@
             this.guna2HtmlLabel9.AutoSize = false;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(22, 227);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(15, 243);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(122, 46);
             this.guna2HtmlLabel9.TabIndex = 208;
@@ -299,7 +312,7 @@
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(22, 292);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(15, 308);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(122, 46);
             this.guna2HtmlLabel4.TabIndex = 207;
@@ -310,7 +323,7 @@
             this.labPersonId.AutoSize = false;
             this.labPersonId.BackColor = System.Drawing.Color.Transparent;
             this.labPersonId.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold);
-            this.labPersonId.Location = new System.Drawing.Point(157, 35);
+            this.labPersonId.Location = new System.Drawing.Point(197, 64);
             this.labPersonId.Name = "labPersonId";
             this.labPersonId.Size = new System.Drawing.Size(95, 32);
             this.labPersonId.TabIndex = 214;
@@ -322,36 +335,48 @@
             this.labPerson.AutoSize = false;
             this.labPerson.BackColor = System.Drawing.Color.Transparent;
             this.labPerson.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold);
-            this.labPerson.Location = new System.Drawing.Point(22, 35);
+            this.labPerson.Location = new System.Drawing.Point(26, 64);
             this.labPerson.Name = "labPerson";
             this.labPerson.Size = new System.Drawing.Size(111, 34);
             this.labPerson.TabIndex = 213;
             this.labPerson.Text = "Person Id:";
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.picPerson);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtEmail);
+            this.guna2CustomGradientPanel1.Controls.Add(this.labPerson);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.labPersonId);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtAddress);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel4);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel9);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtPhone);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel10);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel6);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtFullName);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cbGendre);
+            this.guna2CustomGradientPanel1.Controls.Add(this.TimePicBirthDate);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cbCountries);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.CadetBlue;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.DarkGray;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(739, 483);
+            this.guna2CustomGradientPanel1.TabIndex = 224;
+            // 
             // uc_personInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.cbGendre);
-            this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.cbCountries);
-            this.Controls.Add(this.picPerson);
-            this.Controls.Add(this.TimePicBirthDate);
-            this.Controls.Add(this.txtFullName);
-            this.Controls.Add(this.guna2HtmlLabel10);
-            this.Controls.Add(this.guna2HtmlLabel9);
-            this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.labPersonId);
-            this.Controls.Add(this.labPerson);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Name = "uc_personInfo";
-            this.Size = new System.Drawing.Size(748, 500);
+            this.Size = new System.Drawing.Size(739, 483);
             ((System.ComponentModel.ISupportInitialize)(this.picPerson)).EndInit();
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -374,5 +399,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPersonId;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPerson;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
     }
 }

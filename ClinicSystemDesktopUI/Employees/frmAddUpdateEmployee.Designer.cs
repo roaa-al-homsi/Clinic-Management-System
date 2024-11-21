@@ -99,9 +99,9 @@
             // 
             // uc_personInfo1
             // 
-            this.uc_personInfo1.Location = new System.Drawing.Point(717, 20);
+            this.uc_personInfo1.Location = new System.Drawing.Point(660, 17);
             this.uc_personInfo1.Name = "uc_personInfo1";
-            this.uc_personInfo1.Size = new System.Drawing.Size(748, 500);
+            this.uc_personInfo1.Size = new System.Drawing.Size(814, 523);
             this.uc_personInfo1.TabIndex = 3;
             // 
             // guna2HtmlLabel1

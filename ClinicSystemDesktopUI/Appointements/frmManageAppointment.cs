@@ -1,5 +1,4 @@
-﻿using ClinicSystem.Appointments;
-using ClinicSystem.MainMenu;
+﻿using ClinicSystem.MainMenu;
 using ClinicSystemBusiness;
 using System;
 using System.Windows.Forms;
@@ -25,7 +24,7 @@ namespace ClinicSystem.Appointments
 
         private void btnAddAppointment_Click(object sender, EventArgs e)
         {
-            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateAppointment());
+            _frmMainMenuScreen.OpenChildFormAsync(new frmAddUpdateAppointment(-1));
         }
     }
 }
