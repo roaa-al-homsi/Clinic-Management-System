@@ -92,9 +92,8 @@ namespace ClinicSystemBusiness
         {
             return PrescriptionData.All();
         }
-        public static Prescription Find(string PrescriptionName)
+        public static Prescription Find(int id)
         {
-            int id = -1;
             string dosage = string.Empty;
             string frequency = string.Empty;
             DateTime startDate = DateTime.MinValue;
@@ -109,6 +108,7 @@ namespace ClinicSystemBusiness
             }
             return null;
         }
+
         public static bool Exist(int Id)
         {
             return PrescriptionData.Exist(Id);
