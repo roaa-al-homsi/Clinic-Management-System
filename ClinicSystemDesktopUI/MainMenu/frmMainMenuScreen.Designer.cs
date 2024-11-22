@@ -61,7 +61,7 @@
             this.guna2Panel2.FillColor = System.Drawing.Color.FloralWhite;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1707, 70);
+            this.guna2Panel2.Size = new System.Drawing.Size(1740, 44);
             this.guna2Panel2.TabIndex = 8;
             // 
             // labUserName
@@ -80,10 +80,10 @@
             // 
             this.picCurrentUser.Image = ((System.Drawing.Image)(resources.GetObject("picCurrentUser.Image")));
             this.picCurrentUser.ImageRotate = 0F;
-            this.picCurrentUser.Location = new System.Drawing.Point(1639, 12);
+            this.picCurrentUser.Location = new System.Drawing.Point(1635, 5);
             this.picCurrentUser.Name = "picCurrentUser";
             this.picCurrentUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picCurrentUser.Size = new System.Drawing.Size(59, 53);
+            this.picCurrentUser.Size = new System.Drawing.Size(52, 26);
             this.picCurrentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCurrentUser.TabIndex = 3;
             this.picCurrentUser.TabStop = false;
@@ -113,9 +113,9 @@
             this.labCurrentUser.BackColor = System.Drawing.Color.Transparent;
             this.labCurrentUser.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCurrentUser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labCurrentUser.Location = new System.Drawing.Point(1521, 22);
+            this.labCurrentUser.Location = new System.Drawing.Point(1528, 5);
             this.labCurrentUser.Name = "labCurrentUser";
-            this.labCurrentUser.Size = new System.Drawing.Size(100, 43);
+            this.labCurrentUser.Size = new System.Drawing.Size(72, 38);
             this.labCurrentUser.TabIndex = 0;
             this.labCurrentUser.Text = "user";
             // 
@@ -123,9 +123,9 @@
             // 
             this.panelMainMenu.BackColor = System.Drawing.Color.Gray;
             this.panelMainMenu.FillColor = System.Drawing.Color.Lavender;
-            this.panelMainMenu.Location = new System.Drawing.Point(12, 164);
+            this.panelMainMenu.Location = new System.Drawing.Point(12, 130);
             this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(1686, 685);
+            this.panelMainMenu.Size = new System.Drawing.Size(1700, 739);
             this.panelMainMenu.TabIndex = 8;
             // 
             // labLoginDate
@@ -153,9 +153,9 @@
             this.guna2Panel1.Controls.Add(this.btnUsers);
             this.guna2Panel1.Controls.Add(this.btnEmployees);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 70);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 44);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1707, 73);
+            this.guna2Panel1.Size = new System.Drawing.Size(1740, 70);
             this.guna2Panel1.TabIndex = 17;
             // 
             // btnDoctors
@@ -328,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(1707, 850);
+            this.ClientSize = new System.Drawing.Size(1740, 881);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.panelMainMenu);

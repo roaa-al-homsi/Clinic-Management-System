@@ -30,7 +30,7 @@ namespace ClinicSystem
                 return;
             }
             this.Text = "Update MedicalRecords";
-            _medicalRecord = MedicalRecords.Find(_recordId);
+            _medicalRecord = MedicalRecord.Find(_recordId);
             txtDescription.Text = _medicalRecord.VisitDescription;
             txtNotes.Text = _medicalRecord.AdditionalNotes;
             labRecordId.Text = _medicalRecord.Id.ToString();

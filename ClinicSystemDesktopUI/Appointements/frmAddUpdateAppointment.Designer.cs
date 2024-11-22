@@ -75,9 +75,9 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.DarkGray;
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(417, 12);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(55, 12);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(981, 135);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1421, 135);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
             // timePicker
@@ -89,7 +89,7 @@
             this.timePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.timePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.timePicker.Location = new System.Drawing.Point(772, 41);
+            this.timePicker.Location = new System.Drawing.Point(1036, 35);
             this.timePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.timePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.timePicker.Name = "timePicker";
@@ -104,11 +104,11 @@
             this.guna2HtmlLabel9.AutoSize = false;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(686, 45);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(950, 39);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(55, 29);
             this.guna2HtmlLabel9.TabIndex = 8;
-            this.guna2HtmlLabel9.Text = "Date:";
+            this.guna2HtmlLabel9.Text = "Time:";
             // 
             // btnPay
             // 
@@ -122,7 +122,7 @@
             this.btnPay.FillColor = System.Drawing.Color.DarkGray;
             this.btnPay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnPay.ForeColor = System.Drawing.Color.White;
-            this.btnPay.Location = new System.Drawing.Point(206, 90);
+            this.btnPay.Location = new System.Drawing.Point(470, 84);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(108, 34);
             this.btnPay.TabIndex = 7;
@@ -143,7 +143,7 @@
             this.btnSelectMedicalRecord.FillColor = System.Drawing.Color.DarkGray;
             this.btnSelectMedicalRecord.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSelectMedicalRecord.ForeColor = System.Drawing.Color.White;
-            this.btnSelectMedicalRecord.Location = new System.Drawing.Point(206, 48);
+            this.btnSelectMedicalRecord.Location = new System.Drawing.Point(470, 42);
             this.btnSelectMedicalRecord.Name = "btnSelectMedicalRecord";
             this.btnSelectMedicalRecord.Size = new System.Drawing.Size(96, 33);
             this.btnSelectMedicalRecord.TabIndex = 6;
@@ -156,7 +156,7 @@
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 90);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(302, 80);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(108, 37);
             this.guna2HtmlLabel4.TabIndex = 5;
@@ -167,7 +167,7 @@
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(33, 48);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(302, 38);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(167, 33);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -186,7 +186,7 @@
             this.cbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbStatus.ItemHeight = 30;
-            this.cbStatus.Location = new System.Drawing.Point(538, 88);
+            this.cbStatus.Location = new System.Drawing.Point(802, 82);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(177, 36);
             this.cbStatus.TabIndex = 3;
@@ -197,7 +197,7 @@
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(327, 86);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(591, 80);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(215, 38);
             this.guna2HtmlLabel2.TabIndex = 2;
@@ -212,7 +212,7 @@
             this.datePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.datePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.datePicker.Location = new System.Drawing.Point(500, 44);
+            this.datePicker.Location = new System.Drawing.Point(671, 35);
             this.datePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.datePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.datePicker.Name = "datePicker";
@@ -226,7 +226,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(327, 48);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(591, 42);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(55, 29);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -239,7 +239,7 @@
             this.nDoctors.BorderRadius = 23;
             this.nDoctors.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nDoctors.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nDoctors.Location = new System.Drawing.Point(1429, 135);
+            this.nDoctors.Location = new System.Drawing.Point(848, 492);
             this.nDoctors.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nDoctors.Maximum = new decimal(new int[] {
             10,
@@ -269,7 +269,7 @@
             this.nPatients.BorderRadius = 23;
             this.nPatients.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nPatients.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nPatients.Location = new System.Drawing.Point(37, 118);
+            this.nPatients.Location = new System.Drawing.Point(748, 302);
             this.nPatients.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nPatients.Name = "nPatients";
             this.nPatients.Size = new System.Drawing.Size(114, 48);
@@ -282,9 +282,9 @@
             this.guna2HtmlLabel5.AutoSize = false;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(37, 341);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(25, 396);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(108, 37);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(108, 38);
             this.guna2HtmlLabel5.TabIndex = 8;
             this.guna2HtmlLabel5.Text = "Patient Id :";
             // 
@@ -293,9 +293,9 @@
             this.labPatientId.AutoSize = false;
             this.labPatientId.BackColor = System.Drawing.Color.Transparent;
             this.labPatientId.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labPatientId.Location = new System.Drawing.Point(190, 341);
+            this.labPatientId.Location = new System.Drawing.Point(199, 395);
             this.labPatientId.Name = "labPatientId";
-            this.labPatientId.Size = new System.Drawing.Size(108, 37);
+            this.labPatientId.Size = new System.Drawing.Size(108, 38);
             this.labPatientId.TabIndex = 9;
             this.labPatientId.Text = "??";
             // 
@@ -304,7 +304,7 @@
             this.guna2HtmlLabel7.AutoSize = false;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(888, 357);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(979, 396);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(108, 37);
             this.guna2HtmlLabel7.TabIndex = 10;
@@ -315,7 +315,7 @@
             this.labDoctorId.AutoSize = false;
             this.labDoctorId.BackColor = System.Drawing.Color.Transparent;
             this.labDoctorId.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labDoctorId.Location = new System.Drawing.Point(1036, 357);
+            this.labDoctorId.Location = new System.Drawing.Point(1146, 396);
             this.labDoctorId.Name = "labDoctorId";
             this.labDoctorId.Size = new System.Drawing.Size(108, 37);
             this.labDoctorId.TabIndex = 11;
@@ -326,7 +326,7 @@
             this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(1261, 628);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(1339, 690);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(137, 37);
             this.guna2HtmlLabel6.TabIndex = 12;
@@ -337,7 +337,7 @@
             this.guna2HtmlLabel8.AutoSize = false;
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(37, 22);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(726, 170);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(140, 38);
             this.guna2HtmlLabel8.TabIndex = 8;
@@ -348,7 +348,7 @@
             this.labPaymentId.AutoSize = false;
             this.labPaymentId.BackColor = System.Drawing.Color.Transparent;
             this.labPaymentId.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labPaymentId.Location = new System.Drawing.Point(209, 22);
+            this.labPaymentId.Location = new System.Drawing.Point(898, 170);
             this.labPaymentId.Name = "labPaymentId";
             this.labPaymentId.Size = new System.Drawing.Size(140, 38);
             this.labPaymentId.TabIndex = 13;
@@ -359,7 +359,7 @@
             this.labRecordId.AutoSize = false;
             this.labRecordId.BackColor = System.Drawing.Color.Transparent;
             this.labRecordId.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labRecordId.Location = new System.Drawing.Point(249, 66);
+            this.labRecordId.Location = new System.Drawing.Point(918, 213);
             this.labRecordId.Name = "labRecordId";
             this.labRecordId.Size = new System.Drawing.Size(78, 27);
             this.labRecordId.TabIndex = 15;
@@ -370,7 +370,7 @@
             this.guna2HtmlLabel10.AutoSize = false;
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(37, 66);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(726, 214);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(187, 38);
             this.guna2HtmlLabel10.TabIndex = 14;
@@ -380,7 +380,7 @@
             // 
             this.btnSave.AutoRoundedCorners = true;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderRadius = 16;
+            this.btnSave.BorderRadius = 29;
             this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -388,9 +388,9 @@
             this.btnSave.FillColor = System.Drawing.Color.DarkGray;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(757, 399);
+            this.btnSave.Location = new System.Drawing.Point(1490, 26);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(108, 34);
+            this.btnSave.Size = new System.Drawing.Size(108, 60);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseTransparentBackground = true;
@@ -400,7 +400,7 @@
             // 
             this.btnCancel.AutoRoundedCorners = true;
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BorderRadius = 16;
+            this.btnCancel.BorderRadius = 29;
             this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -408,23 +408,23 @@
             this.btnCancel.FillColor = System.Drawing.Color.DarkGray;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(757, 525);
+            this.btnCancel.Location = new System.Drawing.Point(1490, 113);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(108, 34);
+            this.btnCancel.Size = new System.Drawing.Size(108, 60);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseTransparentBackground = true;
             // 
             // uc_doctor
             // 
-            this.uc_doctor.Location = new System.Drawing.Point(864, 190);
+            this.uc_doctor.Location = new System.Drawing.Point(959, 266);
             this.uc_doctor.Name = "uc_doctor";
-            this.uc_doctor.Size = new System.Drawing.Size(739, 483);
+            this.uc_doctor.Size = new System.Drawing.Size(739, 470);
             this.uc_doctor.TabIndex = 4;
             // 
             // uc_patient
             // 
-            this.uc_patient.Location = new System.Drawing.Point(12, 193);
+            this.uc_patient.Location = new System.Drawing.Point(3, 266);
             this.uc_patient.Name = "uc_patient";
             this.uc_patient.Size = new System.Drawing.Size(739, 472);
             this.uc_patient.TabIndex = 3;
@@ -443,7 +443,7 @@
             this.txtSpecialization.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSpecialization.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSpecialization.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSpecialization.Location = new System.Drawing.Point(1404, 617);
+            this.txtSpecialization.Location = new System.Drawing.Point(1501, 688);
             this.txtSpecialization.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSpecialization.Name = "txtSpecialization";
             this.txtSpecialization.PasswordChar = '\0';
@@ -457,7 +457,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1686, 685);
+            this.ClientSize = new System.Drawing.Size(1700, 739);
             this.Controls.Add(this.txtSpecialization);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
