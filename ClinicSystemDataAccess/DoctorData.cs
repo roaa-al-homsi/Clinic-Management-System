@@ -59,7 +59,7 @@ namespace ClinicSystemDataAccess
         }
         static public bool Exist(int id)
         {
-            return GenericData.Exist("select Found=1 from Doctors where id =@id", "@id", id);
+            return GenericData.Exist("select Found=1 from Doctors where Id =@id", "@id", id);
         }
         static public bool ExistByEmployeeId(int employeeId)
         {

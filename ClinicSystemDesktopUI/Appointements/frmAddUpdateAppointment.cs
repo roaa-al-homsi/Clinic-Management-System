@@ -29,16 +29,17 @@ namespace ClinicSystem.Appointments
                 return;
             }
             this.Tag = "Update Appointment";
+            _appointment = Appointment.Find(_recordId);
             btnSelectMedicalRecord.Enabled = false;
             nDoctors.Value = _appointment.DoctorId;
             nPatients.Value = _appointment.PatientId;
             dtDate.Value = _appointment.Date;
             cbStatus.SelectedIndex = cbStatus.FindString(AppointmentStatus.GetNameById(_appointment.AppointmentStatusId));
             labRecordId.Text = _appointment.MedicalRecordId.ToString();
-            labPaymentId.Text = _appointment.MedicalRecordId.ToString();
+            labPaymentId.Text = _appointment.PaymentId.ToString();
 
         }
-        private void _FillComboPaymentsMethods()
+        private void _FillComboAppointmentStatus()
         {
             DataTable dataTable = AppointmentStatus.All();
             foreach (DataRow row in dataTable.Rows)
@@ -46,6 +47,7 @@ namespace ClinicSystem.Appointments
                 cbStatus.Items.Add(row["Name"]);
             }
         }
+
         private void nDoctors_ValueChanged(object sender, System.EventArgs e)
         {
             int doctorId = Convert.ToInt16(nDoctors.Value);
@@ -54,6 +56,7 @@ namespace ClinicSystem.Appointments
             {
                 uc_doctor.ViewDataPerson(_doctor.Employee.Person);
                 labDoctorId.Text = doctorId.ToString();
+                txtSpecialization.Text = MedicalSpecialties.GetNameById(_doctor.MedicalSpecialtiesId);
             }
         }
         private void nPatients_ValueChanged(object sender, EventArgs e)
@@ -68,7 +71,8 @@ namespace ClinicSystem.Appointments
         }
         private void frmAddUpdateAppointment_Load(object sender, EventArgs e)
         {
-            _FillComboPaymentsMethods();
+            _FillComboAppointmentStatus();
+            cbStatus.SelectedIndex = 0;
             _LoadMedicalRecordData();
         }
         private void btnPay_Click(object sender, EventArgs e)

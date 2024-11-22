@@ -396,7 +396,8 @@
             // txtSpecialization
             // 
             this.txtSpecialization.AutoRoundedCorners = true;
-            this.txtSpecialization.BorderRadius = 21;
+            this.txtSpecialization.BorderColor = System.Drawing.Color.Transparent;
+            this.txtSpecialization.BorderRadius = 23;
             this.txtSpecialization.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSpecialization.DefaultText = "";
             this.txtSpecialization.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -406,13 +407,14 @@
             this.txtSpecialization.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSpecialization.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSpecialization.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSpecialization.Location = new System.Drawing.Point(1404, 627);
+            this.txtSpecialization.Location = new System.Drawing.Point(1404, 617);
             this.txtSpecialization.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSpecialization.Name = "txtSpecialization";
             this.txtSpecialization.PasswordChar = '\0';
             this.txtSpecialization.PlaceholderText = "";
+            this.txtSpecialization.ReadOnly = true;
             this.txtSpecialization.SelectedText = "";
-            this.txtSpecialization.Size = new System.Drawing.Size(191, 45);
+            this.txtSpecialization.Size = new System.Drawing.Size(176, 48);
             this.txtSpecialization.TabIndex = 16;
             // 
             // frmAddUpdateAppointment

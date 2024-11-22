@@ -70,7 +70,7 @@ namespace ClinicSystemDataAccess
         }
         static public bool Exist(int id)
         {
-            return GenericData.Exist("select Found=1 from Appointments where id =@id", "@id", id);
+            return GenericData.Exist("select Found=1 from Appointments where Id =@id", "@id", id);
         }
         static public DataTable All()
         {
