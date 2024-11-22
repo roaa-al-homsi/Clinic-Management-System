@@ -26,11 +26,11 @@ namespace ClinicSystem
             {
                 _medicalRecord = new MedicalRecord();
 
-                this.Text = "Add MedicalRecord";
+                this.Text = "Add MedicalRecords";
                 return;
             }
-            this.Text = "Update MedicalRecord";
-            _medicalRecord = MedicalRecord.Find(_recordId);
+            this.Text = "Update MedicalRecords";
+            _medicalRecord = MedicalRecords.Find(_recordId);
             txtDescription.Text = _medicalRecord.VisitDescription;
             txtNotes.Text = _medicalRecord.AdditionalNotes;
             labRecordId.Text = _medicalRecord.Id.ToString();

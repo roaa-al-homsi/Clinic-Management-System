@@ -135,7 +135,7 @@
             this.labPayment.Name = "labPayment";
             this.labPayment.Size = new System.Drawing.Size(211, 34);
             this.labPayment.TabIndex = 228;
-            this.labPayment.Text = "MedicalRecord Id:";
+            this.labPayment.Text = "MedicalRecords Id:";
             // 
             // btnCancel
             // 
