@@ -70,9 +70,8 @@ namespace ClinicSystemBusiness
             if ((!Exist(this.Id) && _mode == Mode.Update)
                 || !Employee.Exist(this.PatientId)
                 || !Doctor.Exist(this.DoctorId)
-                || !AppointmentStatus.Exist(this.AppointmentStatusId)
-                || !Payment.Exist(this.PaymentId)
-                || !MedicalRecord.Exist(this.MedicalRecordId))
+                || !AppointmentStatus.Exist(this.AppointmentStatusId))
+
             {
                 return false;
             }
@@ -120,6 +119,10 @@ namespace ClinicSystemBusiness
                 return false;
             }
             return AppointmentData.Delete(id);
+        }
+        public static bool AvailableAppointment(int doctorId, DateTime dateTime)
+        {
+            return AppointmentData.AvailableAppointment(doctorId, dateTime);
         }
     }
 }

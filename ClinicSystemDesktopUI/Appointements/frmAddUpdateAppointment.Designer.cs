@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.timePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.btnSelectMedicalRecord = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.datePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.nDoctors = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.nPatients = new Guna.UI2.WinForms.Guna2NumericUpDown();
@@ -61,20 +63,52 @@
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2CustomGradientPanel1.Controls.Add(this.timePicker);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel9);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnPay);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnSelectMedicalRecord);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel4);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel3);
             this.guna2CustomGradientPanel1.Controls.Add(this.cbStatus);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2CustomGradientPanel1.Controls.Add(this.dtDate);
+            this.guna2CustomGradientPanel1.Controls.Add(this.datePicker);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.DarkGray;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(417, 12);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(756, 135);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(981, 135);
             this.guna2CustomGradientPanel1.TabIndex = 0;
+            // 
+            // timePicker
+            // 
+            this.timePicker.AutoRoundedCorners = true;
+            this.timePicker.BackColor = System.Drawing.Color.Transparent;
+            this.timePicker.BorderRadius = 15;
+            this.timePicker.Checked = true;
+            this.timePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.timePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timePicker.Location = new System.Drawing.Point(772, 41);
+            this.timePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.timePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.timePicker.Name = "timePicker";
+            this.timePicker.ShowUpDown = true;
+            this.timePicker.Size = new System.Drawing.Size(132, 33);
+            this.timePicker.TabIndex = 9;
+            this.timePicker.UseTransparentBackground = true;
+            this.timePicker.Value = new System.DateTime(2024, 11, 18, 12, 0, 4, 210);
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.AutoSize = false;
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(686, 45);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(55, 29);
+            this.guna2HtmlLabel9.TabIndex = 8;
+            this.guna2HtmlLabel9.Text = "Date:";
             // 
             // btnPay
             // 
@@ -105,6 +139,7 @@
             this.btnSelectMedicalRecord.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSelectMedicalRecord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSelectMedicalRecord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSelectMedicalRecord.Enabled = false;
             this.btnSelectMedicalRecord.FillColor = System.Drawing.Color.DarkGray;
             this.btnSelectMedicalRecord.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSelectMedicalRecord.ForeColor = System.Drawing.Color.White;
@@ -155,6 +190,7 @@
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(177, 36);
             this.cbStatus.TabIndex = 3;
+            this.cbStatus.SelectedIndexChanged += new System.EventHandler(this.cbStatus_SelectedIndexChanged);
             // 
             // guna2HtmlLabel2
             // 
@@ -167,23 +203,23 @@
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Status Appointment:";
             // 
-            // dtDate
+            // datePicker
             // 
-            this.dtDate.AutoRoundedCorners = true;
-            this.dtDate.BackColor = System.Drawing.Color.Transparent;
-            this.dtDate.BorderRadius = 17;
-            this.dtDate.Checked = true;
-            this.dtDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.dtDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtDate.Location = new System.Drawing.Point(500, 44);
-            this.dtDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtDate.Name = "dtDate";
-            this.dtDate.Size = new System.Drawing.Size(177, 36);
-            this.dtDate.TabIndex = 1;
-            this.dtDate.UseTransparentBackground = true;
-            this.dtDate.Value = new System.DateTime(2024, 11, 18, 12, 0, 4, 210);
+            this.datePicker.AutoRoundedCorners = true;
+            this.datePicker.BackColor = System.Drawing.Color.Transparent;
+            this.datePicker.BorderRadius = 17;
+            this.datePicker.Checked = true;
+            this.datePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.datePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.datePicker.Location = new System.Drawing.Point(500, 44);
+            this.datePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.datePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datePicker.Name = "datePicker";
+            this.datePicker.Size = new System.Drawing.Size(177, 36);
+            this.datePicker.TabIndex = 1;
+            this.datePicker.UseTransparentBackground = true;
+            this.datePicker.Value = new System.DateTime(2024, 11, 18, 12, 0, 4, 210);
             // 
             // guna2HtmlLabel1
             // 
@@ -203,7 +239,7 @@
             this.nDoctors.BorderRadius = 23;
             this.nDoctors.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.nDoctors.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nDoctors.Location = new System.Drawing.Point(1220, 118);
+            this.nDoctors.Location = new System.Drawing.Point(1429, 135);
             this.nDoctors.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nDoctors.Maximum = new decimal(new int[] {
             10,
@@ -457,7 +493,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2ComboBox cbStatus;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker datePicker;
         private Guna.UI2.WinForms.Guna2Button btnPay;
         private Guna.UI2.WinForms.Guna2Button btnSelectMedicalRecord;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
@@ -477,5 +513,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2TextBox txtSpecialization;
+        private Guna.UI2.WinForms.Guna2DateTimePicker timePicker;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
     }
 }

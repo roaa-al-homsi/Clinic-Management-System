@@ -14,6 +14,7 @@ namespace ClinicSystem.Appointments
         private Doctor _doctor;
         private Appointment _appointment;
         private int _recordId;
+        private DateTime _combinedDateTime;
         public frmAddUpdateAppointment(int recordId)
         {
             InitializeComponent();
@@ -30,10 +31,9 @@ namespace ClinicSystem.Appointments
             }
             this.Tag = "Update Appointment";
             _appointment = Appointment.Find(_recordId);
-            btnSelectMedicalRecord.Enabled = false;
             nDoctors.Value = _appointment.DoctorId;
             nPatients.Value = _appointment.PatientId;
-            dtDate.Value = _appointment.Date;
+            datePicker.Value = _appointment.Date;
             cbStatus.SelectedIndex = cbStatus.FindString(AppointmentStatus.GetNameById(_appointment.AppointmentStatusId));
             labRecordId.Text = _appointment.MedicalRecordId.ToString();
             labPaymentId.Text = _appointment.PaymentId.ToString();
@@ -99,16 +99,33 @@ namespace ClinicSystem.Appointments
         }
         private void _FillAppointment()
         {
+            DateTime selectedDate = datePicker.Value.Date;
+            DateTime selectedTime = timePicker.Value;
+            _combinedDateTime = selectedDate.Add(selectedTime.TimeOfDay);
+            _appointment.Date = _combinedDateTime;
             _appointment.DoctorId = Convert.ToInt16(labDoctorId.Text);
             _appointment.PatientId = Convert.ToInt16(labPatientId.Text);
-            _appointment.MedicalRecordId = Convert.ToInt16(labRecordId.Text);
-            _appointment.PaymentId = Convert.ToInt16(labPaymentId.Text);
-            _appointment.Date = dtDate.Value;
+            _appointment.MedicalRecordId = string.IsNullOrWhiteSpace(labRecordId.Text) ? -1 : int.TryParse(labRecordId.Text, out int parsedValue) ? parsedValue : -1;
+            _appointment.PaymentId = string.IsNullOrWhiteSpace(labPaymentId.Text) ? -1 : int.TryParse(labPaymentId.Text, out int terminalValue) ? terminalValue : -1;
             _appointment.AppointmentStatusId = AppointmentStatus.GetIdByName(cbStatus.Text);
+        }
+        private bool _AvailableAppointment()
+        {
+
+            if (cbStatus.SelectedItem.ToString() == "Pending")
+            {
+                return Appointment.AvailableAppointment(_appointment.DoctorId, _combinedDateTime);
+            }
+            return true;
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
             _FillAppointment();
+            if (!_AvailableAppointment())
+            {
+                MessageBox.Show("Failed , There is an appointment with this doctor at the same time so you can choose another time. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (_appointment.Save())
             {
                 labPaymentId.Text = _appointment.Id.ToString();
@@ -118,6 +135,15 @@ namespace ClinicSystem.Appointments
             {
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbStatus.SelectedItem.ToString() == "Completed")
+            {
+                btnSelectMedicalRecord.Enabled = true;
+            }
+
         }
     }
 }

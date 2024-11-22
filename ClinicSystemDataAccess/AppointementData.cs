@@ -39,7 +39,7 @@ namespace ClinicSystemDataAccess
         public static bool Update(int id, DateTime date, int patientId, int doctorId, int AppointmentStatusId, int paymentId, int medicalRecordId)
         {
             int rowsAffected = 0;
-            string query = @"update Appointments set date=@date ,patientId=@patientId ,doctorId=@doctorId,AppointmentStatusId=@AppointmentStatusId
+            string query = @"update Appointments set DateTime=@date ,patientId=@patientId ,doctorId=@doctorId,AppointmentStatusId=@AppointmentStatusId
                            ,paymentId=@paymentId,medicalRecordId=@medicalRecordId  where Id=@Id";
 
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
@@ -108,6 +108,28 @@ namespace ClinicSystemDataAccess
                 }
             }
             return isFound;
+        }
+        static public bool AvailableAppointment(int doctorId, DateTime dateTime)
+        {
+            bool Available = false;
+            string query = "  SELECT 1 AS found FROM Appointments WHERE DoctorId = @doctorId  AND DateTime = @dateTime AND appointmentStatusId=4;";
+            using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@doctorId", doctorId);
+                    command.Parameters.AddWithValue("@dateTime", dateTime);
+
+                    try
+                    {
+                        connection.Open();
+                        SqlDataReader Reader = command.ExecuteReader();
+                        Available = Reader.HasRows;
+                    }
+                    catch (Exception ex) { }
+                }
+            }
+            return !Available;
         }
     }
 }
