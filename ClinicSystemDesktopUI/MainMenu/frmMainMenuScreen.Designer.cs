@@ -39,7 +39,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDoctors = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnPatients = new Guna.UI2.WinForms.Guna2Button();
             this.btnAppointements = new Guna.UI2.WinForms.Guna2Button();
             this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
@@ -146,7 +145,6 @@
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.guna2Panel1.Controls.Add(this.btnDoctors);
             this.guna2Panel1.Controls.Add(this.btnLogout);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.btnPatients);
             this.guna2Panel1.Controls.Add(this.btnAppointements);
             this.guna2Panel1.Controls.Add(this.btnPayments);
@@ -198,26 +196,6 @@
             this.btnLogout.TabIndex = 13;
             this.btnLogout.Tag = "Logout";
             this.btnLogout.Text = "Logout";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.SystemColors.MenuBar;
-            this.guna2Button1.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button1.Location = new System.Drawing.Point(1269, 15);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(158, 55);
-            this.guna2Button1.TabIndex = 14;
-            this.guna2Button1.Tag = "Logins";
-            this.guna2Button1.Text = "Logins";
             // 
             // btnPatients
             // 
@@ -358,7 +336,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnDoctors;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button btnPatients;
         private Guna.UI2.WinForms.Guna2Button btnAppointements;
         private Guna.UI2.WinForms.Guna2Button btnPayments;

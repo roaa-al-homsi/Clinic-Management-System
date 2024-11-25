@@ -82,6 +82,12 @@
     <Compile Include="Employees\frmAddUpdateEmployee.Designer.cs">
       <DependentUpon>frmAddUpdateEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login\frmMainLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmMainLogin.Designer.cs">
+      <DependentUpon>frmMainLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedicalRecord\frmAddUpdateMedicalRecord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,7 @@
     <Compile Include="Payments\frmManagePayments.Designer.cs">
       <DependentUpon>frmManagePayments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Permissions\ManagePermissions.cs" />
     <Compile Include="Persons\frmAddUpdatePersons.cs">
       <SubType>Form</SubType>
     </Compile>

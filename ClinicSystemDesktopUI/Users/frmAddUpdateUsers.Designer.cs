@@ -127,6 +127,7 @@
             this.btnSelectPerson.Size = new System.Drawing.Size(180, 45);
             this.btnSelectPerson.TabIndex = 1;
             this.btnSelectPerson.Text = "Select a Person";
+            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click);
             // 
             // tabUserInfo
             // 
@@ -165,15 +166,12 @@
             this.checkedListBox1.ForeColor = System.Drawing.Color.Silver;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
-            "Books",
-            "Authors",
-            "Customers",
-            "Users",
-            "Genres",
-            "Fines",
-            "Borrowing",
-            "Reservations",
-            "Logins"});
+            "Doctors",
+            "Patients",
+            "Appointments",
+            "Payments",
+            "Employees",
+            "Users"});
             this.checkedListBox1.Location = new System.Drawing.Point(686, 304);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(230, 140);
@@ -348,6 +346,7 @@
             this.btnSave.Size = new System.Drawing.Size(96, 54);
             this.btnSave.TabIndex = 124;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // btnCancel
             // 
@@ -366,6 +365,7 @@
             this.btnCancel.Size = new System.Drawing.Size(96, 54);
             this.btnCancel.TabIndex = 125;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // uc_personInfo1
             // 
