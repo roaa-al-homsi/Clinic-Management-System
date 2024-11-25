@@ -12,7 +12,7 @@ namespace ClinicSystem.Payments
         }
         private void _RefreshPaymentData()
         {
-            dgvManageIPayments.DataSource = MedicalRecord.All();
+            dgvManageIPayments.DataSource = Payment.All();
         }
         private void frmManagePayments_Load(object sender, EventArgs e)
         {

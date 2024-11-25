@@ -1,4 +1,6 @@
 ﻿using ClinicSystem.MainMenu;
+using ClinicSystem.MedicalRecords;
+using ClinicSystem.Prescriptions;
 using ClinicSystemBusiness;
 using System;
 using System.Windows.Forms;
@@ -49,6 +51,18 @@ namespace ClinicSystem.Appointments
                 }
             }
             _RefreshAppointmentData();
+        }
+
+        private void btnAllPrescriptions_Click(object sender, EventArgs e)
+        {
+            frmManagePrescriptions frmManagePrescriptions = new frmManagePrescriptions();
+            frmManagePrescriptions.ShowDialog();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            frmManageMedicalRecord frmManageMedical = new frmManageMedicalRecord();
+            frmManageMedical.ShowDialog();
         }
     }
 }

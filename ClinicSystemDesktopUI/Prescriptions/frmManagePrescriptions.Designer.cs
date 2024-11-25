@@ -80,7 +80,7 @@
             this.dgvManagePrescriptions.RowHeadersVisible = false;
             this.dgvManagePrescriptions.RowHeadersWidth = 51;
             this.dgvManagePrescriptions.RowTemplate.Height = 24;
-            this.dgvManagePrescriptions.Size = new System.Drawing.Size(733, 343);
+            this.dgvManagePrescriptions.Size = new System.Drawing.Size(801, 343);
             this.dgvManagePrescriptions.TabIndex = 3;
             this.dgvManagePrescriptions.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvManagePrescriptions.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -109,7 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 412);
+            this.ClientSize = new System.Drawing.Size(818, 370);
             this.Controls.Add(this.dgvManagePrescriptions);
             this.Name = "frmManagePrescriptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
