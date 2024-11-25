@@ -39,7 +39,7 @@ namespace ClinicSystem.Appointments
         {
             int appointmentId = Convert.ToInt16(dgvManageAppointement.CurrentRow.Cells[0].Value);
 
-            if (MessageBox.Show("Are you sure delete this doctor?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Are you sure delete this appointment?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 if (Appointment.Delete(appointmentId))
                 {

@@ -118,7 +118,9 @@ namespace ClinicSystemBusiness
             {
                 return false;
             }
+
             return AppointmentData.Delete(id);
+
         }
         public static bool AvailableAppointment(int doctorId, DateTime dateTime)
         {
