@@ -49,5 +49,10 @@ namespace ClinicSystem.Users
             }
             _RefreshUsersData();
         }
+
+        private void btnAddUser_Click_1(object sender, EventArgs e)
+        {
+            _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(-1));
+        }
     }
 }
