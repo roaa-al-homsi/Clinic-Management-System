@@ -18,5 +18,13 @@ namespace ClinicSystem.MedicalRecords
         {
             _RefreshMedicalData();
         }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int medicalRecordId = Convert.ToInt32(dgvManageMedicalRecords.CurrentRow.Cells[0].Value);
+            frmAddUpdateMedicalRecord frmAddUpdateMedicalRecord = new frmAddUpdateMedicalRecord(medicalRecordId);
+            frmAddUpdateMedicalRecord.ShowDialog();
+            _RefreshMedicalData();
+        }
     }
 }
