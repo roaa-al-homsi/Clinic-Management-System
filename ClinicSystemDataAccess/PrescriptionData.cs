@@ -37,11 +37,11 @@ namespace ClinicSystemDataAccess
             }
             return newPrescriptionsId;
         }
-        public static bool Update(int id, string dosage, string frequency, DateTime startDate, DateTime endTime, string specialInstructions, string medicationName, int medicalRecordId)
+        public static bool Update(int id, string dosage, string frequency, DateTime startDate, DateTime endDate, string specialInstructions, string medicationName, int medicalRecordId)
         {
             int rowsAffected = 0;
             string query = @"update Prescriptions set
-               dosage=@dosage,frequency=@frequency,startDate=@startDate,endTime=@endTime,
+               dosage=@dosage,frequency=@frequency,startDate=@startDate,endDate=@endDate,
                specialInstructions=@specialInstructions,medicationName=@medicationName,medicalRecordId=@medicalRecordId
                                    where Id=@id";
 
@@ -53,7 +53,7 @@ namespace ClinicSystemDataAccess
                     command.Parameters.AddWithValue("@dosage", dosage);
                     command.Parameters.AddWithValue("@frequency", frequency);
                     command.Parameters.AddWithValue("@startDate", startDate);
-                    command.Parameters.AddWithValue("@endTime", endTime);
+                    command.Parameters.AddWithValue("@endDate", endDate);
                     command.Parameters.AddWithValue("@specialInstructions", specialInstructions);
                     command.Parameters.AddWithValue("@medicationName", medicationName);
                     command.Parameters.AddWithValue("@medicalRecordId", medicalRecordId);
@@ -99,7 +99,7 @@ namespace ClinicSystemDataAccess
                             dosage = (string)reader["Dosage"];
                             frequency = (string)reader["Frequency"];
                             startDate = (DateTime)reader["StartDate"];
-                            endTime = (DateTime)reader["EndTime"];
+                            endTime = (DateTime)reader["EndDate"];
                             specialInstructions = (string)reader["SpecialInstructions"];
                             medicationName = (string)reader["MedicationName"];
                             medicalRecordId = (int)reader["medicalRecordId"];

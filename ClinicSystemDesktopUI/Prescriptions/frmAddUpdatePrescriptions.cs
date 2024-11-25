@@ -30,6 +30,7 @@ namespace ClinicSystem.Prescriptions
             }
             this.Text = "Update Prescription";
             _prescription = Prescription.Find(_prescriptionId);
+            txtName.Text = _prescription.MedicationName;
             txtDosage.Text = _prescription.Dosage;
             txtFrequency.Text = _prescription.Frequency;
             txtInstructions.Text = _prescription.SpecialInstructions;
@@ -61,6 +62,7 @@ namespace ClinicSystem.Prescriptions
             {
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
         private void frmAddUpdatePrescriptions_Load(object sender, EventArgs e)
         {

@@ -33,7 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvManagePrescriptions = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cmsMangePrescriptions = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManagePrescriptions)).BeginInit();
+            this.cmsMangePrescriptions.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvManagePrescriptions
@@ -57,6 +60,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvManagePrescriptions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvManagePrescriptions.ColumnHeadersHeight = 30;
+            this.dgvManagePrescriptions.ContextMenuStrip = this.cmsMangePrescriptions;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,7 +84,7 @@
             this.dgvManagePrescriptions.RowHeadersVisible = false;
             this.dgvManagePrescriptions.RowHeadersWidth = 51;
             this.dgvManagePrescriptions.RowTemplate.Height = 24;
-            this.dgvManagePrescriptions.Size = new System.Drawing.Size(801, 343);
+            this.dgvManagePrescriptions.Size = new System.Drawing.Size(1031, 343);
             this.dgvManagePrescriptions.TabIndex = 3;
             this.dgvManagePrescriptions.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgvManagePrescriptions.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -105,17 +109,42 @@
             this.dgvManagePrescriptions.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgvManagePrescriptions.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             // 
+            // cmsMangePrescriptions
+            // 
+            this.cmsMangePrescriptions.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.cmsMangePrescriptions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateToolStripMenuItem});
+            this.cmsMangePrescriptions.Name = "cmsMangePrescriptions";
+            this.cmsMangePrescriptions.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.cmsMangePrescriptions.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.cmsMangePrescriptions.RenderStyle.ColorTable = null;
+            this.cmsMangePrescriptions.RenderStyle.RoundedEdges = true;
+            this.cmsMangePrescriptions.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.cmsMangePrescriptions.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmsMangePrescriptions.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.cmsMangePrescriptions.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.cmsMangePrescriptions.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.cmsMangePrescriptions.Size = new System.Drawing.Size(211, 56);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
             // frmManagePrescriptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 370);
+            this.ClientSize = new System.Drawing.Size(1048, 370);
             this.Controls.Add(this.dgvManagePrescriptions);
             this.Name = "frmManagePrescriptions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manage Prescriptions";
             this.Load += new System.EventHandler(this.frmManagePrescriptions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManagePrescriptions)).EndInit();
+            this.cmsMangePrescriptions.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -123,5 +152,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvManagePrescriptions;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsMangePrescriptions;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
     }
 }
