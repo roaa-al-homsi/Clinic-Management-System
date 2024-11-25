@@ -3,6 +3,7 @@ using ClinicSystem.Doctors;
 using ClinicSystem.Employees;
 using ClinicSystem.Patients;
 using ClinicSystem.Payments;
+using ClinicSystem.Users;
 using Guna.UI2.WinForms;
 using System.Drawing;
 using System.Windows.Forms;
@@ -118,6 +119,12 @@ namespace ClinicSystem.MainMenu
         {
             btnTitle.Image = btnAppointements.Image;
             OpenChildFormAsync(new frmManageAppointment(this), sender);
+        }
+
+        private void btnUsers_Click(object sender, System.EventArgs e)
+        {
+            btnTitle.Image = btnUsers.Image;
+            OpenChildFormAsync(new frmManageUsers(this), sender);
         }
     }
 }

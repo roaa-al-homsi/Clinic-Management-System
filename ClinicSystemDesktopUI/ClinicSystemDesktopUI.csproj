@@ -156,6 +156,12 @@
     <Compile Include="UserControls\uc_PersonInfo.Designer.cs">
       <DependentUpon>uc_PersonInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\frmManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmManageUsers.Designer.cs">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Appointements\frmAddUpdateAppointment.resx">
       <DependentUpon>frmAddUpdateAppointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +222,9 @@
     <EmbeddedResource Include="UserControls\uc_PersonInfo.resx">
       <DependentUpon>uc_PersonInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -236,8 +245,6 @@
       <Name>ClinicSystemBusiness</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Users\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
