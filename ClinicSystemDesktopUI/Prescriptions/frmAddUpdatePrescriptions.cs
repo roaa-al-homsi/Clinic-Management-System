@@ -10,11 +10,13 @@ namespace ClinicSystem.Prescriptions
         private Mode _mode;
         private Prescription _prescription;
         private int _prescriptionId;
+        private int _medicalRecordId;
 
-        public frmAddUpdatePrescriptions(int prescriptionId)
+        public frmAddUpdatePrescriptions(int prescriptionId, int medicalRecordId)
         {
             InitializeComponent();
             _prescriptionId = prescriptionId;
+            _medicalRecordId = medicalRecordId;
             _mode = _prescriptionId == -1 ? Mode.Add : Mode.Update;
         }
         private void _LoadPrescriptionData()
@@ -23,6 +25,7 @@ namespace ClinicSystem.Prescriptions
             {
                 _prescription = new Prescription();
                 this.Text = "Add Prescription";
+                _prescription.MedicalRecordId = _medicalRecordId;
                 return;
             }
             this.Text = "Update Prescription";
@@ -42,8 +45,8 @@ namespace ClinicSystem.Prescriptions
             _prescription.Dosage = txtDosage.Text;
             _prescription.EndDate = pickerEndDate.Value;
             _prescription.StartDate = pickerStartDate.Value;
-            _prescription.MedicalRecordId = int.Parse(labMedicalRecordId.Text);
-            _prescription.MedicationName = labMedicalRecordId.Text;
+            // _prescription.MedicalRecordId = int.Parse(labMedicalRecordId.Text);
+            _prescription.MedicationName = txtName.Text;
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -51,6 +54,7 @@ namespace ClinicSystem.Prescriptions
             if (_prescription.Save())
             {
                 labPrescriptionId.Text = _prescription.Id.ToString();
+                labMedicalRecordId.Text = _prescription.MedicalRecordId.ToString();
                 MessageBox.Show("Data Saved Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

@@ -355,6 +355,7 @@
             this.Controls.Add(this.labPrescriptionId);
             this.Controls.Add(this.labPrescription);
             this.Name = "frmAddUpdatePrescriptions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAddUpdatePrescriptions";
             this.Load += new System.EventHandler(this.frmAddUpdatePrescriptions_Load);
             this.ResumeLayout(false);

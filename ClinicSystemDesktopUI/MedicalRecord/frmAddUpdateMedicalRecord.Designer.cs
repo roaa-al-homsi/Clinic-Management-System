@@ -38,6 +38,7 @@
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.txtDiagnosis = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnPrescription = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // txtNotes
@@ -210,11 +211,31 @@
             this.guna2HtmlLabel2.TabIndex = 232;
             this.guna2HtmlLabel2.Text = "Diagnosis :";
             // 
+            // btnPrescription
+            // 
+            this.btnPrescription.AutoRoundedCorners = true;
+            this.btnPrescription.BorderRadius = 23;
+            this.btnPrescription.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrescription.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPrescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPrescription.Enabled = false;
+            this.btnPrescription.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPrescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPrescription.ForeColor = System.Drawing.Color.White;
+            this.btnPrescription.Location = new System.Drawing.Point(147, 574);
+            this.btnPrescription.Name = "btnPrescription";
+            this.btnPrescription.Size = new System.Drawing.Size(154, 48);
+            this.btnPrescription.TabIndex = 234;
+            this.btnPrescription.Text = "Add Prescription";
+            this.btnPrescription.Click += new System.EventHandler(this.btnPrescription_Click);
+            // 
             // frmAddUpdateMedicalRecord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 562);
+            this.ClientSize = new System.Drawing.Size(463, 634);
+            this.Controls.Add(this.btnPrescription);
             this.Controls.Add(this.txtDiagnosis);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.btnCancel);
@@ -245,5 +266,6 @@
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private Guna.UI2.WinForms.Guna2TextBox txtDiagnosis;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2Button btnPrescription;
     }
 }

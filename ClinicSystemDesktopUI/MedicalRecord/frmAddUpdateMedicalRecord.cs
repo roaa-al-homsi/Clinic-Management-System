@@ -1,4 +1,5 @@
-﻿using ClinicSystemBusiness;
+﻿using ClinicSystem.Prescriptions;
+using ClinicSystemBusiness;
 using System;
 using System.Windows.Forms;
 
@@ -44,6 +45,7 @@ namespace ClinicSystem
             {
                 labRecordId.Text = _medicalRecord.Id.ToString();
                 MessageBox.Show("Data Saved Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnPrescription.Enabled = true;
             }
             else
             {
@@ -69,6 +71,7 @@ namespace ClinicSystem
             {
                 labRecordId.Text = _medicalRecord.Id.ToString();
                 MessageBox.Show("Data Saved Successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnPrescription.Enabled = true;
             }
             else
             {
@@ -79,6 +82,13 @@ namespace ClinicSystem
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnPrescription_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmAddUpdatePrescriptions addUpdatePrescriptions = new frmAddUpdatePrescriptions(-1, int.Parse(labRecordId.Text));
+            addUpdatePrescriptions.ShowDialog();
         }
     }
 }

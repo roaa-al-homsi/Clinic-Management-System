@@ -16,12 +16,13 @@ namespace ClinicSystemDataAccess
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("date", date);
-                    command.Parameters.AddWithValue("patientId", patientId);
-                    command.Parameters.AddWithValue("doctorId", doctorId);
-                    command.Parameters.AddWithValue("AppointmentStatusId", AppointmentStatusId);
-                    command.Parameters.AddWithValue("paymentId", (paymentId == -1) ? 0 : paymentId);
-                    command.Parameters.AddWithValue("medicalRecordId", (medicalRecordId == -1) ? 0 : medicalRecordId);
+                    command.Parameters.AddWithValue("@date", date);
+                    command.Parameters.AddWithValue("@patientId", patientId);
+                    command.Parameters.AddWithValue("@doctorId", doctorId);
+                    command.Parameters.AddWithValue("@AppointmentStatusId", AppointmentStatusId);
+                    command.Parameters.AddWithValue("@paymentId", (paymentId == -1) ? DBNull.Value : (object)paymentId);
+                    command.Parameters.AddWithValue("@medicalRecordId", (medicalRecordId == -1) ? DBNull.Value : (object)medicalRecordId);
+
                     try
                     {
                         connection.Open();
@@ -40,7 +41,7 @@ namespace ClinicSystemDataAccess
         {
             int rowsAffected = 0;
             string query = @"update Appointments set DateTime=@date ,patientId=@patientId ,doctorId=@doctorId,AppointmentStatusId=@AppointmentStatusId
-                           ,paymentId=@paymentId,medicalRecordId=@medicalRecordId  where Id=@Id";
+                           ,paymentId=@paymentId,medicalRecordId=@medicalRecordId  where Id=@id";
 
             using (SqlConnection connection = new SqlConnection(SettingData.ConnectionString))
             {

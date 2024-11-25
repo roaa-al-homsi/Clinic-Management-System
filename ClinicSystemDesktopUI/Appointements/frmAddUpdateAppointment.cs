@@ -34,6 +34,8 @@ namespace ClinicSystem.Appointments
             nDoctors.Value = _appointment.DoctorId;
             nPatients.Value = _appointment.PatientId;
             datePicker.Value = _appointment.Date;
+            btnSelectMedicalRecord.Enabled = (_appointment.AppointmentStatusId == 2);
+            btnPay.Enabled = (_appointment.AppointmentStatusId == 3);
             cbStatus.SelectedIndex = cbStatus.FindString(AppointmentStatus.GetNameById(_appointment.AppointmentStatusId));
             labRecordId.Text = _appointment.MedicalRecordId.ToString();
             labPaymentId.Text = _appointment.PaymentId.ToString();
@@ -47,39 +49,11 @@ namespace ClinicSystem.Appointments
                 cbStatus.Items.Add(row["Name"]);
             }
         }
-
-        private void nDoctors_ValueChanged(object sender, System.EventArgs e)
-        {
-            int doctorId = Convert.ToInt16(nDoctors.Value);
-            _doctor = Doctor.Find(doctorId);
-            if (_doctor != null)
-            {
-                uc_doctor.ViewDataPerson(_doctor.Employee.Person);
-                labDoctorId.Text = doctorId.ToString();
-                txtSpecialization.Text = MedicalSpecialties.GetNameById(_doctor.MedicalSpecialtiesId);
-            }
-        }
-        private void nPatients_ValueChanged(object sender, EventArgs e)
-        {
-            int patientId = Convert.ToInt16(nPatients.Value);
-            _patient = Patient.Find(patientId);
-            if (_patient != null)
-            {
-                uc_patient.ViewDataPerson(_patient.Person);
-                labPatientId.Text = patientId.ToString();
-            }
-        }
         private void frmAddUpdateAppointment_Load(object sender, EventArgs e)
         {
             _FillComboAppointmentStatus();
             cbStatus.SelectedIndex = 0;
             _LoadMedicalRecordData();
-        }
-        private void btnPay_Click(object sender, EventArgs e)
-        {
-            frmAddUpdatePayment addUpdatePayment = new frmAddUpdatePayment(-1);
-            addUpdatePayment.DataBack += DataBackPayment;
-            addUpdatePayment.ShowDialog();
         }
         private void DataBackPayment(object sender, int paymentId)
         {
@@ -91,34 +65,37 @@ namespace ClinicSystem.Appointments
             labRecordId.Visible = true;
             labRecordId.Text = MedicalRecordId.ToString();
         }
-        private void btnSelectMedicalRecord_Click(object sender, EventArgs e)
-        {
-            frmAddUpdateMedicalRecord frmAddUpdateMedical = new frmAddUpdateMedicalRecord(-1);
-            frmAddUpdateMedical.DataBack += DataBackMedicalRecord;
-            frmAddUpdateMedical.ShowDialog();
-        }
         private void _FillAppointment()
         {
+
             DateTime selectedDate = datePicker.Value.Date;
             DateTime selectedTime = timePicker.Value;
             _combinedDateTime = selectedDate.Add(selectedTime.TimeOfDay);
             _appointment.Date = _combinedDateTime;
             _appointment.DoctorId = Convert.ToInt16(labDoctorId.Text);
             _appointment.PatientId = Convert.ToInt16(labPatientId.Text);
+            _appointment.AppointmentStatusId = AppointmentStatus.GetIdByName(cbStatus.Text);
             _appointment.MedicalRecordId = string.IsNullOrWhiteSpace(labRecordId.Text) ? -1 : int.TryParse(labRecordId.Text, out int parsedValue) ? parsedValue : -1;
             _appointment.PaymentId = string.IsNullOrWhiteSpace(labPaymentId.Text) ? -1 : int.TryParse(labPaymentId.Text, out int terminalValue) ? terminalValue : -1;
-            _appointment.AppointmentStatusId = AppointmentStatus.GetIdByName(cbStatus.Text);
+
         }
         private bool _AvailableAppointment()
         {
-
             if (cbStatus.SelectedItem.ToString() == "Pending")
             {
                 return Appointment.AvailableAppointment(_appointment.DoctorId, _combinedDateTime);
             }
             return true;
         }
-        private void btnSave_Click(object sender, EventArgs e)
+        private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbStatus.SelectedItem.ToString() == "Completed")
+            {
+                btnSelectMedicalRecord.Enabled = true;
+            }
+
+        }
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             _FillAppointment();
             if (!_AvailableAppointment())
@@ -136,14 +113,49 @@ namespace ClinicSystem.Appointments
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        private void nPatients_ValueChanged_1(object sender, EventArgs e)
+        {
+            int patientId = Convert.ToInt16(nPatients.Value);
+            _patient = Patient.Find(patientId);
+            if (_patient != null)
+            {
+                uc_patient.ViewDataPerson(_patient.Person);
+                labPatientId.Text = patientId.ToString();
+            }
+        }
+        private void nDoctors_ValueChanged_1(object sender, EventArgs e)
+        {
+            int doctorId = Convert.ToInt16(nDoctors.Value);
+            _doctor = Doctor.Find(doctorId);
+            if (_doctor != null)
+            {
+                uc_doctor.ViewDataPerson(_doctor.Employee.Person);
+                labDoctorId.Text = doctorId.ToString();
+                txtSpecialization.Text = MedicalSpecialties.GetNameById(_doctor.MedicalSpecialtiesId);
+            }
+        }
+        private void cbStatus_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cbStatus.SelectedItem.ToString() == "Completed")
             {
                 btnSelectMedicalRecord.Enabled = true;
             }
-
+        }
+        private void btnSelectMedicalRecord_Click_1(object sender, EventArgs e)
+        {
+            frmAddUpdateMedicalRecord frmAddUpdateMedical = new frmAddUpdateMedicalRecord(-1);
+            frmAddUpdateMedical.DataBack += DataBackMedicalRecord;
+            frmAddUpdateMedical.ShowDialog();
+        }
+        private void btnPay_Click_1(object sender, EventArgs e)
+        {
+            frmAddUpdatePayment addUpdatePayment = new frmAddUpdatePayment(-1);
+            addUpdatePayment.DataBack += DataBackPayment;
+            addUpdatePayment.ShowDialog();
+        }
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
