@@ -41,7 +41,9 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPatientId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.uc_patient = new ClinicSystem.UserControls.uc_personInfo();
             this.nPatients = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.uc_doctor = new ClinicSystem.UserControls.uc_personInfo();
             this.nDoctors = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.timePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -54,8 +56,6 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.datePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.uc_patient = new ClinicSystem.UserControls.uc_personInfo();
-            this.uc_doctor = new ClinicSystem.UserControls.uc_personInfo();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nPatients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nDoctors)).BeginInit();
@@ -252,6 +252,13 @@
             this.guna2HtmlLabel5.TabIndex = 24;
             this.guna2HtmlLabel5.Text = "Patient Id :";
             // 
+            // uc_patient
+            // 
+            this.uc_patient.Location = new System.Drawing.Point(3, 260);
+            this.uc_patient.Name = "uc_patient";
+            this.uc_patient.Size = new System.Drawing.Size(739, 472);
+            this.uc_patient.TabIndex = 20;
+            // 
             // nPatients
             // 
             this.nPatients.AutoRoundedCorners = true;
@@ -276,6 +283,15 @@
             0,
             0});
             this.nPatients.ValueChanged += new System.EventHandler(this.nPatients_ValueChanged_1);
+            // 
+            // uc_doctor
+            // 
+            this.uc_doctor.BackColor = System.Drawing.Color.Transparent;
+            this.uc_doctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.uc_doctor.Location = new System.Drawing.Point(959, 260);
+            this.uc_doctor.Name = "uc_doctor";
+            this.uc_doctor.Size = new System.Drawing.Size(739, 470);
+            this.uc_doctor.TabIndex = 21;
             // 
             // nDoctors
             // 
@@ -478,22 +494,6 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(55, 29);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Date:";
-            // 
-            // uc_patient
-            // 
-            this.uc_patient.Location = new System.Drawing.Point(3, 260);
-            this.uc_patient.Name = "uc_patient";
-            this.uc_patient.Size = new System.Drawing.Size(739, 472);
-            this.uc_patient.TabIndex = 20;
-            // 
-            // uc_doctor
-            // 
-            this.uc_doctor.BackColor = System.Drawing.Color.Transparent;
-            this.uc_doctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.uc_doctor.Location = new System.Drawing.Point(959, 260);
-            this.uc_doctor.Name = "uc_doctor";
-            this.uc_doctor.Size = new System.Drawing.Size(739, 470);
-            this.uc_doctor.TabIndex = 21;
             // 
             // frmAddUpdateAppointment
             // 

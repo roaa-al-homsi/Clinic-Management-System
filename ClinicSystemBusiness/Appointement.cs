@@ -118,9 +118,20 @@ namespace ClinicSystemBusiness
             {
                 return false;
             }
-
-            return AppointmentData.Delete(id);
-
+            int medicalRecordId = GenericData.GetSpecificIdById("select MedicalRecordId from Appointments where Id=@id", "@id", id);
+            int prescriptionId = GenericData.GetSpecificIdById("select Id from Prescriptions where MedicalRecordId=@medicalRecordId", "@medicalRecordId", medicalRecordId);
+            int paymentId = GenericData.GetSpecificIdById("select PaymentId from Appointments where Id=@id", "@id", id);
+            if (AppointmentData.Delete(id))
+            {
+                if (Payment.Delete(paymentId))
+                {
+                    if (Prescription.Delete(prescriptionId))
+                    {
+                        return MedicalRecord.Delete(medicalRecordId);
+                    }
+                }
+            }
+            return false;
         }
         public static bool AvailableAppointment(int doctorId, DateTime dateTime)
         {

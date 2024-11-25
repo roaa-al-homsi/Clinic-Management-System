@@ -33,13 +33,18 @@ namespace ClinicSystem.Appointments
             _appointment = Appointment.Find(_recordId);
             nDoctors.Value = _appointment.DoctorId;
             nPatients.Value = _appointment.PatientId;
-            datePicker.Value = _appointment.Date;
+            if (_appointment.Date != DateTime.MinValue)
+            {
+                datePicker.Value = _appointment.Date;
+            }
             btnSelectMedicalRecord.Enabled = (_appointment.AppointmentStatusId == 2);
-            btnPay.Enabled = (_appointment.AppointmentStatusId == 3);
+            if (_appointment.AppointmentStatusId == 3)
+            {
+                btnPay.Enabled = false;
+            }
             cbStatus.SelectedIndex = cbStatus.FindString(AppointmentStatus.GetNameById(_appointment.AppointmentStatusId));
             labRecordId.Text = _appointment.MedicalRecordId.ToString();
             labPaymentId.Text = _appointment.PaymentId.ToString();
-
         }
         private void _FillComboAppointmentStatus()
         {
@@ -157,5 +162,7 @@ namespace ClinicSystem.Appointments
         {
             this.Close();
         }
+
+
     }
 }
