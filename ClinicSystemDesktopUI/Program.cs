@@ -1,4 +1,4 @@
-﻿using ClinicSystem.MainMenu;
+﻿using ClinicSystem.Login;
 using System;
 using System.Windows.Forms;
 
@@ -18,7 +18,7 @@ namespace ClinicSystem
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMainMenuScreen());
+            Application.Run(new frmMainLogin());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

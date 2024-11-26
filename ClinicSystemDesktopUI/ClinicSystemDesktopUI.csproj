@@ -193,6 +193,9 @@
     <EmbeddedResource Include="Employees\frmManageEmployees.resx">
       <DependentUpon>frmManageEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmMainLogin.resx">
+      <DependentUpon>frmMainLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MedicalRecord\frmAddUpdateMedicalRecord.resx">
       <DependentUpon>frmAddUpdateMedicalRecord.cs</DependentUpon>
     </EmbeddedResource>
