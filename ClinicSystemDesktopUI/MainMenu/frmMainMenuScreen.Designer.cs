@@ -315,7 +315,6 @@
             this.Name = "frmMainMenuScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMainMenuScreen";
-            this.Load += new System.EventHandler(this.frmMainMenuScreen_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCurrentUser)).EndInit();

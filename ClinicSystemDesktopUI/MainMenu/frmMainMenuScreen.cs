@@ -3,6 +3,7 @@ using ClinicSystem.Doctors;
 using ClinicSystem.Employees;
 using ClinicSystem.Patients;
 using ClinicSystem.Payments;
+using ClinicSystem.Permissions;
 using ClinicSystem.Users;
 using Guna.UI2.WinForms;
 using System.Drawing;
@@ -92,37 +93,61 @@ namespace ClinicSystem.MainMenu
         }
         private void btnEmployees_Click_1(object sender, System.EventArgs e)
         {
+            if (!ManagePermissions.CheckAccessPermission(ManagePermissions.enMainMenuPermission.Employees))
+            {
+                _MessageAccessDenied();
+                return;
+            }
             btnTitle.Image = btnEmployees.Image;
             OpenChildFormAsync(new frmManageEmployees(this), sender);
         }
-        private void frmMainMenuScreen_Load(object sender, System.EventArgs e)
-        {
-
-        }
         private void btnDoctors_Click(object sender, System.EventArgs e)
         {
+            if (!ManagePermissions.CheckAccessPermission(ManagePermissions.enMainMenuPermission.Doctors))
+            {
+                _MessageAccessDenied();
+                return;
+            }
             btnTitle.Image = btnDoctors.Image;
             OpenChildFormAsync(new frmManageDoctorcs(this), sender);
         }
         private void btnPatients_Click(object sender, System.EventArgs e)
         {
+            if (!ManagePermissions.CheckAccessPermission(ManagePermissions.enMainMenuPermission.Patients))
+            {
+                _MessageAccessDenied();
+                return;
+            }
             btnTitle.Image = btnPatients.Image;
             OpenChildFormAsync(new frmManagePatients(this), sender);
         }
         private void btnPayments_Click(object sender, System.EventArgs e)
         {
+            if (!ManagePermissions.CheckAccessPermission(ManagePermissions.enMainMenuPermission.Payments))
+            {
+                _MessageAccessDenied();
+                return;
+            }
             btnTitle.Image = btnPayments.Image;
             OpenChildFormAsync(new frmManagePayments(), sender);
         }
-
         private void btnAppointments_Click(object sender, System.EventArgs e)
         {
+            if (!ManagePermissions.CheckAccessPermission(ManagePermissions.enMainMenuPermission.Appointments))
+            {
+                _MessageAccessDenied();
+                return;
+            }
             btnTitle.Image = btnAppointements.Image;
             OpenChildFormAsync(new frmManageAppointment(this), sender);
         }
-
         private void btnUsers_Click(object sender, System.EventArgs e)
         {
+            if (!ManagePermissions.CheckAccessPermission(ManagePermissions.enMainMenuPermission.Users))
+            {
+                _MessageAccessDenied();
+                return;
+            }
             btnTitle.Image = btnUsers.Image;
             OpenChildFormAsync(new frmManageUsers(this), sender);
         }
