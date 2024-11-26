@@ -153,7 +153,7 @@ namespace ClinicSystemDataAccess
                         if (reader.Read())
                         {
                             IsFound = true;
-                            username = (string)reader["UserName"];
+                            username = (string)reader["Username"];
                             PersonId = (int)reader["PersonId"];
                             Password = (string)reader["Password"];
                             Permission = (int)reader["Permission"];

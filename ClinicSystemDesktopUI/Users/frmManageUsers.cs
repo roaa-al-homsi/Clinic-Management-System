@@ -54,5 +54,11 @@ namespace ClinicSystem.Users
         {
             _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(-1));
         }
+
+        private void ItemUpdate_Click_1(object sender, EventArgs e)
+        {
+            int userId = Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value);
+            _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(userId));
+        }
     }
 }
