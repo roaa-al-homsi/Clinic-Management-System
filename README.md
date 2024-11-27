@@ -62,4 +62,17 @@ The Clinic Management System is a comprehensive desktop application designed to 
 
 1. **Clone the repository:**
    ```bash
-  (https://github.com/roaa-al-homsi/Clinic-Management-System.git)
+   https://github.com/roaa-al-homsi/Clinic-Management-System.git
+  
+
+### Open the project  
+Open the project in Visual Studio.  
+
+### Set up the database  
+- Ensure Microsoft SQL Server is installed.  
+- Import the provided database file (e.g., ClinicDB.sql) into SQL Server.  
+
+### Configure database connection  
+- Open the connection settings file (`app.config`) in the project.  
+- Update the connection string to match your SQL Server settings.  
+
