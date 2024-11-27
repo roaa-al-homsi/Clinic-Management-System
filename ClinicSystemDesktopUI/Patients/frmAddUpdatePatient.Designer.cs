@@ -32,13 +32,13 @@
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tabPersonInfo = new System.Windows.Forms.TabPage();
-            this.btnSelectPerson = new Guna.UI2.WinForms.Guna2Button();
-            this.TabCtrlAddOrUpdateCustomers = new Guna.UI2.WinForms.Guna2TabControl();
-            this.uc_personInfo1 = new ClinicSystem.UserControls.uc_personInfo();
             this.labPatientId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPersonId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPerson = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPatient = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.uc_personInfo1 = new ClinicSystem.UserControls.uc_personInfo();
+            this.btnSelectPerson = new Guna.UI2.WinForms.Guna2Button();
+            this.TabCtrlAddOrUpdateCustomers = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPersonInfo.SuspendLayout();
             this.TabCtrlAddOrUpdateCustomers.SuspendLayout();
             this.SuspendLayout();
@@ -52,10 +52,10 @@
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.Black;
+            this.btnCancel.FillColor = System.Drawing.Color.DarkGray;
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(821, 596);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(760, 595);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(96, 54);
             this.btnCancel.TabIndex = 128;
@@ -70,10 +70,10 @@
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Black;
+            this.btnSave.FillColor = System.Drawing.Color.DarkGray;
             this.btnSave.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(664, 596);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(618, 596);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(96, 54);
             this.btnSave.TabIndex = 127;
@@ -93,7 +93,7 @@
             // 
             // tabPersonInfo
             // 
-            this.tabPersonInfo.BackColor = System.Drawing.Color.Silver;
+            this.tabPersonInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabPersonInfo.Controls.Add(this.labPatientId);
             this.tabPersonInfo.Controls.Add(this.labPersonId);
             this.tabPersonInfo.Controls.Add(this.labPerson);
@@ -104,66 +104,9 @@
             this.tabPersonInfo.Location = new System.Drawing.Point(4, 4);
             this.tabPersonInfo.Name = "tabPersonInfo";
             this.tabPersonInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPersonInfo.Size = new System.Drawing.Size(1480, 581);
+            this.tabPersonInfo.Size = new System.Drawing.Size(1271, 581);
             this.tabPersonInfo.TabIndex = 0;
             this.tabPersonInfo.Text = "Patient Info";
-            // 
-            // btnSelectPerson
-            // 
-            this.btnSelectPerson.AutoRoundedCorners = true;
-            this.btnSelectPerson.BorderRadius = 21;
-            this.btnSelectPerson.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSelectPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelectPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSelectPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelectPerson.FillColor = System.Drawing.Color.Black;
-            this.btnSelectPerson.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectPerson.ForeColor = System.Drawing.Color.White;
-            this.btnSelectPerson.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSelectPerson.Location = new System.Drawing.Point(215, 189);
-            this.btnSelectPerson.Name = "btnSelectPerson";
-            this.btnSelectPerson.Size = new System.Drawing.Size(180, 45);
-            this.btnSelectPerson.TabIndex = 1;
-            this.btnSelectPerson.Text = "Select a Person";
-            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click_1);
-            // 
-            // TabCtrlAddOrUpdateCustomers
-            // 
-            this.TabCtrlAddOrUpdateCustomers.Alignment = System.Windows.Forms.TabAlignment.Right;
-            this.TabCtrlAddOrUpdateCustomers.Controls.Add(this.tabPersonInfo);
-            this.TabCtrlAddOrUpdateCustomers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TabCtrlAddOrUpdateCustomers.ItemSize = new System.Drawing.Size(180, 40);
-            this.TabCtrlAddOrUpdateCustomers.Location = new System.Drawing.Point(0, 0);
-            this.TabCtrlAddOrUpdateCustomers.Name = "TabCtrlAddOrUpdateCustomers";
-            this.TabCtrlAddOrUpdateCustomers.SelectedIndex = 0;
-            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1668, 589);
-            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.TabCtrlAddOrUpdateCustomers.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.TabCtrlAddOrUpdateCustomers.TabIndex = 126;
-            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.Color.Silver;
-            this.TabCtrlAddOrUpdateCustomers.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.VerticalRight;
-            // 
-            // uc_personInfo1
-            // 
-            this.uc_personInfo1.Location = new System.Drawing.Point(717, 20);
-            this.uc_personInfo1.Name = "uc_personInfo1";
-            this.uc_personInfo1.Size = new System.Drawing.Size(748, 500);
-            this.uc_personInfo1.TabIndex = 3;
             // 
             // labPatientId
             // 
@@ -215,11 +158,70 @@
             this.labPatient.TabIndex = 158;
             this.labPatient.Text = "Patient Id:";
             // 
+            // uc_personInfo1
+            // 
+            this.uc_personInfo1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.uc_personInfo1.Location = new System.Drawing.Point(542, 36);
+            this.uc_personInfo1.Name = "uc_personInfo1";
+            this.uc_personInfo1.Size = new System.Drawing.Size(748, 500);
+            this.uc_personInfo1.TabIndex = 3;
+            // 
+            // btnSelectPerson
+            // 
+            this.btnSelectPerson.AutoRoundedCorners = true;
+            this.btnSelectPerson.BorderRadius = 21;
+            this.btnSelectPerson.CheckedState.CustomBorderColor = System.Drawing.Color.HotPink;
+            this.btnSelectPerson.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSelectPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSelectPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSelectPerson.FillColor = System.Drawing.Color.Black;
+            this.btnSelectPerson.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectPerson.ForeColor = System.Drawing.Color.White;
+            this.btnSelectPerson.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
+            this.btnSelectPerson.Location = new System.Drawing.Point(215, 189);
+            this.btnSelectPerson.Name = "btnSelectPerson";
+            this.btnSelectPerson.Size = new System.Drawing.Size(180, 45);
+            this.btnSelectPerson.TabIndex = 1;
+            this.btnSelectPerson.Text = "Select a Person";
+            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click_1);
+            // 
+            // TabCtrlAddOrUpdateCustomers
+            // 
+            this.TabCtrlAddOrUpdateCustomers.Alignment = System.Windows.Forms.TabAlignment.Right;
+            this.TabCtrlAddOrUpdateCustomers.Controls.Add(this.tabPersonInfo);
+            this.TabCtrlAddOrUpdateCustomers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TabCtrlAddOrUpdateCustomers.ItemSize = new System.Drawing.Size(180, 40);
+            this.TabCtrlAddOrUpdateCustomers.Location = new System.Drawing.Point(0, 0);
+            this.TabCtrlAddOrUpdateCustomers.Name = "TabCtrlAddOrUpdateCustomers";
+            this.TabCtrlAddOrUpdateCustomers.SelectedIndex = 0;
+            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1459, 589);
+            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
+            this.TabCtrlAddOrUpdateCustomers.TabButtonSize = new System.Drawing.Size(180, 40);
+            this.TabCtrlAddOrUpdateCustomers.TabIndex = 126;
+            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.TabCtrlAddOrUpdateCustomers.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.VerticalRight;
+            // 
             // frmAddUpdatePatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1668, 638);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1459, 749);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.TabCtrlAddOrUpdateCustomers);

@@ -31,6 +31,8 @@
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.panelContainerEmployeeInfo = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.txtCareer = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSaveEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picPerson = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.labEmployeeId = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,8 +42,9 @@
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labEmployee = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tabEmployeeInfo = new System.Windows.Forms.TabPage();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tabPersonInfo = new System.Windows.Forms.TabPage();
+            this.uc_personInfo1 = new ClinicSystem.UserControls.uc_personInfo();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSelectPerson = new Guna.UI2.WinForms.Guna2Button();
             this.TabCtrlAddOrUpdateCustomers = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabDoctorInfo = new System.Windows.Forms.TabPage();
@@ -53,9 +56,6 @@
             this.labEmployeeDocId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labDoctor = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnSaveEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.txtCareer = new Guna.UI2.WinForms.Guna2TextBox();
-            this.uc_personInfo1 = new ClinicSystem.UserControls.uc_personInfo();
             this.panelContainerEmployeeInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerson)).BeginInit();
             this.tabEmployeeInfo.SuspendLayout();
@@ -75,10 +75,10 @@
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.Black;
+            this.btnCancel.FillColor = System.Drawing.Color.DarkGray;
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(634, 637);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(619, 671);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(96, 54);
             this.btnCancel.TabIndex = 128;
@@ -93,10 +93,10 @@
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Black;
+            this.btnSave.FillColor = System.Drawing.Color.DarkGray;
             this.btnSave.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(477, 637);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(462, 671);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(96, 54);
             this.btnSave.TabIndex = 127;
@@ -115,11 +115,61 @@
             this.panelContainerEmployeeInfo.Controls.Add(this.txtSalary);
             this.panelContainerEmployeeInfo.Controls.Add(this.guna2HtmlLabel9);
             this.panelContainerEmployeeInfo.Controls.Add(this.labEmployee);
-            this.panelContainerEmployeeInfo.FillColor = System.Drawing.Color.Gray;
-            this.panelContainerEmployeeInfo.Location = new System.Drawing.Point(35, 8);
+            this.panelContainerEmployeeInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainerEmployeeInfo.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelContainerEmployeeInfo.FillColor2 = System.Drawing.Color.Silver;
+            this.panelContainerEmployeeInfo.Location = new System.Drawing.Point(3, 3);
             this.panelContainerEmployeeInfo.Name = "panelContainerEmployeeInfo";
-            this.panelContainerEmployeeInfo.Size = new System.Drawing.Size(1126, 540);
+            this.panelContainerEmployeeInfo.Size = new System.Drawing.Size(1265, 578);
             this.panelContainerEmployeeInfo.TabIndex = 150;
+            // 
+            // txtCareer
+            // 
+            this.txtCareer.Animated = true;
+            this.txtCareer.AutoRoundedCorners = true;
+            this.txtCareer.BackColor = System.Drawing.Color.Transparent;
+            this.txtCareer.BorderRadius = 17;
+            this.txtCareer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCareer.DefaultText = "Doctor";
+            this.txtCareer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCareer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCareer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCareer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCareer.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtCareer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCareer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCareer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtCareer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCareer.Location = new System.Drawing.Point(312, 437);
+            this.txtCareer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCareer.Name = "txtCareer";
+            this.txtCareer.PasswordChar = '\0';
+            this.txtCareer.PlaceholderText = "";
+            this.txtCareer.ReadOnly = true;
+            this.txtCareer.SelectedText = "";
+            this.txtCareer.Size = new System.Drawing.Size(200, 36);
+            this.txtCareer.TabIndex = 159;
+            this.txtCareer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnSaveEmployee
+            // 
+            this.btnSaveEmployee.Animated = true;
+            this.btnSaveEmployee.AutoRoundedCorners = true;
+            this.btnSaveEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btnSaveEmployee.BorderRadius = 26;
+            this.btnSaveEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveEmployee.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnSaveEmployee.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSaveEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSaveEmployee.Location = new System.Drawing.Point(630, 451);
+            this.btnSaveEmployee.Name = "btnSaveEmployee";
+            this.btnSaveEmployee.Size = new System.Drawing.Size(182, 54);
+            this.btnSaveEmployee.TabIndex = 130;
+            this.btnSaveEmployee.Text = "Save Employee";
+            this.btnSaveEmployee.Click += new System.EventHandler(this.btnSaveEmployee_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -135,6 +185,7 @@
             // 
             // picPerson
             // 
+            this.picPerson.BackColor = System.Drawing.Color.Transparent;
             this.picPerson.FillColor = System.Drawing.Color.DimGray;
             this.picPerson.ImageRotate = 0F;
             this.picPerson.Location = new System.Drawing.Point(388, 3);
@@ -187,6 +238,7 @@
             // 
             this.txtSalary.Animated = true;
             this.txtSalary.AutoRoundedCorners = true;
+            this.txtSalary.BackColor = System.Drawing.Color.Transparent;
             this.txtSalary.BorderRadius = 17;
             this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSalary.DefaultText = "";
@@ -194,10 +246,10 @@
             this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSalary.FillColor = System.Drawing.Color.Black;
+            this.txtSalary.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSalary.ForeColor = System.Drawing.Color.Silver;
+            this.txtSalary.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Location = new System.Drawing.Point(312, 372);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -241,33 +293,42 @@
             this.tabEmployeeInfo.Location = new System.Drawing.Point(4, 4);
             this.tabEmployeeInfo.Name = "tabEmployeeInfo";
             this.tabEmployeeInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmployeeInfo.Size = new System.Drawing.Size(1201, 581);
+            this.tabEmployeeInfo.Size = new System.Drawing.Size(1271, 584);
             this.tabEmployeeInfo.TabIndex = 1;
             this.tabEmployeeInfo.Text = "Employee Info";
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(8, 140);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(469, 28);
-            this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "You must enter the employee\'s basic information first.";
-            // 
             // tabPersonInfo
             // 
-            this.tabPersonInfo.BackColor = System.Drawing.Color.Silver;
+            this.tabPersonInfo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tabPersonInfo.Controls.Add(this.uc_personInfo1);
             this.tabPersonInfo.Controls.Add(this.guna2HtmlLabel1);
             this.tabPersonInfo.Controls.Add(this.btnSelectPerson);
             this.tabPersonInfo.Location = new System.Drawing.Point(4, 4);
             this.tabPersonInfo.Name = "tabPersonInfo";
             this.tabPersonInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPersonInfo.Size = new System.Drawing.Size(1201, 581);
+            this.tabPersonInfo.Size = new System.Drawing.Size(1271, 584);
             this.tabPersonInfo.TabIndex = 0;
             this.tabPersonInfo.Text = "Person Info";
+            // 
+            // uc_personInfo1
+            // 
+            this.uc_personInfo1.BackColor = System.Drawing.Color.Transparent;
+            this.uc_personInfo1.Location = new System.Drawing.Point(177, 81);
+            this.uc_personInfo1.Name = "uc_personInfo1";
+            this.uc_personInfo1.Size = new System.Drawing.Size(743, 500);
+            this.uc_personInfo1.TabIndex = 8;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(177, 11);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(459, 28);
+            this.guna2HtmlLabel1.TabIndex = 7;
+            this.guna2HtmlLabel1.Text = "You must enter the employee\'s basic information first.";
             // 
             // btnSelectPerson
             // 
@@ -278,16 +339,15 @@
             this.btnSelectPerson.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSelectPerson.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSelectPerson.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelectPerson.FillColor = System.Drawing.Color.Black;
+            this.btnSelectPerson.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSelectPerson.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectPerson.ForeColor = System.Drawing.Color.White;
+            this.btnSelectPerson.ForeColor = System.Drawing.Color.Black;
             this.btnSelectPerson.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSelectPerson.Location = new System.Drawing.Point(215, 189);
+            this.btnSelectPerson.Location = new System.Drawing.Point(689, 8);
             this.btnSelectPerson.Name = "btnSelectPerson";
             this.btnSelectPerson.Size = new System.Drawing.Size(180, 45);
-            this.btnSelectPerson.TabIndex = 1;
+            this.btnSelectPerson.TabIndex = 6;
             this.btnSelectPerson.Text = "Select a Person";
-            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click_1);
             // 
             // TabCtrlAddOrUpdateCustomers
             // 
@@ -300,7 +360,7 @@
             this.TabCtrlAddOrUpdateCustomers.Location = new System.Drawing.Point(0, 0);
             this.TabCtrlAddOrUpdateCustomers.Name = "TabCtrlAddOrUpdateCustomers";
             this.TabCtrlAddOrUpdateCustomers.SelectedIndex = 0;
-            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1389, 589);
+            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1459, 592);
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -318,19 +378,19 @@
             this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.TabCtrlAddOrUpdateCustomers.TabButtonSize = new System.Drawing.Size(180, 40);
             this.TabCtrlAddOrUpdateCustomers.TabIndex = 129;
-            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.Color.Silver;
+            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.TabCtrlAddOrUpdateCustomers.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.VerticalRight;
             // 
             // tabDoctorInfo
             // 
+            this.tabDoctorInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabDoctorInfo.Controls.Add(this.guna2GradientPanel1);
             this.tabDoctorInfo.Location = new System.Drawing.Point(4, 4);
             this.tabDoctorInfo.Name = "tabDoctorInfo";
             this.tabDoctorInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDoctorInfo.Size = new System.Drawing.Size(1201, 581);
+            this.tabDoctorInfo.Size = new System.Drawing.Size(1271, 584);
             this.tabDoctorInfo.TabIndex = 2;
             this.tabDoctorInfo.Text = "Doctor Info";
-            this.tabDoctorInfo.UseVisualStyleBackColor = true;
             // 
             // guna2GradientPanel1
             // 
@@ -341,10 +401,12 @@
             this.guna2GradientPanel1.Controls.Add(this.labEmployeeDocId);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel6);
             this.guna2GradientPanel1.Controls.Add(this.labDoctor);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(57, 3);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel1.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Silver;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(3, 3);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1045, 540);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1265, 578);
             this.guna2GradientPanel1.TabIndex = 151;
             // 
             // cbSpecialization
@@ -354,6 +416,7 @@
             this.cbSpecialization.BorderRadius = 17;
             this.cbSpecialization.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbSpecialization.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSpecialization.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.cbSpecialization.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSpecialization.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbSpecialization.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -379,6 +442,7 @@
             // 
             // picDoctor
             // 
+            this.picDoctor.BackColor = System.Drawing.Color.Transparent;
             this.picDoctor.FillColor = System.Drawing.Color.DimGray;
             this.picDoctor.ImageRotate = 0F;
             this.picDoctor.Location = new System.Drawing.Point(388, 0);
@@ -439,64 +503,12 @@
             this.labDoctor.TabIndex = 154;
             this.labDoctor.Text = "Doctor Id:";
             // 
-            // btnSaveEmployee
-            // 
-            this.btnSaveEmployee.Animated = true;
-            this.btnSaveEmployee.AutoRoundedCorners = true;
-            this.btnSaveEmployee.BorderRadius = 26;
-            this.btnSaveEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveEmployee.FillColor = System.Drawing.Color.Black;
-            this.btnSaveEmployee.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSaveEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnSaveEmployee.Location = new System.Drawing.Point(630, 451);
-            this.btnSaveEmployee.Name = "btnSaveEmployee";
-            this.btnSaveEmployee.Size = new System.Drawing.Size(182, 54);
-            this.btnSaveEmployee.TabIndex = 130;
-            this.btnSaveEmployee.Text = "Save Employee";
-            this.btnSaveEmployee.Click += new System.EventHandler(this.btnSaveEmployee_Click);
-            // 
-            // txtCareer
-            // 
-            this.txtCareer.Animated = true;
-            this.txtCareer.AutoRoundedCorners = true;
-            this.txtCareer.BorderRadius = 17;
-            this.txtCareer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCareer.DefaultText = "Doctor";
-            this.txtCareer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCareer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCareer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCareer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCareer.FillColor = System.Drawing.Color.Black;
-            this.txtCareer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCareer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCareer.ForeColor = System.Drawing.Color.Silver;
-            this.txtCareer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCareer.Location = new System.Drawing.Point(312, 437);
-            this.txtCareer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCareer.Name = "txtCareer";
-            this.txtCareer.PasswordChar = '\0';
-            this.txtCareer.PlaceholderText = "";
-            this.txtCareer.ReadOnly = true;
-            this.txtCareer.SelectedText = "";
-            this.txtCareer.Size = new System.Drawing.Size(200, 36);
-            this.txtCareer.TabIndex = 159;
-            this.txtCareer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // uc_personInfo1
-            // 
-            this.uc_personInfo1.Location = new System.Drawing.Point(458, 8);
-            this.uc_personInfo1.Name = "uc_personInfo1";
-            this.uc_personInfo1.Size = new System.Drawing.Size(743, 500);
-            this.uc_personInfo1.TabIndex = 3;
-            // 
             // frmAddUpdateDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1389, 703);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1459, 749);
             this.Controls.Add(this.TabCtrlAddOrUpdateCustomers);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
@@ -530,10 +542,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel labEmployee;
         private System.Windows.Forms.TabPage tabEmployeeInfo;
-        private UserControls.uc_personInfo uc_personInfo1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.TabPage tabPersonInfo;
-        private Guna.UI2.WinForms.Guna2Button btnSelectPerson;
         private Guna.UI2.WinForms.Guna2TabControl TabCtrlAddOrUpdateCustomers;
         private System.Windows.Forms.TabPage tabDoctorInfo;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
@@ -546,5 +555,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labDoctor;
         private Guna.UI2.WinForms.Guna2Button btnSaveEmployee;
         private Guna.UI2.WinForms.Guna2TextBox txtCareer;
+        private UserControls.uc_personInfo uc_personInfo1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button btnSelectPerson;
     }
 }

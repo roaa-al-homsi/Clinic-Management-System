@@ -88,7 +88,7 @@ namespace ClinicSystemDataAccess
                         {
                             IsFound = true;
                             Id = (int)reader["Id"];
-                            PersonId = (int)reader["Person Id"];
+                            PersonId = (int)reader["PersonId"];
                             Permission = (int)reader["Permission"];
                         }
                         else

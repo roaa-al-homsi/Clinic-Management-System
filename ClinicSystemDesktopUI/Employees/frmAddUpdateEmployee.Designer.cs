@@ -34,7 +34,7 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSelectPerson = new Guna.UI2.WinForms.Guna2Button();
             this.tabEmployeeInfo = new System.Windows.Forms.TabPage();
-            this.panelContainerEmployeeInfo = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.panelContainerEmployeeInfo = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.cbCareer = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.picPerson = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -63,7 +63,7 @@
             this.TabCtrlAddOrUpdateCustomers.Location = new System.Drawing.Point(0, 0);
             this.TabCtrlAddOrUpdateCustomers.Name = "TabCtrlAddOrUpdateCustomers";
             this.TabCtrlAddOrUpdateCustomers.SelectedIndex = 0;
-            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1686, 589);
+            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1459, 589);
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -81,27 +81,28 @@
             this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.TabCtrlAddOrUpdateCustomers.TabButtonSize = new System.Drawing.Size(180, 40);
             this.TabCtrlAddOrUpdateCustomers.TabIndex = 123;
-            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.Color.Silver;
+            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.TabCtrlAddOrUpdateCustomers.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.VerticalRight;
             // 
             // tabPersonInfo
             // 
-            this.tabPersonInfo.BackColor = System.Drawing.Color.Silver;
+            this.tabPersonInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabPersonInfo.Controls.Add(this.uc_personInfo1);
             this.tabPersonInfo.Controls.Add(this.guna2HtmlLabel1);
             this.tabPersonInfo.Controls.Add(this.btnSelectPerson);
             this.tabPersonInfo.Location = new System.Drawing.Point(4, 4);
             this.tabPersonInfo.Name = "tabPersonInfo";
             this.tabPersonInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPersonInfo.Size = new System.Drawing.Size(1498, 581);
+            this.tabPersonInfo.Size = new System.Drawing.Size(1271, 581);
             this.tabPersonInfo.TabIndex = 0;
             this.tabPersonInfo.Text = "Person Info";
             // 
             // uc_personInfo1
             // 
-            this.uc_personInfo1.Location = new System.Drawing.Point(660, 17);
+            this.uc_personInfo1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.uc_personInfo1.Location = new System.Drawing.Point(312, 97);
             this.uc_personInfo1.Name = "uc_personInfo1";
-            this.uc_personInfo1.Size = new System.Drawing.Size(814, 523);
+            this.uc_personInfo1.Size = new System.Drawing.Size(808, 481);
             this.uc_personInfo1.TabIndex = 3;
             // 
             // guna2HtmlLabel1
@@ -109,7 +110,7 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(48, 138);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(312, 50);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(488, 30);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -128,7 +129,7 @@
             this.btnSelectPerson.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSelectPerson.ForeColor = System.Drawing.Color.White;
             this.btnSelectPerson.HoverState.CustomBorderColor = System.Drawing.Color.HotPink;
-            this.btnSelectPerson.Location = new System.Drawing.Point(215, 189);
+            this.btnSelectPerson.Location = new System.Drawing.Point(873, 45);
             this.btnSelectPerson.Name = "btnSelectPerson";
             this.btnSelectPerson.Size = new System.Drawing.Size(180, 45);
             this.btnSelectPerson.TabIndex = 1;
@@ -137,13 +138,13 @@
             // 
             // tabEmployeeInfo
             // 
-            this.tabEmployeeInfo.BackColor = System.Drawing.Color.Silver;
+            this.tabEmployeeInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabEmployeeInfo.Controls.Add(this.panelContainerEmployeeInfo);
             this.tabEmployeeInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabEmployeeInfo.Location = new System.Drawing.Point(4, 4);
             this.tabEmployeeInfo.Name = "tabEmployeeInfo";
             this.tabEmployeeInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmployeeInfo.Size = new System.Drawing.Size(1498, 581);
+            this.tabEmployeeInfo.Size = new System.Drawing.Size(1271, 581);
             this.tabEmployeeInfo.TabIndex = 1;
             this.tabEmployeeInfo.Text = "Employee Info";
             // 
@@ -158,10 +159,14 @@
             this.panelContainerEmployeeInfo.Controls.Add(this.txtSalary);
             this.panelContainerEmployeeInfo.Controls.Add(this.guna2HtmlLabel9);
             this.panelContainerEmployeeInfo.Controls.Add(this.labEmployee);
-            this.panelContainerEmployeeInfo.Location = new System.Drawing.Point(290, 8);
+            this.panelContainerEmployeeInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainerEmployeeInfo.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelContainerEmployeeInfo.FillColor2 = System.Drawing.Color.Silver;
+            this.panelContainerEmployeeInfo.FillColor3 = System.Drawing.SystemColors.ActiveCaption;
+            this.panelContainerEmployeeInfo.Location = new System.Drawing.Point(3, 3);
             this.panelContainerEmployeeInfo.Name = "panelContainerEmployeeInfo";
-            this.panelContainerEmployeeInfo.Size = new System.Drawing.Size(1045, 540);
-            this.panelContainerEmployeeInfo.TabIndex = 150;
+            this.panelContainerEmployeeInfo.Size = new System.Drawing.Size(1265, 575);
+            this.panelContainerEmployeeInfo.TabIndex = 151;
             // 
             // cbCareer
             // 
@@ -170,15 +175,16 @@
             this.cbCareer.BorderRadius = 17;
             this.cbCareer.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbCareer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCareer.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.cbCareer.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbCareer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbCareer.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbCareer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbCareer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cbCareer.ItemHeight = 30;
-            this.cbCareer.Location = new System.Drawing.Point(312, 437);
+            this.cbCareer.Location = new System.Drawing.Point(719, 471);
             this.cbCareer.Name = "cbCareer";
             this.cbCareer.Size = new System.Drawing.Size(200, 36);
-            this.cbCareer.TabIndex = 159;
+            this.cbCareer.TabIndex = 168;
             this.cbCareer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel2
@@ -187,22 +193,23 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(85, 437);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(492, 471);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(146, 36);
-            this.guna2HtmlLabel2.TabIndex = 158;
+            this.guna2HtmlLabel2.TabIndex = 167;
             this.guna2HtmlLabel2.Text = "Career :";
             // 
             // picPerson
             // 
+            this.picPerson.BackColor = System.Drawing.Color.Transparent;
             this.picPerson.FillColor = System.Drawing.Color.DimGray;
             this.picPerson.ImageRotate = 0F;
-            this.picPerson.Location = new System.Drawing.Point(388, 3);
+            this.picPerson.Location = new System.Drawing.Point(492, 49);
             this.picPerson.Name = "picPerson";
             this.picPerson.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.picPerson.Size = new System.Drawing.Size(217, 200);
             this.picPerson.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPerson.TabIndex = 157;
+            this.picPerson.TabIndex = 166;
             this.picPerson.TabStop = false;
             // 
             // labEmployeeId
@@ -211,10 +218,10 @@
             this.labEmployeeId.BackColor = System.Drawing.Color.Transparent;
             this.labEmployeeId.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labEmployeeId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labEmployeeId.Location = new System.Drawing.Point(551, 209);
+            this.labEmployeeId.Location = new System.Drawing.Point(655, 255);
             this.labEmployeeId.Name = "labEmployeeId";
             this.labEmployeeId.Size = new System.Drawing.Size(95, 32);
-            this.labEmployeeId.TabIndex = 146;
+            this.labEmployeeId.TabIndex = 160;
             this.labEmployeeId.Text = "??";
             this.labEmployeeId.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -224,10 +231,10 @@
             this.labPersonId.BackColor = System.Drawing.Color.Transparent;
             this.labPersonId.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPersonId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labPersonId.Location = new System.Drawing.Point(312, 304);
+            this.labPersonId.Location = new System.Drawing.Point(719, 338);
             this.labPersonId.Name = "labPersonId";
             this.labPersonId.Size = new System.Drawing.Size(95, 32);
-            this.labPersonId.TabIndex = 156;
+            this.labPersonId.TabIndex = 165;
             this.labPersonId.Text = "??";
             this.labPersonId.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -237,16 +244,17 @@
             this.labPerson.BackColor = System.Drawing.Color.Transparent;
             this.labPerson.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labPerson.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labPerson.Location = new System.Drawing.Point(85, 302);
+            this.labPerson.Location = new System.Drawing.Point(492, 336);
             this.labPerson.Name = "labPerson";
             this.labPerson.Size = new System.Drawing.Size(111, 34);
-            this.labPerson.TabIndex = 155;
+            this.labPerson.TabIndex = 164;
             this.labPerson.Text = "Person Id:";
             // 
             // txtSalary
             // 
             this.txtSalary.Animated = true;
             this.txtSalary.AutoRoundedCorners = true;
+            this.txtSalary.BackColor = System.Drawing.Color.Transparent;
             this.txtSalary.BorderRadius = 17;
             this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSalary.DefaultText = "";
@@ -254,19 +262,19 @@
             this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSalary.FillColor = System.Drawing.Color.Black;
+            this.txtSalary.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSalary.ForeColor = System.Drawing.Color.Silver;
+            this.txtSalary.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSalary.Location = new System.Drawing.Point(312, 372);
+            this.txtSalary.Location = new System.Drawing.Point(719, 406);
             this.txtSalary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.PasswordChar = '\0';
             this.txtSalary.PlaceholderText = "";
             this.txtSalary.SelectedText = "";
             this.txtSalary.Size = new System.Drawing.Size(200, 36);
-            this.txtSalary.TabIndex = 152;
+            this.txtSalary.TabIndex = 162;
             this.txtSalary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel9
@@ -275,10 +283,10 @@
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Andalus", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(85, 372);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(492, 406);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(146, 36);
-            this.guna2HtmlLabel9.TabIndex = 151;
+            this.guna2HtmlLabel9.TabIndex = 161;
             this.guna2HtmlLabel9.Text = "Salary:";
             // 
             // labEmployee
@@ -287,10 +295,10 @@
             this.labEmployee.BackColor = System.Drawing.Color.Transparent;
             this.labEmployee.Font = new System.Drawing.Font("Impact", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labEmployee.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labEmployee.Location = new System.Drawing.Point(388, 209);
+            this.labEmployee.Location = new System.Drawing.Point(492, 255);
             this.labEmployee.Name = "labEmployee";
             this.labEmployee.Size = new System.Drawing.Size(157, 32);
-            this.labEmployee.TabIndex = 154;
+            this.labEmployee.TabIndex = 163;
             this.labEmployee.Text = "Employee Id:";
             // 
             // btnCancel
@@ -302,10 +310,10 @@
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.Black;
+            this.btnCancel.FillColor = System.Drawing.Color.DarkGray;
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(821, 607);
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(706, 683);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(96, 54);
             this.btnCancel.TabIndex = 125;
@@ -321,10 +329,10 @@
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.Black;
+            this.btnSave.FillColor = System.Drawing.Color.DarkGray;
             this.btnSave.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(664, 607);
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(549, 683);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(96, 54);
             this.btnSave.TabIndex = 124;
@@ -335,8 +343,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1686, 685);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1459, 749);
             this.Controls.Add(this.TabCtrlAddOrUpdateCustomers);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
@@ -360,7 +368,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnSelectPerson;
         private System.Windows.Forms.TabPage tabEmployeeInfo;
-        private Guna.UI2.WinForms.Guna2GradientPanel panelContainerEmployeeInfo;
+        private Guna.UI2.WinForms.Guna2Button btnCancel;
+        private Guna.UI2.WinForms.Guna2Button btnSave;
+        private UserControls.uc_personInfo uc_personInfo1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel panelContainerEmployeeInfo;
+        private Guna.UI2.WinForms.Guna2ComboBox cbCareer;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picPerson;
         private Guna.UI2.WinForms.Guna2HtmlLabel labEmployeeId;
@@ -369,9 +381,5 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSalary;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel labEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnCancel;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2ComboBox cbCareer;
-        private UserControls.uc_personInfo uc_personInfo1;
     }
 }

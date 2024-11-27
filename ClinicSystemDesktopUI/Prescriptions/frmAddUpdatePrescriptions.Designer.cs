@@ -59,10 +59,10 @@
             this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.FillColor = System.Drawing.Color.Black;
+            this.txtName.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.Location = new System.Drawing.Point(234, 151);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -185,10 +185,10 @@
             this.txtFrequency.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtFrequency.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFrequency.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFrequency.FillColor = System.Drawing.Color.Black;
+            this.txtFrequency.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtFrequency.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFrequency.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFrequency.ForeColor = System.Drawing.Color.White;
+            this.txtFrequency.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFrequency.ForeColor = System.Drawing.Color.Black;
             this.txtFrequency.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFrequency.Location = new System.Drawing.Point(234, 267);
             this.txtFrequency.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -211,10 +211,10 @@
             this.txtDosage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtDosage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDosage.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDosage.FillColor = System.Drawing.Color.Black;
+            this.txtDosage.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtDosage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDosage.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtDosage.ForeColor = System.Drawing.Color.White;
+            this.txtDosage.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDosage.ForeColor = System.Drawing.Color.Black;
             this.txtDosage.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDosage.Location = new System.Drawing.Point(234, 209);
             this.txtDosage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -237,10 +237,10 @@
             this.txtInstructions.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtInstructions.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtInstructions.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtInstructions.FillColor = System.Drawing.Color.Black;
+            this.txtInstructions.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtInstructions.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtInstructions.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtInstructions.ForeColor = System.Drawing.Color.White;
+            this.txtInstructions.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInstructions.ForeColor = System.Drawing.Color.Black;
             this.txtInstructions.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtInstructions.Location = new System.Drawing.Point(234, 443);
             this.txtInstructions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -258,6 +258,7 @@
             this.pickerStartDate.BorderRadius = 22;
             this.pickerStartDate.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.pickerStartDate.Checked = true;
+            this.pickerStartDate.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.pickerStartDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pickerStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.pickerStartDate.Location = new System.Drawing.Point(234, 325);
@@ -273,6 +274,7 @@
             this.pickerEndDate.AutoRoundedCorners = true;
             this.pickerEndDate.BorderRadius = 22;
             this.pickerEndDate.Checked = true;
+            this.pickerEndDate.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.pickerEndDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.pickerEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.pickerEndDate.Location = new System.Drawing.Point(234, 384);
@@ -303,9 +305,9 @@
             this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.FillColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(234, 556);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(113, 48);
@@ -321,9 +323,9 @@
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.FillColor = System.Drawing.Color.DarkGray;
+            this.btnSave.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Location = new System.Drawing.Point(76, 556);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(113, 48);
@@ -335,6 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(470, 629);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);

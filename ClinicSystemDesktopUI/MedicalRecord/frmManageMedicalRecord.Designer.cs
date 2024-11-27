@@ -44,13 +44,13 @@
             this.dgvManageMedicalRecords.AllowDrop = true;
             this.dgvManageMedicalRecords.AllowUserToAddRows = false;
             this.dgvManageMedicalRecords.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
             this.dgvManageMedicalRecords.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvManageMedicalRecords.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dgvManageMedicalRecords.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvManageMedicalRecords.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dgvManageMedicalRecords.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.NullValue = "NULL";
@@ -62,14 +62,14 @@
             this.dgvManageMedicalRecords.ColumnHeadersHeight = 30;
             this.dgvManageMedicalRecords.ContextMenuStrip = this.cmsManageMedicalRecords;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvManageMedicalRecords.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvManageMedicalRecords.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
+            this.dgvManageMedicalRecords.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
             this.dgvManageMedicalRecords.Location = new System.Drawing.Point(1, 2);
             this.dgvManageMedicalRecords.Name = "dgvManageMedicalRecords";
             this.dgvManageMedicalRecords.ReadOnly = true;
@@ -86,31 +86,32 @@
             this.dgvManageMedicalRecords.RowTemplate.Height = 24;
             this.dgvManageMedicalRecords.Size = new System.Drawing.Size(864, 381);
             this.dgvManageMedicalRecords.TabIndex = 2;
-            this.dgvManageMedicalRecords.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
-            this.dgvManageMedicalRecords.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgvManageMedicalRecords.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
+            this.dgvManageMedicalRecords.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
             this.dgvManageMedicalRecords.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvManageMedicalRecords.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvManageMedicalRecords.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvManageMedicalRecords.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvManageMedicalRecords.ThemeStyle.BackColor = System.Drawing.Color.Silver;
-            this.dgvManageMedicalRecords.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
-            this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            this.dgvManageMedicalRecords.ThemeStyle.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvManageMedicalRecords.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
             this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvManageMedicalRecords.ThemeStyle.HeaderStyle.Height = 30;
             this.dgvManageMedicalRecords.ThemeStyle.ReadOnly = true;
-            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Andalus", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.Height = 24;
-            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            this.dgvManageMedicalRecords.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // cmsManageMedicalRecords
             // 
+            this.cmsManageMedicalRecords.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.cmsManageMedicalRecords.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsManageMedicalRecords.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem});
@@ -124,12 +125,12 @@
             this.cmsManageMedicalRecords.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageMedicalRecords.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageMedicalRecords.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageMedicalRecords.Size = new System.Drawing.Size(211, 56);
+            this.cmsManageMedicalRecords.Size = new System.Drawing.Size(128, 28);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
@@ -137,6 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(877, 400);
             this.Controls.Add(this.dgvManageMedicalRecords);
             this.Name = "frmManageMedicalRecord";

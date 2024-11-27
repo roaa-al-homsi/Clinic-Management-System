@@ -30,6 +30,7 @@
         {
             this.TabCtrlAddOrUpdateCustomers = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPersonInfo = new System.Windows.Forms.TabPage();
+            this.uc_personInfo1 = new ClinicSystem.UserControls.uc_personInfo();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSelectPerson = new Guna.UI2.WinForms.Guna2Button();
             this.tabUserInfo = new System.Windows.Forms.TabPage();
@@ -47,7 +48,6 @@
             this.labUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
-            this.uc_personInfo1 = new ClinicSystem.UserControls.uc_personInfo();
             this.TabCtrlAddOrUpdateCustomers.SuspendLayout();
             this.tabPersonInfo.SuspendLayout();
             this.tabUserInfo.SuspendLayout();
@@ -65,7 +65,7 @@
             this.TabCtrlAddOrUpdateCustomers.Location = new System.Drawing.Point(0, 0);
             this.TabCtrlAddOrUpdateCustomers.Name = "TabCtrlAddOrUpdateCustomers";
             this.TabCtrlAddOrUpdateCustomers.SelectedIndex = 0;
-            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1664, 591);
+            this.TabCtrlAddOrUpdateCustomers.Size = new System.Drawing.Size(1459, 591);
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.TabCtrlAddOrUpdateCustomers.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -83,20 +83,28 @@
             this.TabCtrlAddOrUpdateCustomers.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.TabCtrlAddOrUpdateCustomers.TabButtonSize = new System.Drawing.Size(180, 40);
             this.TabCtrlAddOrUpdateCustomers.TabIndex = 123;
-            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.Color.Silver;
+            this.TabCtrlAddOrUpdateCustomers.TabMenuBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             // 
             // tabPersonInfo
             // 
-            this.tabPersonInfo.BackColor = System.Drawing.Color.Silver;
+            this.tabPersonInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabPersonInfo.Controls.Add(this.uc_personInfo1);
             this.tabPersonInfo.Controls.Add(this.guna2HtmlLabel1);
             this.tabPersonInfo.Controls.Add(this.btnSelectPerson);
             this.tabPersonInfo.Location = new System.Drawing.Point(184, 4);
             this.tabPersonInfo.Name = "tabPersonInfo";
             this.tabPersonInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPersonInfo.Size = new System.Drawing.Size(1476, 583);
+            this.tabPersonInfo.Size = new System.Drawing.Size(1271, 583);
             this.tabPersonInfo.TabIndex = 0;
             this.tabPersonInfo.Text = "Person Info";
+            // 
+            // uc_personInfo1
+            // 
+            this.uc_personInfo1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.uc_personInfo1.Location = new System.Drawing.Point(507, 63);
+            this.uc_personInfo1.Name = "uc_personInfo1";
+            this.uc_personInfo1.Size = new System.Drawing.Size(739, 483);
+            this.uc_personInfo1.TabIndex = 3;
             // 
             // guna2HtmlLabel1
             // 
@@ -131,13 +139,13 @@
             // 
             // tabUserInfo
             // 
-            this.tabUserInfo.BackColor = System.Drawing.Color.Silver;
+            this.tabUserInfo.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tabUserInfo.Controls.Add(this.panelContainerUserInfo);
             this.tabUserInfo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabUserInfo.Location = new System.Drawing.Point(184, 4);
             this.tabUserInfo.Name = "tabUserInfo";
             this.tabUserInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUserInfo.Size = new System.Drawing.Size(1476, 583);
+            this.tabUserInfo.Size = new System.Drawing.Size(1271, 583);
             this.tabUserInfo.TabIndex = 1;
             this.tabUserInfo.Text = "User Info";
             // 
@@ -154,16 +162,18 @@
             this.panelContainerUserInfo.Controls.Add(this.txtUserName);
             this.panelContainerUserInfo.Controls.Add(this.guna2HtmlLabel9);
             this.panelContainerUserInfo.Controls.Add(this.labUser);
+            this.panelContainerUserInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainerUserInfo.Enabled = false;
-            this.panelContainerUserInfo.Location = new System.Drawing.Point(6, 8);
+            this.panelContainerUserInfo.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelContainerUserInfo.Location = new System.Drawing.Point(3, 3);
             this.panelContainerUserInfo.Name = "panelContainerUserInfo";
-            this.panelContainerUserInfo.Size = new System.Drawing.Size(1045, 540);
+            this.panelContainerUserInfo.Size = new System.Drawing.Size(1265, 577);
             this.panelContainerUserInfo.TabIndex = 150;
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.Black;
-            this.checkedListBox1.ForeColor = System.Drawing.Color.Silver;
+            this.checkedListBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.checkedListBox1.ForeColor = System.Drawing.Color.Black;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Doctors",
@@ -187,12 +197,13 @@
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(146, 36);
             this.guna2HtmlLabel3.TabIndex = 162;
-            this.guna2HtmlLabel3.Text = "Permission:";
+            this.guna2HtmlLabel3.Text = "Permissions :";
             // 
             // txtPassword
             // 
             this.txtPassword.Animated = true;
             this.txtPassword.AutoRoundedCorners = true;
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
             this.txtPassword.BorderRadius = 17;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.DefaultText = "";
@@ -200,10 +211,10 @@
             this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FillColor = System.Drawing.Color.Black;
+            this.txtPassword.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Location = new System.Drawing.Point(312, 437);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -229,6 +240,7 @@
             // 
             // picPerson
             // 
+            this.picPerson.BackColor = System.Drawing.Color.Transparent;
             this.picPerson.FillColor = System.Drawing.Color.DimGray;
             this.picPerson.ImageRotate = 0F;
             this.picPerson.Location = new System.Drawing.Point(388, 3);
@@ -282,6 +294,7 @@
             // 
             this.txtUserName.Animated = true;
             this.txtUserName.AutoRoundedCorners = true;
+            this.txtUserName.BackColor = System.Drawing.Color.Transparent;
             this.txtUserName.BorderRadius = 17;
             this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserName.DefaultText = "";
@@ -289,10 +302,10 @@
             this.txtUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUserName.FillColor = System.Drawing.Color.Black;
+            this.txtUserName.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUserName.ForeColor = System.Drawing.Color.White;
+            this.txtUserName.ForeColor = System.Drawing.Color.Black;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.Location = new System.Drawing.Point(312, 372);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -341,7 +354,7 @@
             this.btnSave.FillColor = System.Drawing.Color.Black;
             this.btnSave.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(514, 600);
+            this.btnSave.Location = new System.Drawing.Point(615, 671);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(96, 54);
             this.btnSave.TabIndex = 124;
@@ -360,25 +373,19 @@
             this.btnCancel.FillColor = System.Drawing.Color.Black;
             this.btnCancel.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(671, 600);
+            this.btnCancel.Location = new System.Drawing.Point(772, 671);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(96, 54);
             this.btnCancel.TabIndex = 125;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // uc_personInfo1
-            // 
-            this.uc_personInfo1.Location = new System.Drawing.Point(698, 54);
-            this.uc_personInfo1.Name = "uc_personInfo1";
-            this.uc_personInfo1.Size = new System.Drawing.Size(739, 483);
-            this.uc_personInfo1.TabIndex = 3;
-            // 
             // frmAddUpdateUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1664, 669);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1459, 749);
             this.Controls.Add(this.TabCtrlAddOrUpdateCustomers);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);

@@ -29,12 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenuScreen));
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.labUserName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picCurrentUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnTitle = new Guna.UI2.WinForms.Guna2Button();
             this.labCurrentUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelMainMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.labLoginDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDoctors = new Guna.UI2.WinForms.Guna2Button();
@@ -44,64 +40,30 @@
             this.btnPayments = new Guna.UI2.WinForms.Guna2Button();
             this.btnUsers = new Guna.UI2.WinForms.Guna2Button();
             this.btnEmployees = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCurrentUser)).BeginInit();
+            this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.picUserMain = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.panelMainMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
+            this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserMain)).BeginInit();
             this.SuspendLayout();
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.Black;
-            this.guna2Panel2.Controls.Add(this.labUserName);
-            this.guna2Panel2.Controls.Add(this.picCurrentUser);
-            this.guna2Panel2.Controls.Add(this.btnTitle);
-            this.guna2Panel2.Controls.Add(this.labCurrentUser);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.FillColor = System.Drawing.Color.FloralWhite;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1740, 44);
-            this.guna2Panel2.TabIndex = 8;
-            // 
-            // labUserName
-            // 
-            this.labUserName.BackColor = System.Drawing.Color.Transparent;
-            this.labUserName.Font = new System.Drawing.Font("Andalus", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(73)))), ((int)(((byte)(225)))));
-            this.labUserName.Location = new System.Drawing.Point(827, 38);
-            this.labUserName.Name = "labUserName";
-            this.labUserName.Size = new System.Drawing.Size(3, 2);
-            this.labUserName.TabIndex = 1;
-            this.labUserName.Text = null;
-            this.labUserName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // picCurrentUser
-            // 
-            this.picCurrentUser.Image = ((System.Drawing.Image)(resources.GetObject("picCurrentUser.Image")));
-            this.picCurrentUser.ImageRotate = 0F;
-            this.picCurrentUser.Location = new System.Drawing.Point(1635, 5);
-            this.picCurrentUser.Name = "picCurrentUser";
-            this.picCurrentUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.picCurrentUser.Size = new System.Drawing.Size(52, 26);
-            this.picCurrentUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCurrentUser.TabIndex = 3;
-            this.picCurrentUser.TabStop = false;
             // 
             // btnTitle
             // 
+            this.btnTitle.BackColor = System.Drawing.Color.Transparent;
             this.btnTitle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTitle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTitle.FillColor = System.Drawing.Color.Silver;
+            this.btnTitle.FillColor = System.Drawing.Color.Transparent;
             this.btnTitle.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTitle.Image = ((System.Drawing.Image)(resources.GetObject("btnTitle.Image")));
             this.btnTitle.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTitle.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnTitle.Location = new System.Drawing.Point(3, 3);
+            this.btnTitle.Location = new System.Drawing.Point(12, 4);
             this.btnTitle.Name = "btnTitle";
-            this.btnTitle.Size = new System.Drawing.Size(196, 50);
+            this.btnTitle.Size = new System.Drawing.Size(426, 47);
             this.btnTitle.TabIndex = 2;
             this.btnTitle.Text = "Home";
             this.btnTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -112,20 +74,11 @@
             this.labCurrentUser.BackColor = System.Drawing.Color.Transparent;
             this.labCurrentUser.Font = new System.Drawing.Font("Andalus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCurrentUser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labCurrentUser.Location = new System.Drawing.Point(1528, 5);
+            this.labCurrentUser.Location = new System.Drawing.Point(1243, 10);
             this.labCurrentUser.Name = "labCurrentUser";
-            this.labCurrentUser.Size = new System.Drawing.Size(72, 38);
+            this.labCurrentUser.Size = new System.Drawing.Size(108, 38);
             this.labCurrentUser.TabIndex = 0;
             this.labCurrentUser.Text = "user";
-            // 
-            // panelMainMenu
-            // 
-            this.panelMainMenu.BackColor = System.Drawing.Color.Gray;
-            this.panelMainMenu.FillColor = System.Drawing.Color.Lavender;
-            this.panelMainMenu.Location = new System.Drawing.Point(12, 130);
-            this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(1700, 739);
-            this.panelMainMenu.TabIndex = 8;
             // 
             // labLoginDate
             // 
@@ -142,7 +95,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.guna2Panel1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.guna2Panel1.Controls.Add(this.btnDoctors);
             this.guna2Panel1.Controls.Add(this.btnLogout);
             this.guna2Panel1.Controls.Add(this.btnPatients);
@@ -150,63 +103,76 @@
             this.guna2Panel1.Controls.Add(this.btnPayments);
             this.guna2Panel1.Controls.Add(this.btnUsers);
             this.guna2Panel1.Controls.Add(this.btnEmployees);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 44);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 54);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1740, 70);
+            this.guna2Panel1.Size = new System.Drawing.Size(1459, 70);
             this.guna2Panel1.TabIndex = 17;
             // 
             // btnDoctors
             // 
             this.btnDoctors.BackColor = System.Drawing.Color.Black;
+            this.btnDoctors.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnDoctors.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDoctors.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnDoctors.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDoctors.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDoctors.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDoctors.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDoctors.FillColor = System.Drawing.SystemColors.MenuBar;
+            this.btnDoctors.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnDoctors.Font = new System.Drawing.Font("Andalus", 10.8F);
             this.btnDoctors.ForeColor = System.Drawing.Color.Black;
+            this.btnDoctors.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnDoctors.Image = ((System.Drawing.Image)(resources.GetObject("btnDoctors.Image")));
             this.btnDoctors.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDoctors.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnDoctors.ImageSize = new System.Drawing.Size(70, 70);
             this.btnDoctors.Location = new System.Drawing.Point(12, 16);
             this.btnDoctors.Name = "btnDoctors";
             this.btnDoctors.Size = new System.Drawing.Size(157, 54);
             this.btnDoctors.TabIndex = 2;
             this.btnDoctors.Tag = "Doctors";
-            this.btnDoctors.Text = "Doctors";
+            this.btnDoctors.Text = "  Doctors";
+            this.btnDoctors.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnDoctors.Click += new System.EventHandler(this.btnDoctors_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnLogout.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnLogout.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogout.FillColor = System.Drawing.Color.Gainsboro;
+            this.btnLogout.FillColor = System.Drawing.Color.Transparent;
             this.btnLogout.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.Location = new System.Drawing.Point(1453, 5);
+            this.btnLogout.Location = new System.Drawing.Point(1255, 6);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(158, 65);
+            this.btnLogout.Size = new System.Drawing.Size(147, 64);
             this.btnLogout.TabIndex = 13;
             this.btnLogout.Tag = "Logout";
             this.btnLogout.Text = "Logout";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnPatients
             // 
             this.btnPatients.BackColor = System.Drawing.Color.Black;
+            this.btnPatients.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPatients.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnPatients.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnPatients.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPatients.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPatients.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPatients.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPatients.FillColor = System.Drawing.SystemColors.MenuBar;
+            this.btnPatients.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnPatients.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPatients.ForeColor = System.Drawing.Color.Black;
+            this.btnPatients.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnPatients.Image = ((System.Drawing.Image)(resources.GetObject("btnPatients.Image")));
             this.btnPatients.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPatients.ImageSize = new System.Drawing.Size(40, 40);
@@ -221,13 +187,17 @@
             // btnAppointements
             // 
             this.btnAppointements.BackColor = System.Drawing.Color.Black;
+            this.btnAppointements.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnAppointements.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnAppointements.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnAppointements.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAppointements.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAppointements.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAppointements.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAppointements.FillColor = System.Drawing.SystemColors.MenuBar;
+            this.btnAppointements.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnAppointements.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppointements.ForeColor = System.Drawing.Color.Black;
+            this.btnAppointements.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnAppointements.Image = ((System.Drawing.Image)(resources.GetObject("btnAppointements.Image")));
             this.btnAppointements.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAppointements.ImageSize = new System.Drawing.Size(40, 40);
@@ -242,13 +212,17 @@
             // btnPayments
             // 
             this.btnPayments.BackColor = System.Drawing.Color.Black;
+            this.btnPayments.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnPayments.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnPayments.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnPayments.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnPayments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnPayments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnPayments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnPayments.FillColor = System.Drawing.SystemColors.MenuBar;
+            this.btnPayments.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnPayments.Font = new System.Drawing.Font("Andalus", 10.8F);
             this.btnPayments.ForeColor = System.Drawing.Color.Black;
+            this.btnPayments.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnPayments.Image = ((System.Drawing.Image)(resources.GetObject("btnPayments.Image")));
             this.btnPayments.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPayments.ImageSize = new System.Drawing.Size(40, 40);
@@ -263,13 +237,17 @@
             // btnUsers
             // 
             this.btnUsers.BackColor = System.Drawing.Color.Black;
+            this.btnUsers.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnUsers.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnUsers.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnUsers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUsers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnUsers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUsers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUsers.FillColor = System.Drawing.SystemColors.MenuBar;
+            this.btnUsers.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnUsers.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsers.ForeColor = System.Drawing.Color.Black;
+            this.btnUsers.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
             this.btnUsers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnUsers.ImageSize = new System.Drawing.Size(40, 40);
@@ -284,13 +262,17 @@
             // btnEmployees
             // 
             this.btnEmployees.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEmployees.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnEmployees.CheckedState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnEmployees.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnEmployees.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEmployees.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEmployees.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEmployees.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEmployees.FillColor = System.Drawing.SystemColors.MenuBar;
+            this.btnEmployees.FillColor = System.Drawing.SystemColors.InactiveBorder;
             this.btnEmployees.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployees.ForeColor = System.Drawing.Color.Black;
+            this.btnEmployees.HoverState.CustomBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnEmployees.Image = ((System.Drawing.Image)(resources.GetObject("btnEmployees.Image")));
             this.btnEmployees.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnEmployees.ImageSize = new System.Drawing.Size(40, 40);
@@ -302,35 +284,67 @@
             this.btnEmployees.Text = "Employee";
             this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click_1);
             // 
+            // guna2CustomGradientPanel1
+            // 
+            this.guna2CustomGradientPanel1.Controls.Add(this.labCurrentUser);
+            this.guna2CustomGradientPanel1.Controls.Add(this.picUserMain);
+            this.guna2CustomGradientPanel1.Controls.Add(this.btnTitle);
+            this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.SystemColors.ActiveCaption;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DarkGray;
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1459, 54);
+            this.guna2CustomGradientPanel1.TabIndex = 4;
+            // 
+            // picUserMain
+            // 
+            this.picUserMain.BackColor = System.Drawing.Color.Transparent;
+            this.picUserMain.Image = ((System.Drawing.Image)(resources.GetObject("picUserMain.Image")));
+            this.picUserMain.ImageRotate = 0F;
+            this.picUserMain.Location = new System.Drawing.Point(1387, 3);
+            this.picUserMain.Name = "picUserMain";
+            this.picUserMain.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.picUserMain.Size = new System.Drawing.Size(60, 48);
+            this.picUserMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUserMain.TabIndex = 4;
+            this.picUserMain.TabStop = false;
+            this.picUserMain.UseTransparentBackground = true;
+            // 
+            // panelMainMenu
+            // 
+            this.panelMainMenu.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.panelMainMenu.FillColor = System.Drawing.Color.White;
+            this.panelMainMenu.Location = new System.Drawing.Point(0, 130);
+            this.panelMainMenu.Name = "panelMainMenu";
+            this.panelMainMenu.Size = new System.Drawing.Size(1433, 749);
+            this.panelMainMenu.TabIndex = 8;
+            // 
             // frmMainMenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(1740, 881);
+            this.ClientSize = new System.Drawing.Size(1459, 881);
+            this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.panelMainMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMainMenuScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMainMenuScreen";
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCurrentUser)).EndInit();
+            this.Load += new System.EventHandler(this.frmMainMenuScreen_Load);
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picUserMain)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel labUserName;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox picCurrentUser;
         private Guna.UI2.WinForms.Guna2Button btnTitle;
         private Guna.UI2.WinForms.Guna2HtmlLabel labCurrentUser;
-        private Guna.UI2.WinForms.Guna2Panel panelMainMenu;
         private Guna.UI2.WinForms.Guna2HtmlLabel labLoginDate;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnDoctors;
@@ -340,5 +354,8 @@
         private Guna.UI2.WinForms.Guna2Button btnPayments;
         private Guna.UI2.WinForms.Guna2Button btnUsers;
         private Guna.UI2.WinForms.Guna2Button btnEmployees;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox picUserMain;
+        private Guna.UI2.WinForms.Guna2Panel panelMainMenu;
     }
 }

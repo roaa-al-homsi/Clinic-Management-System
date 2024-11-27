@@ -1,6 +1,7 @@
 ﻿using ClinicSystem.Appointments;
 using ClinicSystem.Doctors;
 using ClinicSystem.Employees;
+using ClinicSystem.Login;
 using ClinicSystem.Patients;
 using ClinicSystem.Payments;
 using ClinicSystem.Permissions;
@@ -27,12 +28,12 @@ namespace ClinicSystem.MainMenu
                 if (_currentButton != null)
                 {
                     _currentButton.BackColor = Color.FromArgb(175, 238, 238);
-                    _currentButton.ForeColor = Color.White;
+                    _currentButton.ForeColor = Color.Black;
                     _currentButton.Font = new System.Drawing.Font("Andalus", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
 
                 _currentButton = (Guna2Button)btnSender;
-                _currentButton.BackColor = Color.White;
+                _currentButton.BackColor = Color.Black;
                 _currentButton.ForeColor = Color.FromArgb(175, 238, 238);
                 _currentButton.Font = new System.Drawing.Font("Comic Sans MS", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             }
@@ -150,6 +151,20 @@ namespace ClinicSystem.MainMenu
             }
             btnTitle.Image = btnUsers.Image;
             OpenChildFormAsync(new frmManageUsers(this), sender);
+        }
+
+
+        private void btnLogout_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+            frmMainLogin frmMainLogin = new frmMainLogin();
+            frmMainLogin.ShowDialog();
+        }
+
+        private void frmMainMenuScreen_Load(object sender, System.EventArgs e)
+        {
+            labCurrentUser.Text = frmMainLogin.CurrentUser.UserName;
+            picUserMain.ImageLocation = string.IsNullOrWhiteSpace(frmMainLogin.CurrentUser.Person.ImagePath) ? null : frmMainLogin.CurrentUser.Person.ImagePath;
         }
     }
 }

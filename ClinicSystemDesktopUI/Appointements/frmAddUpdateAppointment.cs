@@ -43,8 +43,8 @@ namespace ClinicSystem.Appointments
                 btnPay.Enabled = false;
             }
             cbStatus.SelectedIndex = cbStatus.FindString(AppointmentStatus.GetNameById(_appointment.AppointmentStatusId));
-            labRecordId.Text = _appointment.MedicalRecordId.ToString();
-            labPaymentId.Text = _appointment.PaymentId.ToString();
+            labRecordId.Text = _appointment.MedicalRecordId == -1 ? "??" : _appointment.MedicalRecordId.ToString();
+            labPaymentId.Text = _appointment.PaymentId == -1 ? "??" : _appointment.PaymentId.ToString();
         }
         private void _FillComboAppointmentStatus()
         {
@@ -136,7 +136,7 @@ namespace ClinicSystem.Appointments
             {
                 uc_doctor.ViewDataPerson(_doctor.Employee.Person);
                 labDoctorId.Text = doctorId.ToString();
-                txtSpecialization.Text = MedicalSpecialties.GetNameById(_doctor.MedicalSpecialtiesId);
+                txtSpecialization1.Text = MedicalSpecialties.GetNameById(_doctor.MedicalSpecialtiesId);
             }
         }
         private void cbStatus_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -162,7 +162,5 @@ namespace ClinicSystem.Appointments
         {
             this.Close();
         }
-
-
     }
 }

@@ -69,7 +69,10 @@ namespace ClinicSystem.Users
                 {
                     _PermissionOnlyUser += (int)ManagePermissions.enMainMenuPermission.Users;
                 }
-
+                if (_PermissionOnlyUser == 63)
+                {
+                    _PermissionOnlyUser = -1;
+                }
             }
         }
         private void btnSave_Click_1(object sender, EventArgs e)
