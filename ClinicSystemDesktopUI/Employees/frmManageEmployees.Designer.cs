@@ -173,6 +173,7 @@
             this.Controls.Add(this.dgvManageEmployees);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManageEmployees";
+            this.Tag = "Manage Employees";
             this.Text = "frmManageEmployees";
             this.Load += new System.EventHandler(this.frmManageEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageEmployees)).EndInit();

@@ -174,6 +174,7 @@
             this.Controls.Add(this.dgvManagePatients);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManagePatients";
+            this.Tag = "Manage Patients";
             this.Text = "frmManagePatients";
             this.Load += new System.EventHandler(this.frmManagePatients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManagePatients)).EndInit();

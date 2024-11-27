@@ -18,7 +18,7 @@ namespace ClinicSystem.Login
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            CurrentUser = User.FindByUserNameAndPassword(txtUserName.Text, txtPassword.Text);
+            CurrentUser = User.FindByUserNameAndPassword(txtUsername.Text, txtPassword.Text);
             if (CurrentUser != null)
             {
                 this.Hide();
@@ -32,7 +32,7 @@ namespace ClinicSystem.Login
                 if (_CounterFailedLogin == 3)
                 {
                     txtPassword.Enabled = false;
-                    txtUserName.Enabled = false;
+                    txtUsername.Enabled = false;
                     labCheckLogin.Text = $"System Lock, Wait a few seconds to log in again";
                     _CounterFailedLogin = 0;
                     timer1.Enabled = true;
@@ -40,7 +40,7 @@ namespace ClinicSystem.Login
                 }
                 else
                 { labCheckLogin.Text = $"Invalid username or password, You have {3 - _CounterFailedLogin} tries to login"; }
-                txtUserName.Text = string.Empty;
+                txtUsername.Text = string.Empty;
                 txtPassword.Text = string.Empty;
             }
         }
@@ -49,7 +49,7 @@ namespace ClinicSystem.Login
             btnLogin.Enabled = true;
             timer1.Enabled = false;
             txtPassword.Enabled = true;
-            txtUserName.Enabled = true;
+            txtUsername.Enabled = true;
             labTimer.Visible = false;
             labCheckLogin.Visible = false;
             _CounterTick = 60;

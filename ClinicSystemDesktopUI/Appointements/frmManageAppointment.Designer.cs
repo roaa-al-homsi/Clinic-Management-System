@@ -131,19 +131,19 @@
             this.cmManageAppointment.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmManageAppointment.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmManageAppointment.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmManageAppointment.Size = new System.Drawing.Size(211, 80);
+            this.cmManageAppointment.Size = new System.Drawing.Size(128, 52);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -213,6 +213,7 @@
             this.Controls.Add(this.dgvManageAppointement);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManageAppointment";
+            this.Tag = "Manage Appointment";
             this.Text = "frmManageAppointement";
             this.Load += new System.EventHandler(this.frmManageAppointment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageAppointement)).EndInit();

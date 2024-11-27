@@ -129,19 +129,19 @@
             this.cmManagePaymets.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmManagePaymets.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmManagePaymets.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmManagePaymets.Size = new System.Drawing.Size(211, 80);
+            this.cmManagePaymets.Size = new System.Drawing.Size(128, 52);
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.updateToolStripMenuItem.Text = "Update";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -173,6 +173,7 @@
             this.Controls.Add(this.dgvManageIPayments);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManagePayments";
+            this.Tag = "Manage Payments";
             this.Text = "frmManagePayments";
             this.Load += new System.EventHandler(this.frmManagePayments_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvManageIPayments)).EndInit();
