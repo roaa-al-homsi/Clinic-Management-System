@@ -71,16 +71,6 @@ namespace ClinicSystem.Doctors
                 picDoctor.ImageLocation = person.ImagePath;
             }
         }
-        private void btnSelectPerson_Click_1(object sender, EventArgs e)
-        {
-            frmAddUpdatePersons addUpdatePersons = new frmAddUpdatePersons(_doctor.Employee.PersonId);
-            addUpdatePersons.DataBack += DataBackPerson;
-            addUpdatePersons.ShowDialog();
-        }
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         private void frmAddUpdateDoctor_Load(object sender, EventArgs e)
         {
             _FillComboSpecialization();
@@ -118,6 +108,16 @@ namespace ClinicSystem.Doctors
             {
                 MessageBox.Show("Failed ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void btnSelectPerson_Click(object sender, EventArgs e)
+        {
+            frmAddUpdatePersons addUpdatePersons = new frmAddUpdatePersons(_doctor.Employee.PersonId);
+            addUpdatePersons.DataBack += DataBackPerson;
+            addUpdatePersons.ShowDialog();
+        }
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

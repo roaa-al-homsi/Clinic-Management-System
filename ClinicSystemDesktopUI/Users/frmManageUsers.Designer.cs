@@ -129,20 +129,21 @@
             this.cmsManageUser.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.cmsManageUser.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.cmsManageUser.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.cmsManageUser.Size = new System.Drawing.Size(128, 52);
+            this.cmsManageUser.Size = new System.Drawing.Size(211, 80);
             // 
             // ItemUpdate
             // 
             this.ItemUpdate.Name = "ItemUpdate";
-            this.ItemUpdate.Size = new System.Drawing.Size(127, 24);
+            this.ItemUpdate.Size = new System.Drawing.Size(210, 24);
             this.ItemUpdate.Text = "Update";
             this.ItemUpdate.Click += new System.EventHandler(this.ItemUpdate_Click_1);
             // 
             // ItemDelete
             // 
             this.ItemDelete.Name = "ItemDelete";
-            this.ItemDelete.Size = new System.Drawing.Size(127, 24);
+            this.ItemDelete.Size = new System.Drawing.Size(210, 24);
             this.ItemDelete.Text = "Delete";
+            this.ItemDelete.Click += new System.EventHandler(this.ItemDelete_Click_1);
             // 
             // btnAddUser
             // 

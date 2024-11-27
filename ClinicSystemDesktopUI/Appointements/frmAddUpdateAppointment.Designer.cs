@@ -42,9 +42,9 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labPatientId = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.uc_patient = new ClinicSystem.UserControls.uc_personInfo();
+            this.uc_Doctor = new ClinicSystem.UserControls.uc_personInfo();
             this.nPatients = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.uc_doctor = new ClinicSystem.UserControls.uc_personInfo();
+            this.uc_Patient = new ClinicSystem.UserControls.uc_personInfo();
             this.nDoctors = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.timePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -78,9 +78,9 @@
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel7);
             this.guna2CustomGradientPanel1.Controls.Add(this.labPatientId);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel5);
-            this.guna2CustomGradientPanel1.Controls.Add(this.uc_patient);
+            this.guna2CustomGradientPanel1.Controls.Add(this.uc_Doctor);
             this.guna2CustomGradientPanel1.Controls.Add(this.nPatients);
-            this.guna2CustomGradientPanel1.Controls.Add(this.uc_doctor);
+            this.guna2CustomGradientPanel1.Controls.Add(this.uc_Patient);
             this.guna2CustomGradientPanel1.Controls.Add(this.nDoctors);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -281,13 +281,13 @@
             this.guna2HtmlLabel5.TabIndex = 24;
             this.guna2HtmlLabel5.Text = "Patient Id :";
             // 
-            // uc_patient
+            // uc_Doctor
             // 
-            this.uc_patient.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.uc_patient.Location = new System.Drawing.Point(720, 265);
-            this.uc_patient.Name = "uc_patient";
-            this.uc_patient.Size = new System.Drawing.Size(739, 472);
-            this.uc_patient.TabIndex = 20;
+            this.uc_Doctor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.uc_Doctor.Location = new System.Drawing.Point(720, 265);
+            this.uc_Doctor.Name = "uc_Doctor";
+            this.uc_Doctor.Size = new System.Drawing.Size(739, 472);
+            this.uc_Doctor.TabIndex = 20;
             // 
             // nPatients
             // 
@@ -314,14 +314,14 @@
             0});
             this.nPatients.ValueChanged += new System.EventHandler(this.nPatients_ValueChanged_1);
             // 
-            // uc_doctor
+            // uc_Patient
             // 
-            this.uc_doctor.BackColor = System.Drawing.Color.Transparent;
-            this.uc_doctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.uc_doctor.Location = new System.Drawing.Point(3, 276);
-            this.uc_doctor.Name = "uc_doctor";
-            this.uc_doctor.Size = new System.Drawing.Size(741, 461);
-            this.uc_doctor.TabIndex = 21;
+            this.uc_Patient.BackColor = System.Drawing.Color.Transparent;
+            this.uc_Patient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.uc_Patient.Location = new System.Drawing.Point(3, 276);
+            this.uc_Patient.Name = "uc_Patient";
+            this.uc_Patient.Size = new System.Drawing.Size(741, 461);
+            this.uc_Patient.TabIndex = 21;
             // 
             // nDoctors
             // 
@@ -559,9 +559,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel labPatientId;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private UserControls.uc_personInfo uc_patient;
+        private UserControls.uc_personInfo uc_Doctor;
         private Guna.UI2.WinForms.Guna2NumericUpDown nPatients;
-        private UserControls.uc_personInfo uc_doctor;
+        private UserControls.uc_personInfo uc_Patient;
         private Guna.UI2.WinForms.Guna2NumericUpDown nDoctors;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2DateTimePicker timePicker;

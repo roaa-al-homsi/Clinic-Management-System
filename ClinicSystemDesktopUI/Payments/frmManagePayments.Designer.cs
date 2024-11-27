@@ -156,7 +156,7 @@
             this.btnSave.FillColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSave.Font = new System.Drawing.Font("Andalus", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(500, 538);
+            this.btnSave.Location = new System.Drawing.Point(563, 569);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(202, 48);
             this.btnSave.TabIndex = 227;

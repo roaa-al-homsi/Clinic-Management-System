@@ -21,18 +21,16 @@ namespace ClinicSystem.Users
         {
             _RefreshUsersData();
         }
-        private void btnAddUser_Click(object sender, System.EventArgs e)
+        private void btnAddUser_Click_1(object sender, EventArgs e)
         {
-            // _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUser(-1));
+            _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(-1));
         }
-
-        private void ItemUpdate_Click(object sender, System.EventArgs e)
+        private void ItemUpdate_Click_1(object sender, EventArgs e)
         {
-            //int UserId = (int)dgvAllUsers.CurrentRow.Cells[0].Value;
-            //_MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUser(UserId));
+            int userId = Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value);
+            _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(userId));
         }
-
-        private void ItemDelete_Click(object sender, System.EventArgs e)
+        private void ItemDelete_Click_1(object sender, EventArgs e)
         {
             int UserId = (int)dgvAllUsers.CurrentRow.Cells[0].Value;
 
@@ -48,17 +46,6 @@ namespace ClinicSystem.Users
                 }
             }
             _RefreshUsersData();
-        }
-
-        private void btnAddUser_Click_1(object sender, EventArgs e)
-        {
-            _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(-1));
-        }
-
-        private void ItemUpdate_Click_1(object sender, EventArgs e)
-        {
-            int userId = Convert.ToInt32(dgvAllUsers.CurrentRow.Cells[0].Value);
-            _MainMenuScreen.OpenChildFormAsync(new frmAddUpdateUsers(userId));
         }
     }
 }

@@ -124,7 +124,7 @@ namespace ClinicSystem.Appointments
             _patient = Patient.Find(patientId);
             if (_patient != null)
             {
-                uc_patient.ViewDataPerson(_patient.Person);
+                uc_Patient.ViewDataPerson(_patient.Person);
                 labPatientId.Text = patientId.ToString();
             }
         }
@@ -134,7 +134,7 @@ namespace ClinicSystem.Appointments
             _doctor = Doctor.Find(doctorId);
             if (_doctor != null)
             {
-                uc_doctor.ViewDataPerson(_doctor.Employee.Person);
+                uc_Doctor.ViewDataPerson(_doctor.Employee.Person);
                 labDoctorId.Text = doctorId.ToString();
                 txtSpecialization1.Text = MedicalSpecialties.GetNameById(_doctor.MedicalSpecialtiesId);
             }

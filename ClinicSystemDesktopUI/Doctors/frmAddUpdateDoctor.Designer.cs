@@ -83,6 +83,7 @@
             this.btnCancel.Size = new System.Drawing.Size(96, 54);
             this.btnCancel.TabIndex = 128;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnSave
             // 
@@ -348,6 +349,7 @@
             this.btnSelectPerson.Size = new System.Drawing.Size(180, 45);
             this.btnSelectPerson.TabIndex = 6;
             this.btnSelectPerson.Text = "Select a Person";
+            this.btnSelectPerson.Click += new System.EventHandler(this.btnSelectPerson_Click);
             // 
             // TabCtrlAddOrUpdateCustomers
             // 

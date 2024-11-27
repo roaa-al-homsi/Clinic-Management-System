@@ -422,6 +422,7 @@
             this.Controls.Add(this.labPersonId);
             this.Controls.Add(this.labPerson);
             this.Name = "frmAddUpdatePersons";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddUpdatePersons";
             this.Load += new System.EventHandler(this.frmAddUpdatePersons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPerson)).EndInit();

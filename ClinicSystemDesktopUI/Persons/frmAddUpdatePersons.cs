@@ -109,15 +109,14 @@ namespace ClinicSystem.Persons
         {
             picPerson.ImageLocation = null;
         }
-
         private void txtPhone_TextChanged(object sender, System.EventArgs e)
         {
 
         }
-
         private void cbGendre_SelectedIndexChanged(object sender, System.EventArgs e)
         {
 
         }
+
     }
 }

@@ -52,8 +52,9 @@ namespace ClinicSystemDataAccess
                     command.Parameters.AddWithValue("@patientId", patientId);
                     command.Parameters.AddWithValue("@doctorId", doctorId);
                     command.Parameters.AddWithValue("@AppointmentStatusId", AppointmentStatusId);
-                    command.Parameters.AddWithValue("@paymentId", paymentId);
-                    command.Parameters.AddWithValue("@medicalRecordId", medicalRecordId);
+                    command.Parameters.AddWithValue("@paymentId", (paymentId == -1) ? DBNull.Value : (object)paymentId);
+                    command.Parameters.AddWithValue("@medicalRecordId", (medicalRecordId == -1) ? DBNull.Value : (object)medicalRecordId);
+
                     try
                     {
                         connection.Open();
