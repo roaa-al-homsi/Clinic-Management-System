@@ -62,4 +62,4 @@ The Clinic Management System is a comprehensive desktop application designed to 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/Clinic-Management-System.git
+  (https://github.com/roaa-al-homsi/Clinic-Management-System.git)
