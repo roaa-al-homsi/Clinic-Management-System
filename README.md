@@ -76,3 +76,7 @@ Open the project in Visual Studio.
 - Open the connection settings file (`app.config`) in the project.  
 - Update the connection string to match your SQL Server settings.  
 
+---
+### Demo Video
+
+  [Watch the demo on YouTube](https://youtu.be/xGfC-TnD8dk?si=09fRVpMC2PSnhrfX)
